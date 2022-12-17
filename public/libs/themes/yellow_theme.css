@@ -1,0 +1,27 @@
+.leftside-menu{
+    background-color: #ffd400 !important;
+}
+.content-page .navbar-custom{
+    background-color: #faf2d1 !important;
+}
+.logo-background{
+    background-color: #ffd400 !important;
+}
+.notification-list .nav-user{
+    background-color: #faf2d1 !important;
+    border: 1px solid #faf2d1 !important;
+}
+
+.leftside-menu a{
+    color: #faf2d1;
+}
+body[data-leftbar-theme=light] .side-nav .side-nav-link {
+    color: #747898;
+}
+.navbar-custom .topbar-menu .nav-link {
+    color: #747898
+}
+
+.content-page{
+    background-color: #fffddd !important; 
+}

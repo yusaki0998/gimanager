@@ -1,0 +1,38 @@
+:root{
+    --pt-primary-color: #ffecef;
+    --pt-secondary-color: #f9e6ea;
+    --pt-link: #474d56;
+}
+.leftside-menu{
+    /* background-color: var(--pt-secondary-color)  !important; */
+    background-image: url("../../assets/images/pink-theme-1.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover!important ;
+}
+
+body[data-leftbar-theme=light] .leftside-menu .logo {
+    background: none !important;
+}
+
+.leftside-menu a{
+    color: var(--pt-link);
+}
+body[data-leftbar-theme=light] .side-nav .side-nav-link {
+    color: var(--pt-link);
+}
+.navbar-custom .topbar-menu .nav-link {
+    color: var(--pt-link);
+}
+
+.greeting-background {
+    background-color: #f7d1d5!important;
+    background-image: url("../../assets/images/pink-theme-2.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover!important ;
+}
+
+#greeting_card h1{ 
+    color: #372753 !important;
+}
