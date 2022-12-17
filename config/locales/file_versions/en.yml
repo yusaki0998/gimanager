@@ -1,0 +1,17 @@
+en:
+  file_version:
+    revert_versions:
+      date_time: "Date time"
+      changer: "Changer"
+      title: "Title"
+      file_name: "File name"
+      operation: "Operation"
+      comment: "Comment"
+      mon: "Mon"
+      tue: "Tue"
+      wed: "Wed"
+      thu: "Thu"
+      fri: "Fri"
+      sat: "Sat"
+      sun: "Sun"
+    

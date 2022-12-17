@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teipa</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="shortcut icon" href="<%= root_path %>assets/images/favicon.ico">
+    <link href="<%= root_path %>libs/hyper/assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css" />
+    <link href="<%= root_path %>libs/hyper/assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css" />
+    <link href="<%= root_path %>libs/hyper/assets/css/vendor/buttons.bootstrap5.css" rel="stylesheet" type="text/css" />
+    <link href="<%= root_path %>libs/hyper/assets/css/vendor/select.bootstrap5.css" rel="stylesheet" type="text/css" />
+
+    <!-- <link href="<%= root_path %>libs/sliptree-bootstrap-tokenfield/css/bootstrap-tokenfield.css" rel="stylesheet" type="text/css" />
+    <script src="<%= root_path %>libs/sliptree-bootstrap-tokenfield/bootstrap-tokenfield.js"></script> -->   
+    <link href="<%= root_path %>libs/hyper/assets/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="<%= root_path %>libs/hyper/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Quill css -->
+
+    <link href="<%= root_path %>libs/hyper/assets/css/app-creative.css" rel="stylesheet" type="text/css" id="app-style" />
+    <meta charset="utf-8" />
+    <script src="<%= root_path %>assets/js/download.js"></script>
+    
+    <meta name="google" content="notranslate" />
+
+    <link rel="stylesheet" href="<%= root_path %>assets/css/jquery-ui.css"> 
+
+
+    <link href="<%= root_path %>libs/slick/slick.css" rel="stylesheet" type="text/css" />
+    <link href="<%= root_path %>libs/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="<%= root_path %>libs/slick/slick.min.js"></script> -->
+    
+  </head>
+  <% if current_user.nil? %>
+    <%= yield %>   
+  <% else %>
+  <body class="show" data-layout="full" data-layout-color="<%= get_data_layout_color(current_user.schema_color)%>" data-layout-mode="fluid" data-rightbar-onstart="true" data-leftbar-theme="light"
+  data-turbolinks="false" >   
+    <div class="wrapper">
+      <%= render 'wrapper/leftside-menu'%>
+      <%= render 'wrapper/content-page'%>       
+    </div>
+
+    <div class="end-bar">
+      <%= render 'end-bar/rightbar-title'%>
+      <%= render 'end-bar/rightbar-content'%>       
+    </div>
+  <% end %> 
+
+  <div class="rightbar-overlay"></div>
+
+  <div class = "commons-modal">
+    <%= render 'shared/alert/modal_based_alerts' %>  
+  </div>
+  <div id = "commons-librarys">
+    <%= render 'shared/library' %>
+  </div>
+  </body>
+</html>

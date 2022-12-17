@@ -1,0 +1,134 @@
+<body class="authentication-bg" data-layout-config="{&quot;darkMode&quot;:false}" data-layout-color="light">
+	<div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+			<div class="container">
+					<div class="row justify-content-center">
+							<div class="col-xxl-4 col-lg-5">
+									<div class="card">
+											<!-- Logo-->
+											<%= render "users/shared/header" %>
+
+											<div class="card-body p-4">
+													
+													<div class="text-center w-75 m-auto">
+															<h4 class="text-dark-50 text-center mt-0 fw-bold">Free Sign Up</h4>
+															<p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
+													</div>
+
+													<%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true) do |f| %>
+
+															<div class="mb-3">
+																	<%= f.label :first_name, "Full Name", class: "control-label" %>
+																	<div class="row">
+																			<div class="form-group col-md-6"> 
+																					<%= f.text_field :first_name, autofocus: true, placeholder: "Enter your first name", class: "form-control"%>
+																					<span id = "firstname" class="help-block"></span>
+																			</div>
+																			<div class="form-group col-md-6">
+																					<%= f.text_field :last_name, placeholder: "Enter your last name", class: "form-control"%>
+																					<span id = "lastname" class="help-block"></span>
+																			</div>
+																	</div>
+															</div>
+
+															<div class="mb-3">
+																	<%= f.label :email ,"Email address" %><br />
+																	<%= f.email_field :email, autocomplete: "email",placeholder: "Enter your email", class:"form-control" %>
+																	<span id = "email" class="help-block"></span>
+															</div>
+
+															<div class="mb-3">
+																	<%= f.label :password, "Password" %>
+																	<% if @minimum_password_length %>
+																			<em>(<%= @minimum_password_length %> characters minimum)</em>
+																	<% end %><br />
+																	<div class="input-group input-group-merge">
+																			<%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Enter your password" %>
+																			<div class="input-group-append" data-password="false">
+																					<div class="input-group-text">
+																							<span class="password-eye"></span>
+																					</div>
+																			</div>
+																	</div>
+																	<span id = "password" class="help-block"></span>
+															</div>
+
+															<div class="mb-3">
+																	<span id = "password" class="help-block"></span>
+																	<%= f.label :password_confirmation, "Password Confirmation" %>
+																	<div class="input-group input-group-merge">
+																			<%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Enter your password" %>
+																			<div class="input-group-append" data-password="false">
+																					<div class="input-group-text">
+																							<span class="password-eye"></span>
+																					</div>
+																			</div>
+																	</div>
+																	<div id="password_confirmation"></div>
+															</div>
+															<div class="mb-3 text-center">
+																	<%= f.submit "Sign Up", class: "btn btn-primary", id:"btn_signUp" %>
+																	<button class="btn btn-primary d-none" type="button" disabled id="btn_loading">
+																			<span class="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></span>
+																			Signing up...
+																	</button>
+															</div>
+
+													<% end %>
+											</div> <!-- end card-body -->
+									</div>
+									<!-- end card -->
+
+									<div class="row mt-3">
+											<div class="col-12 text-center">
+													<p class="text-muted">Already have account? 
+															<%- if controller_name != 'sessions' %>
+																	<%= link_to "Log in", new_session_path(resource_name) %><br />
+															<% end %>
+													</p>
+											</div> <!-- end col-->
+									</div>
+									<!-- end row -->
+
+							</div> <!-- end col -->
+					</div>
+					<!-- end row -->
+			</div>
+			<!-- end container -->
+	</div>
+	<!-- end page -->
+	<%= render "users/shared/footer" %> 
+</body>
+
+
+
+
+<!-- <h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+	<%= render "users/shared/error_messages", resource: resource %>
+
+	<div class="field">
+		<%= f.label :email %><br />
+		<%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+	</div>
+
+	<div class="field">
+		<%= f.label :password %>
+		<% if @minimum_password_length %>
+		<em>(<%= @minimum_password_length %> characters minimum)</em>
+		<% end %><br />
+		<%= f.password_field :password, autocomplete: "new-password" %>
+	</div>
+
+	<div class="field">
+		<%= f.label :password_confirmation %><br />
+		<%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+	</div>
+
+	<div class="actions">
+		<%= f.submit "Sign up" %>
+	</div>
+<% end %>
+
+<%= render "users/shared/links" %>
+ -->

@@ -1,0 +1,6 @@
+$("#modal-position-delete").modal('hide');
+$('#list_post').DataTable().destroy();
+  <%= render "shared/alert/alert" %>
+
+	 $('#tbl-postion-container').html("<%= j render :partial => 'positions/position_row', :locals => { positions: @positions} %>");
+    formatTablePosition();	

@@ -1,0 +1,9 @@
+ja:
+  shared:
+    stamps:
+      homepage: "トップページ"
+      display_stamp: "ハンコの表示"
+      stamp_for: "のハンコでございます。"
+      seal: "認印"
+      office_seal: "職制印"
+      company_seal: "会社印"

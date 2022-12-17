@@ -1,0 +1,94 @@
+en:
+  data_folders:
+    common:
+      home_page: "Home page"
+      file_management: "File management"
+      mon: "Mon"
+      tue: "Tue"
+      wed: "Wed"
+      thu: "Thu"
+      fri: "Fri"
+      sat: "Sat"
+      sun: "Sun"
+    button_create:
+      create: "Create"
+      add_folder: "Add folder"
+      add_file: "Add File"
+    confirm_delete_multiple_file:
+      file_deletion: "Are you sure you want to delete the file?"
+      delete: "Delete"
+      cancel: "Cancel"
+    confirm_destroy:
+      file_deletion: "Are you sure you want to delete the folder?"
+      delete: "Delete"
+      cancel: "Cancel"
+    decentralize_block:
+      rename_folder: "Rename folder"
+      permission_setting: "Permission setting"
+      move: "Move"
+      delete: "Delete"
+    decentralize:
+      permission_setting: "Permission setting"
+      addtion: "Add"
+      delete: "Delete"
+      set: "Set"
+      cancel: "Cancel"
+    edit:
+      change_file_name: "Change file name"
+      add_folder: "Add Folder"
+      required_field: "Required field."
+      folder_name: "Folder name"
+      position: "Position"
+      change: "Change"
+      cancel: "Cancel"
+    form_table_decentralize: 
+      read_only: "Read only"
+      full_permission: "Can view, change, and add"
+    form:
+      change_file_name: "Change file name"
+      add_folder: "Add Folder"
+      required_field: "Required field."
+      folder_name: "Folder name"
+      position: "Position"
+      add: "Add"
+      cancel: "Cancel"
+    relocation_multiple_file":
+      move_file_position: "Move file position"
+      file_to_move: "File to move"
+      parent_folder_before_move: "Parent folder before move"
+      parent_folder_after_move: "Parent folder after move"
+      moving: "Moving"
+      cancel: "Cancel"
+    relocation:
+      move_folder_position: "Move folder position"
+      folder_to_move: "Folder to move"
+      parent_folder_before_move: "Parent folder before move"
+      parent_folder_after_move: "Parent folder after move"
+      moving: "Moving"
+      cancel: "Cancel"
+    sub_folder_block:
+      organization_folder: "Organization folder"
+      no_subfolders: "This folder has no subfolders"
+      shared_by_admin: "Folders are shared by the system administrator"
+      shared_folder: "Shared folder"
+    sub_folder_relocation_file:
+      organization_folder: "Organization folder"
+      no_subfolders: "This folder has no subfolders"
+      shared_folder: "Shared folder"
+    sub_folder_relocation:
+      organization_folder: "Organization folder"
+      no_subfolders: "This folder has no subfolders"
+      shared_folder: "Shared folder"
+    table_department_deventralize:
+      read_only: "Read only"
+      full_permission: "Can view, change, and add"
+    table_file:
+      file: "File"
+      download: "Download"
+      moving: "Move"
+      delete: "Delete"
+      number: "No."
+      title: "Title"
+      changer: "Changer"
+      date_time: "Date time"
+      size: "Size"

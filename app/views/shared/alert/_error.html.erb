@@ -1,0 +1,46 @@
+ <div class="modal-body p-1">
+    <div class="text-center">
+        <i class="dripicons-wrong h1"></i>
+        <h5 class="mt-2"><%= alert %></h5>
+        <p class="mt-2" id = "countdown_error"></p>
+        <button type="button" class="btn btn-light my-2 mt-2" id = "btn_close_error" data-bs-dismiss="modal">OK</button>
+    </div>
+</div>
+<script>
+$('#danger-alert-modal').fadeIn(20);
+var seconds = 7;
+var countDownDate = new Date();
+countDownDate = dateAddSeconds(countDownDate,seconds);
+var countdown_error = document.getElementById("countdown_error");
+if(countdown_error){
+  var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  countdown_error.innerHTML = "（このダイアログが" + seconds + "秒後に閉じます）"; 
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    countdown_error.innerHTML = "Closing...";
+    //$('#danger-alert-modal').modal('hide');
+    $('#btn_close_error').click();
+    window.$("#danger-alert-modal").find(".modal-content").html("");
+  }
+}, 1000);
+}
+
+function dateAddSeconds(date, seconds){ 
+    return new Date( Date.parse(date) + seconds*1000 );
+}
+ </script> 
+
+

@@ -1,0 +1,67 @@
+vi:
+  dashboards:
+    bulletin_card:
+      bulletn_board: "Bảng tin"
+      title: "Tiêu đề"
+      sender: "Người gửi"
+      updated_at: "Cập nhật lúc"
+    greating_card:
+      ready: "Dashboard của bạn đã sẵn sàng!"
+      start: "Bắt Đầu"
+    list_of_transfers_dashboard_table:
+      file_name: "Tên tệp"
+      forwarder: "Người nhận"
+      status: "Trạng thái"
+      completion: "Hoàn thành"
+      approving: "Đang phê duyệt"
+      stamp: "Con dấu"
+    mail_card:
+      mail: "Mail"
+    mail_dashboard_table:
+      title: "Tiêu đề"
+      content: "Nội dung"
+      creation_date: "Ngày tạo"
+    modal_simple_schedule_dashboard:
+      participant: "Người tham gia"
+      time: "Thời gian"
+      type_meeting: "Loại cuộc họp"
+      note: "Ghi chú"
+      public/private: "Trạng thái"
+      public: "Công khai"
+      private: "Riêng tư"
+      sign_up: "Đăng kí"
+      to_advanced_settings: "Tới khởi tạo nâng cao"
+      close_up: "Đóng"
+    pdf_complete_dashboard_table:
+      file_name: "Tên tệp"
+      final_approver: "Người phê duyệt cuối"
+      last_approval_date: "Ngày phê duyệt cuối"
+      view: "Xem"
+    pdf_dashboard_table:
+      file_name: "Tên tệp"
+      forwarder: "Người nhận"
+      next_approver: "Người phê duyệt tiếp"
+      status: "Tình trạng"
+      send_back: "Gửi lại"
+      no_comment: "Không bình luận"
+      approving: "Chờ phê duyệt"
+      view: "Xem"
+    schedule_card:
+      schedule: "Thời gian biểu"
+      last_week: "Tuần trước"
+      the_day_before: "Ngày trước đó"
+      today: "Hôm nay"
+      the_next_day: "Ngày sau đó"
+      next_week: "Tuần sau"
+    stamp_card:
+      document: "PDF file"
+      list_of_transfers: "Đơn được chia sẻ"
+      end_of_approval: "Đơn hoàn thành"
+    index:
+      homepage: "Trang chủ"
+      dashboard: "Dashboard"
+    helper:
+      morning: "Chào buổi sáng"
+      afternoon: "Chào buổi chiều"
+      evening: "Chào buổi tối"
+      night: "Chúc ngủ ngon"

@@ -1,0 +1,2 @@
+class GiAccount < ApplicationRecord
+end

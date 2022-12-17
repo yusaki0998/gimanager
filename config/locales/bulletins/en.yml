@@ -1,0 +1,64 @@
+en:
+  bulletins:
+    system_import_bulletin:
+      bread_crumb:
+        homepage: "Home page"
+        company_setting: "Company setting"
+        bulletin_board_settings: "Bulletin Board Settings"
+        read_from_CSV: "Read from CSV file"
+      content:
+        import_CSV: "Import from CSV file (bulletin board)"
+        instructions: "Select a category and load bulletin board data from a CSV file."
+        category: "Category"
+        please_select: "(Please select a category.)"
+        CSV_file: "CSV File"
+        delete: "Delete"
+        cancel: "Cancel"
+      menu_tab:
+        general_setting_bulletin: "General setting"
+        category_settings: "Category settings"
+        manage_bulletins: "Manage bulletins"
+        read_from_CSV: "Read from CSV file"
+        export_to_CSV: "Export to CSV file"
+        bulk_delete: "Bulk deletion of bulletins"
+      result_import_bulletin:
+        result: "Result"
+        invalid_description: "The line below could not be read because there was an invalid description."
+        item: "item"
+        status: "Status"
+    setting_delete_multi_bulletin:
+      bread_crumb:
+        homepage: "Home page"
+        company_setting: "Company setting"
+        bulletin_board_settings: "Bulletin Board Settings"
+        bulk_delete: "Bulk deletion of bulletins"
+      content:
+        bulk_delete: "Bulk deletion of bulletins"
+        required_field: "Required field"
+        delete_instructions: "Choose the category and period, then delete all bulletins."
+        target_category: "Target Category"
+        select_to_delete: "Please select the category to be deleted."
+        reference_date: "Reference date"
+        select_date_note_1: "Select a date to base the deletion on."
+        select_date_note_2: "Deletes bulletins that have not been updated since the selected date."
+        delete: "Delete"
+        cancel: "Cancel"
+      menu_tab:
+        general_setting_bulletin: "General setting"
+        category_settings: "Category settings"
+        manage_bulletins: "Manage bulletins"
+        read_from_CSV: "Read from CSV file"
+        export_to_CSV: "Export to CSV file"
+        bulk_delete: "Bulk deletion of bulletins"
+      modal_confirm_delete_bulletin:
+        bulk_delete: "Bulk deletion of bulletins"
+        ask_to_delete: "Delete the following data ?"
+        target_category: "Target category"
+        reference_date: "Reference Date"
+        unupdated_bulletin: "Bulletins that have not been updated since"
+        delete_instructions_1: "※ Other users cannot use the bulletin board during the deletion process."
+        delete_instructions_2: "Execute it during a time when users do not operate as much as possible."
+        delete_instructions_3: "※ Deleted bulletins cannot be recovered."
+        delete_instructions_4: "※ Deleting a bulletin makes it invisible to all users."
+        delete: "Delete"
+        close_up: "Close"

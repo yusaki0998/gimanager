@@ -1,0 +1,90 @@
+vi:
+  bulletin_categories:
+    breadcrumb: 
+      homepage: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      bulletin_board_settings: "Cài đặt bảng tin"
+      category_settings: "Quản lý quyền truy cập"
+    form:
+      add_category: "Thêm nhóm "
+      change_category: "Sửa nhóm"
+      required_field: "Phần bắt buộc"
+      category_name: "Tên nhóm"
+      update_notification: "Cập nhật thông báo"
+      groups_to_notifi: "Người/nhóm được thông báo"
+      addition: "Thêm"
+      delete: "Xóa"
+      group_list: "Danh sách người/nhóm"
+      add: "Tạo"
+      close_up: "Đóng"
+    menu_tab:
+      general_setting_bulletin: "Cài đặt chung"
+      category_settings: "Quản lý quyền truy cập"
+      manage_bulletins: "Quản lý bản tin"
+      read_from_CSV: "Đọc tệp CSV"
+      export_to_CSV: "Xuất ra tệp CSV"
+      bulk_delete: "Xóa tin"
+      whole: "（全体）"
+    modal_change_index_bulletin_category:
+      change_oder_categories: "Thay đổi thứ tự của các nhóm"
+      instructions_for_change: "Thay đổi thứ tự, sau đó bấm [Lưu] để lưu sự thay đổi đó "
+      change_button: "Thay đổi"
+      no_button: "Không"
+    modal_change_permission_bulletin_category:
+      access_rights: "Cài đặt quyền truy cập (Nhóm)"
+      organization_category: "Nhóm"
+      groups_to_notifi: "Người/nhóm được thông báo"
+      group_list: "Danh sách người/nhóm"
+      addition: "Thêm"
+      delete: "Xóa"
+      set: "Cài đặt"
+      cancel: "Hủy"
+    modal_confirm_destroy:
+      ask_to_delete: "Xóa những dữ liệu sau?"
+      delete: "Xóa"
+      close_up: "Đóng"
+    tab_pane_bulletin_category:
+      category_settings: "Quản lý quyền truy cập"
+      add: "Thêm"
+      reorder: "Sắp xếp lại"
+      delete: "Xóa"
+    table_bulletin_category_default:
+      organization_category: "Nhóm"
+      limited_access : "Quyền truy cập"
+      change_permissions: "Thay đổi quyền truy cập"
+    table_bulletin:
+      category: "Nhóm"
+      limited_access : "Quyền truy cập"
+      change_permissions: "Thay đổi quyền truy cập"
+      change_button: "Thay đổi "
+    table_bulletin_department_permission_selected:
+      read_only: "Chỉ đọc"
+      view_and_comment: "Xem và bình luận"
+      full_permission: "Tạo, xem và bình luận"
+    controller:
+      everyone: "（全員）"
+      created: "Thêm nhóm thành công"
+      updated: "Cập nhật nhóm thành công"
+      deleted: "Xóa nhóm thành công"
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+    
+

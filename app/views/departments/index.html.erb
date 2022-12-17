@@ -1,0 +1,60 @@
+
+  
+
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                            <%= link_to t('departments.index.home_page_breadcrumb'), root_path %>
+                    </li>
+                        <li class="breadcrumb-item">
+                            <%= link_to t('departments.index.company_setting'), departments_path %>
+                        </li>
+                        <li class="breadcrumb-item active"><%= t('departments.index.department_position') %></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>     
+    <!-- end page title --> 
+
+    <div class="row" id="depart_pos">
+        <div class="col-xl-12">
+            <div class="card" id="common_card">
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="default-tabs-preview">
+                            <ul class="nav nav-tabs mb-3">
+                                <li class="nav-item">
+                                    <a href="#home" data-bs-toggle="tab" class="nav-link active">
+                                        <i class="mdi mdi-home-variant d-md-none d-block"></i>
+                                        <span class="d-none d-md-block"><%= t('departments.index.department') %></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#profile" data-bs-toggle="tab" class="nav-link">
+                                        <i class="mdi mdi-account-circle d-md-none d-block"></i>
+                                        <span class="d-none d-md-block"><%= t('departments.index.position') %></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane show active" id="home">
+                                    <%= render "departments/department_content" %>
+                                </div>
+                                <div class="tab-pane" id="profile">
+                                    <%= render "positions/position_content", positions:@positions %>
+                                </div>
+                            </div>                                           
+                        </div> <!-- end preview-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->

@@ -1,0 +1,21 @@
+en:
+  export_bulletins:
+    index:
+      breadcrumd:
+        home_page: "Home page"
+        company_setting: "Company setting"
+        bulletin_board_settings: "Bulletin Board Settings"
+        export_to_CSV_file: "Export to CSV file"
+      menu_tab:
+        general_setting_bulletin: "General setting"
+        category_settings: "Category settings"
+        manage_bulletins: "Manage bulletins"
+        read_from_CSV: "Read from CSV file"
+        export_to_CSV: "Export to CSV file"
+        bulk_delete: "Bulk deletion of bulletins"
+      tab_pane_export_bulletins:
+        export_CSV: "Export to CSV file (bulletin board)"
+        category: "Category"
+        select_category: "（Please select a category to write.）"
+        period: "Period"
+        write: "Write"

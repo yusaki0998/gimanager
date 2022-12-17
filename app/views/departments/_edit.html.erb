@@ -1,0 +1,19 @@
+<%= form_for @department, html: {class: "form-horizontal", remote: true} do |form| %>
+	<div>
+		<div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel"><%= t('departments.edit.department_register') %></h4>
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+		</div>
+
+		<div class="modal-body">
+		  <%= render 'form', form: form %>
+		</div>
+
+		<div class="modal-footer">
+			<%= button_tag(:type => 'submit', :class => "btn btn-info btnEditDepartModal", 'data-toggle' => 'modal', 'data-target' => '#modal-edit' ,:remote => true) do %>
+                <i class="dripicons-document-edit iconEditDepart"></i><%= t('departments.edit.rename') %>
+            <% end %>
+		  	<button type="button" class="btn btn-light" data-bs-dismiss="modal"><%= t('departments.edit.close_up') %></button>
+		</div>
+	</div>
+<% end %>

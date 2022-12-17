@@ -1,0 +1,16 @@
+vi:
+  user_settings:
+    index:
+      home_page_breadcrumb: "Trang chủ"
+      personal_settings: "Cài đặt cá nhân"
+      select_item: "Chọn mục"
+      department: "Phòng ban"
+    system_setting:
+      home_page_breadcrumb: "Trang chủ"
+      system_setting: "Cài đặt hệ thống"
+      group: "Nhóm"
+      user: "Người dùng"
+      department_and_position: "Phòng ban & Chức vụ"
+      modules: "Tính năng"
+      schedule: "Lịch trình"
+      bulletin_setting: "Cài đặt bản tin"

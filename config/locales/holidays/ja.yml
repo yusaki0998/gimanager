@@ -1,0 +1,58 @@
+ja:
+  holidays:
+    holiday_row:
+      date: "日付"
+      holiday_name: "祝日名"
+    modal_confirm_destroy_holiday:
+      delete_title: "祝日の削除"
+      delete_button: "削除する"
+      close_up: "閉じる"
+    new_holiday:
+      add_holiday: "祝日の追加"
+      required_field: "は必須項目です。"
+      change_holiday: "祝日の変更"
+      date: "日付"
+      holiday_name: "祝日名"
+      add_button: "追加する"
+      close_up: "閉じる"
+    table_import_holiday:
+      result: "Result"
+      number: "番号"
+      date: "日付"
+      holiday_name: "祝日名"
+      status: "Status"
+      close: "Close"
+    index:
+      homepage: "トップページ"
+      company_setting: "会社設定"
+      schedule_setting: "スケジュール設定"
+      schedule_and_equipment_reservation: "スケジュールと施設予約"
+      category: "施設グループ"
+      equipment: "施設"
+      holiday: "祝日"
+      type_meetings: "予定メニュー"
+      setting_schedules: "一般設定"
+      import_schedule: "インポート"  
+      holiday_setting: "祝日の設定"
+      year: "年"
+      add_button: "追加する"
+      this_year: "今年"
+      change_button: "変更する"
+      delete_button: "削除する"
+      read_CSV: "CSVファイルから読み込む"
+      export_all_holidays: "年内のすべての祝日をCSVファイルへ書き出す"
+      import_holidays: "CSVファイルからの読み込み（祝日）"
+      read_from_CSV: "※ 次の項目並び順で、CSVファイルから読み込みます:"
+      date_holiday_name: "(日付, 祝日名)"
+      format_note: "※ 日付の表記は「yyyy/mm/dd」となります。"
+      import: "インポート"
+    controller:
+      created: "Holiday was successfully created."
+      updated: "Holiday was successfully updated."
+      name_alert: "Equipment name not null."
+      file_alert: "Incorrect file format."
+      invalid_date: "日付が不正です。"
+
+
+
+  

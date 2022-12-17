@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div id="mess_posi"></div>
+    <div class="row mb-2">
+        <div class="col-sm-4">
+            <%= link_to new_position_path, class: "btn btn-primary", 'data-toggle' => 'modal', 'data-target' => '#modal-new' ,:remote => true do %>
+                <i class="mdi mdi-plus-circle mr-2"></i><%= t('positions.position_content.register') %>
+            <% end %>
+        </div>
+        <div class="col-sm-8">
+            <div class="text-end">
+                <%= button_tag(:type => 'button', :class => "btn btn-info mb-2 mr-1 btnEditPosition",id: "btnEditPosition", :remote => true) do %>
+                    <i class="dripicons-document-edit mr-1 iconEditDepart"></i><%= t('positions.position_content.rename') %>
+                <% end %>
+                <%= button_tag(:type => 'button', :class => "btn btn-danger mb-2 btnDeletePosition",id: "btnDeletePosition" ,:remote => true) do %>
+                    <i class="uil uil-minus-circle iconDeleteDepart"></i><%= t('positions.position_content.delete') %>
+                <% end %>
+            </div>
+        </div><!-- end col-->
+    </div>
+
+    <div id="tbl-postion-container">
+        <%= render partial: 'positions/position_row' %>
+    </div>
+    <!-- end row -->        
+</div> <!-- container -->
+
+<div id="modal-position-new" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+<div id="modal-position-edit" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+<div id="modal-position-delete" class="modal hide fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"></div>
+    </div>
+</div>

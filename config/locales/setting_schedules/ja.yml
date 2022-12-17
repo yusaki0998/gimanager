@@ -1,0 +1,43 @@
+ja:
+  setting_schedules:
+    bread_crumb:
+      homepage: "トップページ"
+      company_setting: "会社設定"
+      schedule_setting: "スケジュール設定"
+      setting_schedules: "一般設定"
+    form:
+      setting_schedules: "一般設定"
+      schedule_time_unit: "予定の登録単位"
+      set: "設定する"
+      cancel: "キャンセルする"
+    menu_tab:
+      category: "施設グループ"
+      equipment: "施設"
+      holiday: "祝日"
+      type_meetings: "予定メニュー"
+      setting_schedules: "一般設定"
+      import_schedule: "インポート"  
+    controller:
+      5_minutes: "5分単位"
+      10_minutes: "10分単位"
+      15_minutes: "15分単位"
+      30_minutes: "30分単位"
+    schedule:
+      import_schedule:
+        homepage: "トップページ"
+        company_setting: "会社設定"
+        schedule_setting: "スケジュール設定"
+        read_from_CSV: "CSVファイルからの読み込み"
+        category: "施設グループ"
+        equipment: "施設"
+        holiday: "祝日"
+        type_meetings: "予定メニュー"
+        setting_schedules: "一般設定"
+        import_schedule: "インポート"  
+        read_from_CSV_schedule: "CSVファイルからの読み込み（スケジュール）"
+        CSV_file: "CSVファイル"
+        system: "システム"
+        load: "読み込む"
+        warning_mess: "Incorrect Information"
+        close: "Close"
+

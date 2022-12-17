@@ -1,0 +1,42 @@
+en:
+  categories:
+    category_row:
+      number: "No."
+      category_name: "Category name"
+    change_index_categories:
+      sort_categories: "Change the order of categories"
+      instructions_for_change: "Change the order ,then click [Change] button to save that."
+      change_button: "Change"
+      no_button: "No"
+    modal_confirm_destroy:
+      delete_title: "Delete the following data:"
+      delete_button: "Delete"
+      close_up: "Close"
+    new_category:
+      add_category: "Add category"
+      required_field: "Required field."
+      change_category: "Change category"
+      category_name: "Category name"
+      add_button: "Add"
+      close_up: "Close"
+    table_category:
+      category_setting: "Category setting"
+      add_button: "Add"
+      reorder: "Re-order"
+      change_button: "Change"
+      delete_button: "Delete"
+    index:
+      homepage: "Home page"
+      company_setting: "Company settings"
+      schedule_setting: "Schedule settings"
+      category_setting: "Category setting"
+      category: "Category"
+      equipments: "Equipment"
+      holiday: "Holiday"
+      type_meetings: "Meeting types"
+      setting_schedules: "General setting - Schedules"
+      import_schedule: "Import schedule"
+    controller:
+      created: "Category was successfully created."
+      updated: "Category was successfully updated."
+      destroyed: "Category was successfully destroyed."

@@ -1,0 +1,14 @@
+<% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<script>
+$('#msg_id').fadeIn(1000);
+ window.scrollTo(0, 0);
+  setTimeout(function() { 
+      $('#msg_id').fadeOut(1000); 
+  }, 3000);
+
+ </script> 

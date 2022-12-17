@@ -1,0 +1,9 @@
+vi:
+  breadcrumb_home: 'Trang chủ'
+  date: 
+    formats:
+      default: '%Y/%m/%d'
+      year_month: '%Y/%m'
+  time:
+    formats:
+      default: '%H:%M'

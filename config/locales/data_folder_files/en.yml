@@ -1,0 +1,11 @@
+en:
+  data_folder_files:
+    form: 
+      add_file: "Add file"
+      required_field: "Required field"
+      registered_person: "Registered person"
+      position: "Position"
+      add: "Add"
+      cancel: "Cancel"
+
+

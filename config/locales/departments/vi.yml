@@ -1,0 +1,36 @@
+vi:
+  departments:
+    index:
+      home_page_breadcrumb: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      department_position: "Phòng ban & Chức vụ"
+      department: "Phòng ban"
+      position: "Chức vụ"
+    department_content:
+      register: "Đăng kí"
+      rename: "Đặt lại tên"
+      delete: "Xóa"
+    department_row:
+      number: "STT"
+      department_name: "Tên phòng ban"
+      group: "Nhóm"
+    new:
+      department_register: "Đăng kí phòng ban"
+      register: "Đăng kí"
+      close_up: "Đóng"
+    form:
+      department_name: "Tên phòng ban"
+    edit:
+      department_register: "Đăng kí phòng ban"
+      rename: "Đặt lại tên"
+      close_up: "Đóng"
+    delete:
+      ask_to_delete: "Bạn có muốn xóa phòng ban đã chọn"
+      delete: "Xóa"
+      close_up: "Đóng"
+    controller:
+      department_existed: "Phòng ban đã tồn tại"
+      added_department: "Tạo phòng ban thành công"
+      updated_department: "Cập nhật phòng ban thành công"
+      deleted_department: "Xóa phòng ban thành công"
+      fail_to_delete: "Xóa phòng ban bị lỗi"

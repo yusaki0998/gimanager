@@ -1,0 +1,21 @@
+<table class="table dt-responsive nowrap w-100 table-hover table-centered mb-0 tbl_depart" id="">
+    <thead class="thead-light">
+        <tr>
+            <th></th>
+            <th class="num_depart"><%= t('departments.department_row.number') %></th>
+            <th class="name_depart"> <%= t('departments.department_row.department_name') %></th> 
+            <th class=""><%= t('departments.department_row.group') %></th>
+        </tr>
+    </thead>
+    <tbody id="appenddepartant">
+        <% @departments.each_with_index do |department, index| %>
+            <tr>
+                <td class="col_checkbox" data-item="<%= department.id  %>"><%= department.id %></td>        
+                <td><%= index + 1 %></td>
+                <td><%= department.name %></td>
+                <td><%= department.group.name %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+

@@ -1,0 +1,68 @@
+ja:
+  dashboards:
+    bulletin_card:
+      bulletn_board: "掲示板"
+      title: "標題"
+      sender: "差出人"
+      updated_at: "更新日時"
+    greating_card:
+      ready: "ダッシュボードの準備ができました!"
+      start: "始めましょう"
+    list_of_transfers_dashboard_table:
+      file_name: "ファイル名"
+      forwarder: "転送者"
+      status: "状況"
+      completion: "完了"
+      approving: "承認中"
+      stamp: "押印"
+    mail_card:
+      mail: "メール"
+    mail_dashboard_table:
+      title: "標題"
+      content: "コンテンツ"
+      creation_date: "作成日時"
+    modal_simple_schedule_dashboard:
+      participant: "参加者"
+      time: "時刻"
+      type_meeting: "予定"
+      note: "メモ"
+      public/private: "公開/非公開"
+      public: "公開"
+      private: "非公開"
+      sign_up: "登録する"
+      to_advanced_settings: "詳細設定へ"
+      close_up: "閉じる"
+    pdf_complete_dashboard_table:
+      file_name: "ファイル名"
+      final_approver: "最終承認者"
+      last_approval_date: "最終承認日"
+      view: "閲覧"
+    pdf_dashboard_table:
+      file_name: "ファイル名"
+      forwarder: "転送者"
+      next_approver: "次の承認者"
+      status: "状況"
+      no_comment: "コメント無し"
+      send_back: "差し戻し"
+      approving: "承認中"
+      view: "押印"
+    schedule_card:
+      schedule: "スケジュール"
+      last_week: "前週"
+      the_day_before: "前日"
+      today: "今日"
+      the_next_day: "翌日"
+      next_week: "翌週"
+    stamp_card:
+      document: "ドキュメント"
+      list_of_transfers: "転送のリスト"
+      end_of_approval: "承認終了"
+    index:
+      homepage: "トップページ"
+      dashboard: "ダッシュボード"
+    helper:
+      morning: "おはよう"
+      afternoon: "こんにちは"
+      evening: "こんばんは"
+      night: "おやすみ"
+      

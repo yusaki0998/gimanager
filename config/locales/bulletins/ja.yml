@@ -1,0 +1,64 @@
+ja:
+  bulletins:
+    system_import_bulletin:
+      bread_crumb:
+        homepage: "トップページ"
+        company_setting: "会社設定"
+        bulletin_board_settings: "掲示板設定"
+        read_from_CSV: "CSVファイルからの読み込み"
+      content:
+        import_CSV: "CSVファイルからの読み込み（掲示板）"
+        instructions: "カテゴリを選択し、掲示板データをCSVファイルから読み込みます。"
+        category: "カテゴリ"
+        please_select: "（カテゴリを選択してください。）"
+        CSV_file: "CSVファイル"
+        delete: "削除する"
+        cancel: "キャンセルする"
+      menu_tab:
+        general_setting_bulletin: "一般設定"
+        category_settings: "カテゴリの設定"
+        manage_bulletins: "掲示の管理"
+        read_from_CSV: "CSVファイルからの読み込み"
+        export_to_CSV: "CSVファイルへの書き出し"
+        bulk_delete: "掲示の一括削除"
+      result_import_bulletin:
+        result: "Result"
+        invalid_description: "下記の行は、不正な記述が存在したため、読み込めませんでした。"
+        item: "行"
+        status: "Status"
+    setting_delete_multi_bulletin:
+      bread_crumb:
+        homepage: "トップページ"
+        company_setting: "会社設定"
+        bulletin_board_settings: "掲示板設定"
+        bulk_delete: "掲示の一括削除"
+      content:
+        bulk_delete: "掲示の一括削除"
+        required_field: "は必須項目です。"
+        delete_instructions: "カテゴリと期間を指定し、掲示を一括削除します。"
+        target_category: "対象カテゴリ"
+        select_to_delete: "削除対象カテゴリを選択してください。"
+        reference_date: "基準日"
+        select_date_note_1: "削除の基準となる日付を選択します。"
+        select_date_note_2: "選択した日付以降に更新されていない掲示を削除します。"
+        delete: "削除する"
+        cancel: "キャンセルする"
+      menu_tab:
+        general_setting_bulletin: "一般設定"
+        category_settings: "カテゴリの設定"
+        manage_bulletins: "掲示の管理"
+        read_from_CSV: "CSVファイルからの読み込み"
+        export_to_CSV: "CSVファイルへの書き出し"
+        bulk_delete: "掲示の一括削除"
+      modal_confirm_delete_bulletin:
+        bulk_delete: "掲示の一括削除"
+        ask_to_delete: "次のデータを削除します。"
+        target_category: "対象カテゴリ"
+        reference_date: "基準日"
+        unupdated_bulletin: "以降更新されていない掲示"
+        delete_instructions_1: "※ 削除処理中は他のユーザーが掲示板を使用できません。"
+        delete_instructions_2: "なるべくユーザーが操作しない時間帯に実行してください。"
+        delete_instructions_3: "※ 削除した掲示は元に戻せません。"
+        delete_instructions_4: "※ 掲示を削除すると、すべてのユーザーから閲覧できなくなります。"
+        delete: "一括削除する"
+        close_up: "閉じる"

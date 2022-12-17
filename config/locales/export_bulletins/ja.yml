@@ -1,0 +1,21 @@
+ja:
+  export_bulletins:
+    index:
+      breadcrumd:
+        home_page: "トップページ"
+        company_setting: "会社設定"
+        bulletin_board_settings: "掲示板設定"
+        export_to_CSV_file: "CSVファイルからの読み込み"
+      menu_tab:
+        general_setting_bulletin: "一般設定"
+        category_settings: "カテゴリの設定"
+        manage_bulletins: "掲示の管理"
+        read_from_CSV: "CSVファイルからの読み込み"
+        export_to_CSV: "CSVファイルへの書き出し"
+        bulk_delete: "掲示の一括削除"
+      tab_pane_export_bulletins:
+        export_CSV: "CSVファイルへの書き出し（掲示板）"
+        category: "カテゴリ"
+        select_category: "（書き込むカテゴリを選択してください。）"
+        period: "期間"
+        write: "書き出す"

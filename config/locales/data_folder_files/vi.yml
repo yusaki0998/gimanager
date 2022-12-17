@@ -1,0 +1,9 @@
+vi:
+  data_folder_files:
+    form: 
+      add_file: "Thêm tệp"
+      required_field: "Phần bắt buộc"
+      registered_person: "Đăng kí người dùng"
+      position: "Vị trí"
+      add: "Thêm"
+      cancel: "Hủy"

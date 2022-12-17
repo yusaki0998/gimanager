@@ -1,0 +1,40 @@
+en:
+  positions:
+    index:
+      home_page_breadcrumb: "Home page"
+      company_setting: "Company Settings"
+      department_position: "Department & Position"
+      department: "Department"
+      position: "Position"
+    position_content:
+      register: "Register"
+      rename: "Rename"
+      delete: "Delete"
+    position_row:
+      number: "Number"
+      position_name: "Position Name "
+      group: "Group"
+    new:
+      position_register: "Position Register"
+      register: "Register"
+      close_up: "Close"
+    form:
+      position_name: "Position Name"
+    edit:
+      position_change: "Position Change"
+      rename: "Rename"
+      close_up: "Close"
+    delete:
+      ask_to_delete: "Are you sure you want to delete the selected position?"
+      delete: "Delete"
+      close_up: "Close"
+    controller:
+      updated_position: "Position was successfully updated."
+      created_position: "Position was successfully created."
+      position_existed: "Position existed"
+      deleted_position: "Position was successfully deleted."
+      delete_failed: "Failed to delete position."
+      
+
+   
+    

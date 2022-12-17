@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Gi accounts</h1>
+
+<div id="gi_accounts">
+  <% @gi_accounts.each do |gi_account| %>
+    <%= render gi_account %>
+    <p>
+      <%= link_to "Show this gi account", gi_account %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New gi account", new_gi_account_path %>

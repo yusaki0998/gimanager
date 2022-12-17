@@ -1,0 +1,5 @@
+<% if counter > 0 %>
+    <span id="notifications-count"><%= Notification.where("user_id_receive=? and status=?",current_user.id,false).order(created_at: :desc).count %>
+        <span class="noti-icon-badge"></span>
+    </span>
+<% end %>

@@ -1,0 +1,100 @@
+vi:
+  equipments:
+    confirm_destroy_equipments:
+      destroy_title: "Xóa các dữ liệu đã chọn ?"
+      delete_button: "Xóa"
+      close_up: "Đóng"
+    confirm_destroy:
+      destroy_title: "Bạn có muốn xóa không"
+      delete_button: "Xóa"
+      close_up: "Đóng"
+    edit_equipment:
+      edit_equipment: "Chỉnh sửa trang thiết bị"
+      required_field: "Phần bắt buộc."
+      equipment_name: "Tên thiết bị"
+      category: "Nhóm"
+      all_equipment: "(Tất cả các thiết bị)"
+      note: "Ghi chú"
+      file: "Tệp tin"
+      delete_button: "Xóa" 
+      add_button: "Thêm"
+      close_up: "Đóng"
+    form:
+      equipment_name: "Tên thiết bị"
+      category: "Nhóm"
+      all_equipment: "Tất cả các thiết bị"
+      note: "Ghi chú"
+      file: "Tệp tin"
+      submit: "Gửi"
+      back_button: "Quay lại"
+    new_equipment:
+      new_equipment: "Thêm thiết bị mới"
+      required_field: "Phần bắt buộc."
+      equipment_name: "Tên thiết bị"
+      category: "Nhóm"
+      all_equipment: "(Tất cả thiết bị)"
+      note: "Ghi chú"
+      file: "Tệp tin"
+      add_button: "Thêm"
+      close_up: "Đóng"
+    option_categoty_items:
+      all_equipment: "(Tất cả thiết bị)"
+    relocate_items_equipment:
+      change_the_order: "Thay đổi thứ tự của các thiết bị"
+      instructions_for_change: "Thay đổi thứ tự, sau đó bấm [Lưu] để lưu sự thay đổi đó "
+      change: "Thay đổi"
+      close_up: "Đóng"
+    table_equipment_items:
+      number: "STT"
+      equipment_name: "Tên thiết bị"
+    table_import_equipment:
+      result: "Kết quả"
+      number: "STT"
+      equipment_name: "Tên thiết bị"
+      status: "Trạng thái"
+      close: "Đóng"
+    index:
+      homepage: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      schedule_setting: "Cài đặt lịch trình"
+      equipment_setting: "Cài đặt Thiết bị"
+      category: "Nhóm"
+      equipment: "Thiết bị"
+      holiday: "Nghỉ lễ"
+      type_meetings: "Loại cuộc họp"
+      setting_schedules: "Cài đặt chung - Lịch trình"
+      import_schedule: "Nhập lịch trình"
+      add_button: "Thêm"
+      reorder: "Sắp xếp lại"
+      change_button: "Thay đổi"
+      delete_button: "Xóa"
+      import_csv: "Đọc tệp CSV "
+      export_csv: "Xuất ra tệp CSV"
+      import_csv_2: "Nhập từ tệp CSV (Thiết bị)"
+    controller:
+      created_mess: "Tạo thiết bị thành công"
+      destroyed_mess: "Xóa nhóm thành công"
+      name_alert: "Tên thiết bị không được để trống"
+      file_alert: "Sai định dạng tệp"
+      import_done: "Hoàn thành việc nhập."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

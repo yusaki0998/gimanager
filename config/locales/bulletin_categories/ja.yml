@@ -1,0 +1,90 @@
+ja:
+  bulletin_categories:
+    breadcrumb: 
+      homepage: "トップページ"
+      company_setting: "会社設定"
+      bulletin_board_settings: "掲示板設定"
+      category_settings: "カテゴリの設定"
+    form:
+      add_category: "カテゴリの追加"
+      change_category: "カテゴリの変更"
+      required_field: "は必須項目です。"
+      category_name: "カテゴリ名"
+      update_notification: "更新通知"
+      groups_to_notifi: "通知するグループ"
+      addition: "追加"
+      delete: "削除"
+      group_list: "グループ一覧"
+      add: "追加する"
+      close_up: "閉じる"
+    menu_tab:
+      general_setting_bulletin: "一般設定"
+      category_settings: "カテゴリの設定"
+      manage_bulletins: "掲示の管理"
+      read_from_CSV: "CSVファイルからの読み込み"
+      export_to_CSV: "CSVファイルへの書き出し"
+      bulk_delete: "掲示の一括削除"
+      whole: "（全体）"
+    modal_change_index_bulletin_category:
+      change_oder_categories: "カテゴリの順番変更"
+      instructions_for_change: "で順番を変更し、最後に[変更する]をクリックしてください。"
+      change_button: "変更する"
+      no_button: "いいえ"
+    modal_change_permission_bulletin_category:
+      access_rights: "アクセス権の設定（カテゴリ）"
+      organization_category: "組織カテゴリ"
+      groups_to_notifi: "通知するグループ"
+      group_list: "グループ一覧"
+      addition: "追加"
+      delete: "削除"
+      set: "設定する"
+      cancel: "キャンセルする"
+    modal_confirm_destroy:
+      ask_to_delete: "次のデータを削除します。"
+      delete: "削除する"
+      close_up: "閉じる"
+    tab_pane_bulletin_category:
+      category_settings: "カテゴリの設定"
+      add: "追加する"
+      reorder: "順番変更する"
+      delete: "削除する"
+    table_bulletin_category_default:
+      organization_category: "組織カテゴリ"
+      limited_access : "アクセス制限"
+      change_permissions: "アクセス権を変更する"
+    table_bulletin:
+      category: "カテゴリ"
+      limited_access : "アクセス制限"
+      change_permissions: "アクセス権を変更する"
+      change_button: "変更する"
+    table_bulletin_department_permission_selected:
+      read_only: "閲覧のみ"
+      view_and_comment: "閲覧・コメントが可能"
+      full_permission: "閲覧・コメント・作成が可能"
+    controller:
+      everyone: "（全員）"
+      created: "Bulletin category was successfully created."
+      updated: "Bulletin category was successfully updated."
+      deleted: "Bulletin category was successfully destroyed."
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+    
+

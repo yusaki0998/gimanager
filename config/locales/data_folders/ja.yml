@@ -1,0 +1,94 @@
+ja:
+  data_folders:
+    common:
+      home_page: "トップページ"
+      file_management: "ファイル管理"
+      mon: "月"
+      tue: "火"
+      wed: "水"
+      thu: "木"
+      fri: "金"
+      sat: "土"
+      sun: "日"
+    button_create:
+      create: "作成"
+      add_folder: "フォルダを追加する"
+      add_file: "ファイルを追加する"
+    confirm_delete_multiple_file:
+      file_deletion: "ファイルを削除しますか。"
+      delete: "削除する"
+      cancel: "キャンセルする"
+    confirm_destroy:
+      file_deletion: "フォルダを削除しますか。"
+      delete: "削除する"
+      cancel: "キャンセルする"
+    decentralize_block:
+      rename_folder: "フォルダ名の変更"
+      permission_setting: "アクセス権の設定"
+      move: "移動"
+      delete: "削除"
+    decentralize:
+      permission_setting: "アクセス権の設定"
+      addtion: "追加"
+      delete: "削除"
+      set: "設定する"
+      cancel: "キャンセルする"
+    edit:
+      change_file_name: "ファイル名を変更する"
+      add_folder: "フォルダの追加"
+      required_field: "は必須項目です。"
+      folder_name: "フォルダ名"
+      position: "位置"
+      change: "変更する"
+      cancel: "キャンセルする"
+    form_table_decentralize: 
+      read_only: "閲覧のみ"
+      full_permission: "閲覧・変更・追加が可能"
+    form:
+      change_file_name: "ファイル名を変更する"
+      add_folder: "フォルダの追加"
+      required_field: "は必須項目です。"
+      folder_name: "フォルダ名"
+      position: "位置"
+      add: "追加する"
+      cancel: "キャンセルする"
+    relocation_multiple_file":
+      move_file_position: "ファイルの位置の移動"
+      file_to_move: "移動するファイル"
+      parent_folder_before_move: "移動前の親フォルダ"
+      parent_folder_after_move: "移動後の親フォルダ"
+      moving: "移動する"
+      cancel: "キャンセルする"
+    relocation:
+      move_folder_position: "フォルダの位置の移動"
+      folder_to_move: "移動するフォルダ"
+      parent_folder_before_move: "移動前の親フォルダ"
+      parent_folder_after_move: "移動後の親フォルダ"
+      moving: "移動する"
+      cancel: "キャンセルする"
+    sub_folder_block:
+      organization_folder: "組織フォルダ"
+      no_subfolders: "このフォルダにはサブフォルダがありません"
+      shared_by_admin: "システムの管理者から共有するフォルダ"
+      shared_folder: "共有フォルダ"
+    sub_folder_relocation_file:
+      organization_folder: "組織フォルダ"
+      no_subfolders: "このフォルダにはサブフォルダがありません"
+      shared_folder: "共有フォルダ"
+    sub_folder_relocation:
+      organization_folder: "組織フォルダ"
+      no_subfolders: "このフォルダにはサブフォルダがありません"
+      shared_folder: "共有フォルダ"
+    table_department_deventralize:
+      read_only: "閲覧のみ"
+      full_permission: "閲覧・変更・追加が可能"
+    table_file:
+      file: "ファイル"
+      download: "ダウンロード"
+      moving: "移動"
+      delete: "削除"
+      number: "番号"
+      title: "タイトル"
+      changer: "更新者"
+      date_time: "日時"
+      size: "サイズ"

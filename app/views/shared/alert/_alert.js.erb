@@ -1,0 +1,7 @@
+<% if notice %>
+    window.$("#success-alert-modal").find(".modal-content").html("<%= j (render 'shared/alert/success') %>");
+    window.$("#success-alert-modal").modal('show');
+<% else %>
+    window.$("#danger-alert-modal").find(".modal-content").html("<%= j (render 'shared/alert/error') %>");
+    window.$("#danger-alert-modal").modal('show');
+<% end %>

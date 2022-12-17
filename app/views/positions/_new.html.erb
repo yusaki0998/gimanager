@@ -1,0 +1,18 @@
+<%= form_for @position, html: {class: "form-horizontal", remote: true} do |form| %>
+	<div>
+		<div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel"><%= t('positions.new.position_register') %></h4>
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+		</div>
+		<div class="modal-body">
+		  <%= render 'form', form: form %>
+		</div>
+
+		<div class="modal-footer">
+			<%= button_tag(:type => 'submit', :class => 'btn btn-primary') do %>
+				<i class="mdi mdi-plus-circle mr-2"></i><%= t('positions.new.register') %>
+			<% end %>
+		  	<button type="button" class="btn btn-light" data-bs-dismiss="modal"><%= t('positions.new.close_up') %></button>
+		</div>
+	</div>
+<% end %>	

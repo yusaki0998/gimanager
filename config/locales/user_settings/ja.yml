@@ -1,0 +1,15 @@
+ja:
+  user_settings:
+    index:
+      home_page_breadcrumb: "トップページ"
+      personal_settings: "個人設定"
+      select_item: "設定する項目を選んでください。"
+      department: "部署"
+    system_setting:
+      system_setting: "システム設定"
+      group: "グループ"
+      user: "ユーザー"
+      department_and_position: "部署・役職"
+      modules: "Modules"
+      schedule: "スケジュール"
+      bulletin_setting: "掲示板設定"

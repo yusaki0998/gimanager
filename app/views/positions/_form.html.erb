@@ -1,0 +1,11 @@
+<div class="form-group row">
+    <div class="col-md-2 text-left" style="padding-top:2px;">
+        <%= form.label t('positions.form.position_name'), style: "font-weight: normal;" %>
+        <i class="uil-asterisk" style="color:red;font-size: 11px;"></i>
+    </div>
+    <div class="col-md-9">
+        <%= form.text_field :name ,class: "form-control" %>
+        <div id="error-positions">
+        </div>
+    </div>
+</div>

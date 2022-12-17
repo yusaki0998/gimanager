@@ -1,0 +1,9 @@
+ja:
+  breadcrumb_home: 'トップページ'
+  date: 
+    formats:
+      default: '%Y 年 %m 月 %d 日'
+      year_month: '%Y 年 %m 月'
+  time:
+    formats:
+      default: '%H 時 %M 分'

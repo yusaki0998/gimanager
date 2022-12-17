@@ -1,0 +1,44 @@
+en:
+  setting_schedules:
+    bread_crumb:
+      homepage: "Home page"
+      company_setting: "Company settings"
+      schedule_setting: "Schedule settings"
+      setting_schedules: "General setting - Schedules"
+    form:
+      setting_schedules: "General setting - Schedules"
+      schedule_time_unit: "Schedule time unit"
+      set: "Set"
+      cancel: "Cancel"
+    menu_tab:
+      category: "Category"
+      equipment: "Equipment"
+      holiday: "Holiday"
+      type_meetings: "Meeting types"
+      setting_schedules: "General setting - Schedules"
+      import_schedule: "Import Schedule"  
+    controller:
+      5_minutes: "5 minutes"
+      10_minutes: "10 minutes"
+      15_minutes: "15 minutes"
+      30_minutes: "30 minutes"
+    schedule:
+      import_schedule:
+        homepage: "Home page"
+        company_setting: "Company settings"
+        schedule_setting: "Schedule settings"
+        read_from_CSV: "Read from CSV file"
+        category: "Category"
+        equipment: "Equipment"
+        holiday: "Holiday"
+        type_meetings: "Meeting types"
+        setting_schedules: "General setting - Schedules"
+        import_schedule: "Import schedule"  
+        read_from_CSV_schedule: "Read from CSV file (Schedule)"
+        CSV_file: "CSV file"
+        system: "System"
+        load: "Load"
+        warning_mess: "Incorrect Information"
+        close: "Close" 
+
+

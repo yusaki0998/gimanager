@@ -1,0 +1,62 @@
+ja:
+  type_meeting: 
+    change_index_type_modal:
+      change_order_type_meeting: "予定メニューの順番変更"
+      instructions_for_change: "で順番を変更し、最後に[変更する]をクリックしてください。"
+      change: "変更する"
+      no_button: "いいえ"
+    modal_confirm_destroy:
+      delete_title: "次のデータを削除します。"
+      delete_button: "削除する"
+      close_up: "閉じる"
+    new_type_meeting:
+      add_type_meeting: "予定メニューの追加"
+      required_field: "は必須項目です。"
+      change_type_meeting: "予定メニューの変更"
+      type_meeting_name: "予定メニュー名"
+      background_color: "背景色"
+      add_button: "追加する"
+      close_up: "閉じる"
+    table_type_meeting:
+      type_meeting_setting: "予定メニューの設定"
+      add_button: "追加する"
+      reorder: "順番変更する"
+      change_button: "変更する"
+      delete_button: "削除する"
+    type_meeting_row:
+      number: "番号"
+      type_meeting_name: "予定メニュー名"
+      preview: "プレビュー"
+    index:
+      homepage: "トップページ"
+      company_setting: "会社設定"
+      schedule_setting: "スケジュール設定"
+      type_meeting_setting: "予定メニューの設定"
+      category: "施設グループ"
+      equipment: "施設"
+      holiday: "祝日"
+      type_meetings: "予定メニュー"
+      setting_schedules: "一般設定"
+      import_schedule: "インポート" 
+    controller:
+      created: "Meeting types was successfully created."
+      updated: "Meeting types was successfully updated."
+      destroyed: "Meeting types was successfully destroyed."
+
+
+
+
+  
+
+
+
+
+    
+
+  
+
+
+
+
+
+  

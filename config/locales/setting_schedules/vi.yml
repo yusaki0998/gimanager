@@ -1,0 +1,44 @@
+vi:
+  setting_schedules:
+    bread_crumb:
+      homepage: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      schedule_setting: "Cài đặt lịch trình"
+      setting_schedules: "Cài đặt chung - Lịch trình"
+    form:
+      setting_schedules: "Cài đặt chung - Lịch trình"
+      schedule_time_unit: "Đợn vị"
+      set: "Đặt"
+      cancel: "Hủy"
+    menu_tab:
+      category: "Nhóm"
+      equipment: "Thiết bị"
+      holiday: "Nghỉ lễ"
+      type_meetings: "Loại cuộc họp"
+      setting_schedules: "Cài đặt chung - Lịch trình"
+      import_schedule: "Nhập lịch trình"  
+    controller:
+      5_minutes: "5 phút"
+      10_minutes: "10 phút"
+      15_minutes: "15 phút"
+      30_minutes: "30 phút"
+    schedule:
+      import_schedule:
+        homepage: "Trang chủ"
+        company_setting: "Cài đặt hệ thống"
+        schedule_setting: "Cài đặt lịch trình"
+        read_from_CSV: "Đọc tệp CSV"
+        category: "Nhóm"
+        equipment: "Thiết bị"
+        holiday: "Nghỉ lễ"
+        type_meetings: "Loại cuộc họp"
+        setting_schedules: "Cài đặt chung - Lịch trình"
+        import_schedule: "Nhập lịch trình"  
+        read_from_CSV_schedule: "Đọc file CSV (Lịch trình)"
+        CSV_file: "Tệp CSV"
+        system: "Hệ thống"
+        load: "Tải"
+        warning_mess: "Sai thông tin"
+        close: "Đóng"
+
+

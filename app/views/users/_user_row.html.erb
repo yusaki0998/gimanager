@@ -1,0 +1,60 @@
+<table  class="table dt-responsive nowrap w-100 table-hover table-centered tbl_user">
+  <thead class="thead-light">
+    <tr>
+      <th></th>
+      <th><%= t('users.user_row.number') %></th>
+      <th><%= t('users.user_row.group') %></th>
+      <th><%= t('users.user_row.ic_no') %></th>
+      <th><%= t('users.user_row.empl_code') %></th>
+      <th><%= t('users.user_row.email') %></th>
+      <th><%= t('users.user_row.full_name') %></th>
+      <th><%= t('users.user_row.department') %></th>
+      <th><%= t('users.user_row.position') %></th>
+      <th><%= t('users.user_row.status') %></th>
+      <th><%= t('users.user_row.password') %></th>
+    </tr>
+  </thead>
+  <tbody id="append_user">
+    <% @users.each_with_index do |user, index| %>
+      <tr>
+        <td class="col_checkbox">
+          <%= user.id %>
+        </td>
+        <td class="col_number"><%= index + 1 %></td>
+        <td class="col_general"><%= user.group.name if user.group %></td>
+        <td class="col_general"><%= user.ic_no %></td>
+        <td class="col_name"><%= user.employee_code %></td>
+        <td class="col_email"><%= user.email %></td>
+        <td class="col_name"><%= user.fullname %></td>
+        <td class="col_group"><% user.departments.each do |department| %>
+            <%= department.name %>
+          <% end %>
+        </td>
+        <td class="col_general">
+          <%= select_tag "position", options_for_select(user.positions.collect{|p| [p.name, p.id]}), class:'form-control' %>
+        </td>
+        <% if user.active%>
+          <td class="col_number">
+            <span class="badge bg-success"><%= t('users.user_row.actived') %></span>
+          </td>
+        <% else %>
+          <td class="col_number">
+            <span class="badge bg-danger"><%= t('users.user_row.unactivated') %></span>
+          </td>
+        <% end %>
+        <% if user.status == true %>
+          <td class="col_general">
+            <span class="badge bg-success"><%= t('users.user_row.configured') %></span>
+          </td>
+          <!-- <td>Enable</td> -->
+        <% else %>
+          <td class="col_general">
+            <span class="badge bg-danger"><%= t('users.user_row.not_set') %></span>
+          </td>
+          <!-- <td>Disable</td> -->
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

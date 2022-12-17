@@ -1,0 +1,176 @@
+<div class="modal-header modal-colored-header bg-primary">
+	<h4 class="modal-title" id="compose-header-modalLabel"><%= t('users.new_user.staff_details') %></h4>
+		                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+</div>
+<div class="modal-body p-3">
+		<%= form_for @user, url:add_user_path(@user), method: 'get', remote: true do |f| %>
+		<div class="row">
+				<div class="col-sm-12">
+						<div class="mb-2 row" id="error-users">
+						</div>
+						<div class="mb-2 row">
+							<div class="col-sm-2 text-end label-form">
+								<%= f.label :email, t('users.new_user.email'), class: "control-label style-label" %><span class="required">*</span>
+							</div>
+								
+							<div class="col-sm-4">
+								<%= f.text_field :email, class: "form-control text-field-css", :required => true %>
+							</div>
+							
+							<div class="col-sm-2 text-end label-form">
+								<%= f.label :ICNo, t('users.new_user.ic_no'), class: "control-label style-label" %><span class="required">*</span>
+							</div>
+							
+							<div class="col-sm-3">
+								<%= f.text_field :ic_no, class: "form-control text-field-css", :required => true %>
+							</div>
+						</div>
+
+					<div class="mb-2 row">
+						<div class="col-sm-2 text-end label-form">
+								<%= f.label :fullname, t('users.new_user.full_name'), class: "control-label style-label" %><span class="required">*</span>
+						</div>
+						<div class="col-sm-2">
+							 <%= f.text_field :first_name, class: "form-control text-field-css", :required => true %>
+						</div>
+						<div class="col-sm-2">
+							<%= f.text_field :last_name, class: "form-control text-field-css", :required => true %>
+						</div>
+
+						<div class="col-sm-2 text-end label-form">
+							<%= f.label :employee_code, t('users.new_user.empl_code'), class: "control-label style-label" %><span class="required">*</span>
+						</div>
+						
+						<div class="col-sm-3">
+							<%= f.text_field :employee_code, class: "form-control text-field-css", :required => true %>
+						</div>
+				 </div>
+
+				<div class="mb-2 row">
+					<div class="col-sm-2 text-end label-form">
+						<%= f.label :department, t('users.new_user.department'), class: "control-label style-label" %>
+					</div>
+					
+					<div class="col-sm-4">
+						<%= f.fields_for :user_departments do |dep| %>
+							<%= dep.select :department_id, options_from_collection_for_select(@departments, "id", "name"), {prompt: ""}, {class: " form-control text-field-css"} %>
+						<% end %>
+					</div>
+
+					<div class="col-sm-2 text-end label-form">
+						<%= f.label :password, t('users.new_user.password'), class: "control-label style-label" %><span class="required">*</span>
+					</div>
+					
+					<div class="col-sm-3">
+						<%= f.text_field :password, class: "form-control text-field-css", value:'123456', disabled:true %>
+					</div>
+
+				</div>
+
+				<div class="mb-2 row">
+
+					<%if current_user.group_id != 1 %>
+					<div class="col-sm-4 offset-sm-2">
+						<span><%= t('users.new_user.set_as_default')%></span>
+					</div>
+					<% end %>
+				</div>
+
+				<% if current_user.group_id == 1 %>
+				<div class="mb-2 row">
+					<div class="col-sm-2 text-end label-form">
+							<%= f.label :group_id, t('users.new_user.group'), class: "control-label style-label" %><span class="required">*</span>
+						</div>
+						
+						<div class="col-sm-4">
+							<%= f.collection_select(:group_id, Group.all, :id, :name, {:prompt=>""}, {:class=>'form-control'}) %>
+						</div>
+					<div class="col-sm-4 offset-sm-2">
+						<span><%= t('users.new_user.set_as_default')%></span>
+					</div>
+				</div>
+				<% end %>
+
+				<div class="mb-2 row">
+					<div class="col-sm-2 text-end label-form">
+						<%= f.label :position, t('users.new_user.position'), class: "control-label style-label" %>
+					</div>
+						<div class="col-sm-4">
+							<%= f.fields_for :user_positions do |position| %>
+								<%= position.collection_select(:position_id, @positions, :id, :name, {:prompt=>""}, {:class=>'form-control'}) %>
+							<% end %>
+						</div>
+				</div>
+
+
+				<div class="mb-2 row">
+					<div class="col-sm-2 text-end label-form">
+						<%= f.label :active, t('users.new_user.active'), class: "control-label style-label" %>
+					</div>
+
+					<div class="col-sm-3 label-form">
+						<div class="row">
+							<div class="col-sm-6">
+								<%= f.radio_button :active, 1, :checked => true %><span class="space_rd"><%= t('users.new_user.actived')%></span>
+							</div>
+								
+							<div class="col-sm-6">
+								<%= f.radio_button :active, 0 %><span class="space_rd"><%= t('users.new_user.unactivated')%></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-1"></div>
+					
+					<div class="col-sm-2 text-end label-form">
+				</div>
+
+				<div class="col-sm-3 label-form">
+					<div class="row">
+						<div class="col-sm-6">
+							<%= f.radio_button :is_full_time, 1, :checked => true %><span class="space_rd"><%= t('users.new_user.full_time')%></span>
+						</div>
+							
+						<div class="col-sm-6">
+							<%= f.radio_button :is_full_time, 0 %><span class="space_rd"><%= t('users.new_user.dispatcher')%></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="row mb-2">
+			<div class="col-sm-12">
+				<div class="mb-2 row">
+					<div class="col-sm-12 text-center">
+						<%= button_tag class:"btn btn-primary btnSaveUser", id:'btnSaveUser' do %>
+							<i class="mdi mdi-plus-circle"></i><%= t('users.new_user.sign_up')%>
+						<% end %>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><%= t('users.new_user.close_up')%></button>
+					</div>
+				</div>
+			</div>
+		</div>
+<% end %>
+</div>
+
+<!-- <div id="modal-addPersonalSeal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+				<div class="modal-content"></div>
+		</div>
+</div> -->
+
+<!-- <div id="modal-addJobSeal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+				<div class="modal-content"></div>
+		</div>
+</div> -->
+
+<div id="modal_addCompanyStamp" class="modal hide fade in" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content"></div>
+	</div>
+</div>

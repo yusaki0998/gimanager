@@ -1,0 +1,121 @@
+ja:
+  personal_mails:
+    common:
+      homepage: "トップページ"
+      mail: "メール"
+      sent_mail: "メールの送信"
+      sent_mail_2: "メールを送る"
+      mail_detail: "メールの詳細"
+      title: "標題"
+      creation_date: "作成日時"
+    index:
+      button_group_header_content_mails:
+        change: "変更する"
+        delete: "削除する"
+        move_to: "Move to:"
+      button_group_header:
+        move_to: "Move to:"
+        other_operations: "その他の操作"
+        folder_details: "フォルダの詳細"
+        set_up_update_noti: "更新通知を設定する"
+        cancel_update_noti: "更新通知を解除する"
+        delete_folder: "フォルダを削除する"
+        empty_trash: "ごみ箱を空にする"
+        delete_all: "フォルダ内の全データを削除する"
+        mark_all_as_read: "フォルダ内の全データを既読にする"
+      content_mail:
+        date_time: "日時"
+        sender: "差出人"
+        address: "宛先"
+        attachments: "Attachments"
+        download_all_file: "Download all file"
+        reply: "返信"
+        reply_all: "全員に返信"
+        send_on: "転送"
+      modal_confirm_mark_read_all_mail:
+        read_data: "フォルダ内の全データの既読処理"
+        mark_all_mail: "Đánh dấu tất cả các dữ liệu trong thư mục"
+        is_read: "là đã đọc."
+        mark_mail_note: "この操作で既読にした通知は、通知履歴に表示されません。"
+        mark_as_read: "既読にする"
+        cancel: "キャンセルする"
+      table_send:
+        to: "To"
+      table_trash:
+        to: "To"
+        trash_note: "ごみ箱のデータは 30 日間保存されます。"
+        deleted_date_time: "削除日時"
+    new:
+      list_user:
+        full_name: "氏名"
+        mail: "メール"
+        department: "部署"
+      modal_choose_email:
+        list_users: "List user"
+        department: "部署"
+        all: "全部"
+        address: "宛先"
+        save: "Save"
+        no: "いいえ"
+      upload_document_mail:
+        upload_file: "Drop files here or click to upload."
+        save_file: "Lưu file"
+    show:
+      button_group_header:
+        change: "変更する"
+        delete: "削除する"
+      content_mail:
+        date_and_time: "日時"
+        sender: "差出人"
+        address: "宛先"
+        attachments: "Attachments"
+        reply: "返信"
+        reply_all: "全員に返信"
+        send_on: "転送"
+      modal_confirm_move_mail_to_trash:
+        delete_mail: "メールの削除"
+        mail: "メール"
+        delte_title: "をごみ箱から削除します。よろしいですか？"
+        mail_2: "メール"
+        move_title: "をごみ箱に移動します。よろしいですか？"
+        yes_button: "はい"
+        no_button: "いいえ"
+    button_group_folder_mail:
+      folder: "フォルダ"
+      add_folder: "フォルダを追加する"
+      change_folder_order: "フォルダの順番変更"
+    form:
+      address: "宛先"
+      title: "標題"
+      text: "本文"
+      file: "ファイル"
+      delete: "削除する"
+      submit: "Submit"
+      send: "送信する"
+      save_draft: "下書き保存する"
+      cancel: "キャンセルする"
+      incorrect_information: "Incorrect Information"
+      close: "Close"
+    modal_new_mail:
+      new_mess: "New Message"
+      address: "宛先"
+      title: "標題"
+      text: "本文"
+      send_mess: "Send Message"
+      cancel: "キャンセルする"
+    js:
+      error_upload_1: "File is too big upload error: "
+      error_upload_2: "Max filesize: 15MiB."
+    controller:
+      to: "To"
+      forwarded_message: "Forwarded message"
+      subject: "Subject"
+      date: "Date"
+      from: "From"
+      wrote: "wrote"
+      re: "Re"
+      inbox: "受信箱"
+      sent_mail: "送信箱"
+      draft: "下書き"
+      important: "重要なメール"
+      trash: "ごみ箱"

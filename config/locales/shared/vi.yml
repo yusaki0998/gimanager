@@ -1,0 +1,9 @@
+vi:
+  shared:
+    stamps:
+      homepage: "Trang chủ"
+      display_stamp: "Con dấu"
+      stamp_for: ""
+      seal: "Con dấu cá nhân"
+      office_seal: "Con dấu văn phòng"
+      company_seal: "Con dấu công ty"

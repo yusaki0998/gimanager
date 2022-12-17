@@ -1,0 +1,40 @@
+vi:
+  positions:
+    index:
+      home_page_breadcrumb: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      department_position: "Phòng ban & Chức vụ"
+      department: "Phòng ban"
+      position: "Chức vụ"
+    position_content:
+      register: "Đăng kí"
+      rename: "Đặt lại tên"
+      delete: "Xóa"
+    position_row:
+      number: "STT"
+      position_name: "Chức vụ "
+      group: "Nhóm"
+    new:
+      position_register: "Đăng kí Chức vụ"
+      register: "Đăng kí"
+      close_up: "Đóng"
+    form:
+      position_name: "Chức vụ"
+    edit:
+      position_change: "Thay đổi tên chức vụ"
+      rename: "Đặt lại tên"
+      close_up: "Đóng"
+    delete:
+      ask_to_delete: "Bạn có chắc muỗn xóa chức vụ này không"
+      delete: "Xóa"
+      close_up: "Đóng"
+    controller:
+      updated_position: "Cập nhật chức vụ thành công"
+      created_position: "Tạo chức vụ thành công"
+      position_existed: "Chức vụ này đã tồn tại"
+      deleted_position: "Xóa chức vụ thành công"
+      delete_failed: "Xóa chức vụ thất bại"
+      
+
+   
+    

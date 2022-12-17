@@ -1,0 +1,22 @@
+en:
+  bulletin_generals:
+    breadcrumb: 
+      homepage: "Home page"
+      company_setting: "Company setting"
+      bulletin_board_settings: "Bulletin Board Settings"
+      general_setting_bulletin: "General setting"
+    form:
+      general_setting_bulletin: "General setting"
+      error_explanation: "prohibited this bulletin_general from being saved:"
+      initial_value_setting: "Initial value setting"
+      text_default_check_comment: "Set the initial value of the comment function to 'checked' "
+      set: "Set"
+      cancel: "Cancel"
+    menu_tab:
+      general_setting_bulletin: "General setting"
+      category_settings: "Category settings"
+      manage_bulletins: "Manage bulletins"
+      read_from_CSV: "Read from CSV file"
+      export_to_CSV: "Export to CSV file"
+      bulk_delete: "Bulk deletion of bulletins"
+      whole: "（全体）"

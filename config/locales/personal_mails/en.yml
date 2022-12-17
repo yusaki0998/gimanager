@@ -1,0 +1,124 @@
+en:
+  personal_mails:
+    common:
+      homepage: "Home page"
+      mail: "Mail"
+      sent_mail: "Sent Mail"
+      sent_mail_2: "Sent Mail"
+      mail_detail: "Mail detail"
+      title: "Title"
+      creation_date: "Creation Date"
+    index:
+      button_group_header_content_mails:
+        change: "Change"
+        delete: "Delete"
+        move_to: "Move to:"
+      button_group_header:
+        move_to: "Move to:"
+        other_operations: "Other"
+        folder_details: "Folder details"
+        set_up_update_noti: "Set up update notifications"
+        cancel_update_noti: "Cancel update notification"
+        delete_folder: "Delete folder"
+        empty_trash: "Empty trash"
+        delete_all: "Delete all data in folder"
+        mark_all_as_read: "Mark all data in a folder as read"
+      content_mail:
+        date_time: "Date and Time"
+        sender: "Sender"
+        address: "Address"
+        attachments: "Attachments"
+        download_all_file: "Download all file"
+        reply: "Reply"
+        reply_all: "Reply all"
+        send_on: "Forward"
+      modal_confirm_mark_read_all_mail:
+        read_data: "Read processing of all data in the folder"
+        mark_all_mail: "Mark all the data in the folder"
+        is_read: "is read."
+        mark_mail_note: "Notifications marked as read by this action will not be displayed in the notification history."
+        mark_as_read: "Mark as read"
+        cancel: "Cancel"
+      table_send:
+        to: "To"
+      table_trash:
+        to: "To"
+        trash_note: "Recycle Bin data is stored for 30 days."
+        deleted_date_time: "Delete date time"
+    new:
+      list_user:
+        full_name: "Full name"
+        mail: "Mail"
+        department: "Department"
+      modal_choose_email:
+        list_users: "List user"
+        department: "Department"
+        all: "All"
+        address: "Address"
+        save: "Save"
+        no: "No"
+      upload_document_mail:
+        upload_file: "Drop files here or click to upload."
+        save_file: "Save file"
+    show:
+      button_group_header:
+        change: "Change"
+        delete: "Delete"
+      content_mail:
+        date_time: "Date and Time"
+        sender: "Sender"
+        address: "Address"
+        attachments: "Attachments"
+        reply: "Reply"
+        reply_all: "Reply all"
+        send_on: "Forward"
+      modal_confirm_move_mail_to_trash:
+        delete_mail: "Delete mail"
+        mail: "Do you want to delete the mail"
+        delete_title: "from the trash ?"
+        mail_2: "Do you want to move the mail"
+        move_title: "to the trash ?"
+        yes_button: "Yes"
+        no_button: "No"
+    button_group_folder_mail:
+      folder: "Folder"
+      add_folder: "Add folder"
+      change_folder_order: "Change folder order"
+    form:
+      address: "Address"
+      title: "Title"
+      text: "Text"
+      file: "File"
+      delete: "Delete"
+      submit: "Submit"
+      send: "Send"
+      save_draft: "Save draft"
+      cancel: "Cancel"
+      incorrect_information: "Incorrect Information"
+      close: "Close"
+    modal_new_mail:
+      new_mess: "New Message"
+      address: "Address"
+      title: "Title"
+      text: "Text"
+      send_mess: "Send Message"
+      cancel: "Cancel"
+    js:
+      error_upload_1: "File is too big upload error: "
+      error_upload_2: "Max filesize: 15MiB."
+    controller:
+      to: "To"
+      forwarded_message: "Forwarded message"
+      subject: "Subject"
+      date: "Date"
+      from: "From"
+      wrote: "wrote"
+      re: "Re"
+      inbox: "Inbox"
+      sent_mail: "Sent mail"
+      draft: "Draft"
+      important: "Important"
+      trash: "Trash"
+
+
+

@@ -1,0 +1,17 @@
+vi:
+  setting_interactions:
+    new:
+      homepage: "Trang chủ"
+      personal_settings: "Cài đặt cá nhân"
+      set_a_stamp_group: "Đặt nhóm con dấu"
+    form:
+      stamp_group_name: "Tên nhóm con dấu"
+      error_explanation: "Cấm lưu tương tác cài đặt này"
+      all: "Tất cả"
+      department: "Phòng ban"
+      back_button: "Quay lại"
+      save_button: "Lưu"
+      addition: "Thêm"
+      delete: "Xóa"
+    controller:
+      save_success: "Lưu thành công."

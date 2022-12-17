@@ -1,0 +1,36 @@
+en:
+  departments:
+    index:
+      home_page_breadcrumb: "Home page"
+      company_setting: "Company settings"
+      department_position: "Department & Position"
+      department: "Department"
+      position: "Position"
+    department_content:
+      register: "Register"
+      rename: "Rename"
+      delete: "Delete"
+    department_row:
+      number: "No."
+      department_name: "Department name"
+      group: "Group"
+    new:
+      department_register: "Department registration"
+      register: "Register"
+      close_up: "Close"
+    form:
+      department_name: "Department name"
+    edit:
+      department_register: "Department registration"
+      rename: "Rename"
+      close_up: "Close"
+    delete:
+      ask_to_delete: "Are you sure you want to delete the selected department?"
+      delete: "Delete"
+      close_up: "Close"
+    controller:
+      department_existed: "Department existed"
+      added_department: "Department was successfully created."
+      updated_department: "Department was successfully updated."
+      deleted_department: "Department was successfully deleted."
+      fail_to_delete: "Failed to delete department."

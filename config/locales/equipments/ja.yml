@@ -1,0 +1,100 @@
+ja:
+  equipments:
+    confirm_destroy_equipments:
+      destroy_title: "次のデータを削除します。"
+      delete_button: "削除する"
+      close_up: "閉じる"
+    confirm_destroy:
+      destroy_title: "次のデータを削除します。"
+      delete_button: "削除する"
+      close_up: "閉じる"
+    edit_equipment:
+      edit_equipment: "施設の変更"
+      required_field: "は必須項目です。"
+      equipment_name: "会社情報"
+      category: "施設グループ"
+      all_equipment: "(全施設)"
+      note: "メモ"
+      file: "ファイル"
+      delete_button: "削除する" 
+      add_button: "追加する"
+      close_up: "閉じる"
+    form:
+      equipment_name: "会社情報"
+      category: "施設グループ"
+      all_equipment: "全施設"
+      note: "メモ"
+      file: "ファイル"
+      submit: "Submit"
+      back_button: "キャンセル"
+    new_equipment:
+      new_equipment: "施設の追加"
+      required_field: "は必須項目です。"
+      equipment_name: "会社情報"
+      category: "施設グループ"
+      all_equipment: "(全施設)"
+      note: "メモ"
+      file: "ファイル"
+      add_button: "追加する"
+      close_up: "閉じる"
+    option_categoty_items:
+      all_equipment: "(全施設)"
+    relocate_items_equipment:
+      change_the_order: "施設の順番変更"
+      instructions_for_change: "で順番を変更し、最後に[変更する]をクリックしてください。"
+      change: "変更する"
+      close_up: "閉じる"
+    table_equipment_items:
+      number: "番号"
+      equipment_name: "施設名"
+    table_import_equipment:
+      result: "Result"
+      number: "番号"
+      equipment_name: "施設名"
+      status: "状態"
+      close: "閉じる"
+    index:
+      homepage: "トップページ"
+      company_setting: "会社設定"
+      schedule_setting: "スケジュール設定"
+      equipment_setting: "施設の設定"
+      category: "施設グループ"
+      equipment: "施設"
+      holiday: "祝日"
+      type_meetings: "予定メニュー"
+      setting_schedules: "一般設定"
+      import_schedule: "インポート"
+      add_button: "追加する"
+      reorder: "順番変更する"
+      change_button: "変更する"
+      delete_button: "削除する"
+      import_csv: "CSV ファイルから読み込む"
+      export_csv: "CSV ファイルへ書き出す"
+      import_csv_2: "CSV ファイルからの読み込み （施設）"
+    controller:
+      created_mess: "Equipment was successfully created."
+      destroyed_mess: "Category was successfully destroyed."
+      name_alert: "Equipment name not null."
+      file_alert: "Incorrect file format."
+      import_done: "インポートができました。"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

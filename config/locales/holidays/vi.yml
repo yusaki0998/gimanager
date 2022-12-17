@@ -1,0 +1,58 @@
+vi:
+  holidays:
+    holiday_row:
+      date: "Ngày"
+      holiday_name: "Ngày nghỉ lễ"
+    modal_confirm_destroy_holiday:
+      delete_title: "Xóa ngày nghỉ"
+      delete_button: "Xóa"
+      close_up: "Đóng"
+    new_holiday:
+      add_holiday: "Thêm ngày nghỉ"
+      required_field: "Phần bắt buộc."
+      change_holiday: "Thay đổi ngày nghỉ"
+      date: "Ngày"
+      holiday_name: "Ngày nghỉ lễ"
+      add_button: "Thêm"
+      close_up: "Đóng"
+    table_import_holiday:
+      result: "Kết quả"
+      number: "STT"
+      date: "Ngày"
+      holiday_name: "Ngày nghỉ lễ"
+      status: "Trạng thái"
+      close: "Đóng"
+    index:
+      homepage: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      schedule_setting: "Cài đặt lịch trình"
+      schedule_and_equipment_reservation: "Đặt lịch và thiết bị"
+      category: "Nhóm"
+      equipment: "Thiết bị"
+      holiday: "Nghỉ lễ"
+      type_meetings: "Loại cuộc họp"
+      setting_schedules: "Cài đặt chung - Lịch trình"
+      import_schedule: "Nhập lịch trình"  
+      holiday_setting: "Cài đặt ngày nghỉ"
+      year: " "
+      add_button: "Thêm"
+      this_year: "Năm nay"
+      change_button: "Thay đổi"
+      delete_button: "Xóa"
+      read_CSV: "Đọc tệp CSV"
+      export_all_holidays: "Xuất tất cả các ngày lễ trong năm sang tệp CSV"
+      import_holidays: "Nhập ngày lễ từ tệp CSV"
+      read_from_CSV: "※ đọc từ tệp CSV theo thứ tự các mục sau:"
+      date_holiday_name: "(tên ngày lễ và thời gian)"
+      format_note: "※ Định dạng của ngày tháng là  yyyy/mm/dd."
+      import: "Nhập"
+    controller:
+      created: "Tạo ngày lễ thành công"
+      updated: "Cập nhật ngày lễ thành công"
+      name_alert: "Tên thiết bị không được để trống."
+      file_alert: "Sai định dạng tệp"
+      invalid_date: "Ngày không hợp lệ."
+
+
+
+  

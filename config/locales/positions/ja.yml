@@ -1,0 +1,40 @@
+ja:
+  positions:
+    index:
+      home_page_breadcrumb: "トップページ"
+      company_setting: "会社設定"
+      department_position: "部署・役職"
+      department: "部署"
+      position: "役職"
+    position_content:
+      register: "登録"
+      rename: "名称変更"
+      delete: "削除"
+    position_row:
+      number: "番号"
+      position_name: "役職名 "
+      group: "グループ"
+    new:
+      position_register: "役職登録"
+      register: "登録"
+      close_up: "閉じる"
+    form:
+      position_name: "役職名"
+    edit:
+      position_change: "役職変更"
+      rename: "名称変更"
+      close_up: "閉じる"
+    delete:
+      ask_to_delete: "選択中の役職を削除しますか？"
+      delete: "削除"
+      close_up: "閉じる"
+    controller:
+      updated_position: "役職を更新できました。"
+      created_position: "Department was successfully created."
+      position_existed: "役職が存在しました。"
+      deleted_position: "役職を削除できました。"
+      delete_failed: "役職を削除できませんでした。"
+      
+
+   
+    

@@ -1,0 +1,2 @@
+class GiAccountCharater < ApplicationRecord
+end

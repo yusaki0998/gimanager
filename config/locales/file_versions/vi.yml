@@ -1,0 +1,17 @@
+vi:
+  file_version:
+    revert_versions:
+      date_time: "Thời gian"
+      changer: "Người thay đổi"
+      title: "Tiêu đề"
+      file_name: "Tên tệp"
+      operation: "Hoạt động"
+      comment: "Bình luận"
+      mon: "Thứ 2"
+      tue: "Thứ 3"
+      wed: "Thứ 4"
+      thu: "Thứ 5"
+      fri: "Thứ 6"
+      sat: "Thứ 7"
+      sun: "CN"
+    

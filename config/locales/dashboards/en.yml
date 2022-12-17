@@ -1,0 +1,67 @@
+en:
+  dashboards:
+    bulletin_card:
+      bulletn_board: "Bulletn board"
+      title: "Title"
+      sender: "Người gửi"
+      updated_at: "Updated at"
+    greating_card:
+      ready: "Your dashboard is ready!"
+      start: "Get Started"
+    list_of_transfers_dashboard_table:
+      file_name: "File name"
+      forwarder: "Forwarder"
+      status: "Status"
+      completion: "Completion"
+      approving: "Approving"
+      stamp: "Stamp"
+    mail_card:
+      mail: "Mail"
+    mail_dashboard_table:
+      title: "Title"
+      content: "Content"
+      creation_date: "Creation at"
+    modal_simple_schedule_dashboard:
+      participant: "Participant"
+      time: "Time"
+      type_meeting: "Type meeting"
+      note: "Note"
+      public/private: "Status"
+      public: "Public"
+      private: "Private"
+      sign_up: "Sign up"
+      to_advanced_settings: "Advanced settings"
+      close_up: "Close"
+    pdf_complete_dashboard_table:
+      file_name: "File name"
+      final_approver: "Last approver"
+      last_approval_date: "Last approval date"
+      view: "View"
+    pdf_dashboard_table:
+      file_name: "File name"
+      forwarder: "Forwarder"
+      next_approver: "Next approver"
+      status: "Status"
+      no_comment: "No comment"
+      send_back: "Send back"
+      approving: "Approving"
+      view: "View"
+    schedule_card:
+      schedule: "Schedule"
+      last_week: "Last week"
+      the_day_before: "The day before"
+      today: "Today"
+      the_next_day: "The next day"
+      next_week: "Next week"
+    stamp_card:
+      document: "PDF file"
+      list_of_transfers: "PDF Shared"
+      end_of_approval: "PDF Comlete"
+    index:
+      homepage: "Home page"
+      dashboard: "Dashboard"
+    helper:
+      morning: "Good Morning"
+      afternoon: "Good Afternoon"
+      evening: "Good Evening"
+      night: "Good Night"

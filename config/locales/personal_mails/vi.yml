@@ -1,0 +1,123 @@
+vi:
+  personal_mails:
+    common:
+      homepage: "Trang chủ"
+      mail: "Mail"
+      sent_mail: "Gửi Mail"
+      sent_mail_2: "Gửi Mail"
+      mail_detail: "Chi tiết Mail"
+      title: "Tiêu đề"
+      creation_date: "Ngày tạo"
+    index:
+      button_group_header_content_mails:
+        change: "Đổi"
+        delete: "Xóa"
+        move_to: "Di chuyển tới"
+      button_group_header:
+        move_to: "Di chuyển tới"
+        other_operations: "Khác"
+        folder_details: "Chi tiết thư mục"
+        set_up_update_noti: "Cài thông báo cập nhật"
+        cancel_update_noti: "Hủy thông báo cập nhật"
+        delete_folder: "Xóa thư mục"
+        empty_trash: "Làm sạch thùng rác"
+        delete_all: "Xóa tất cả dữ liệu trong thư mục"
+        mark_all_as_read: "Đánh dấu tất cả dữ liệu trong một thư mục là đã đọc"
+      content_mail:
+        date_time: "Thời gian"
+        sender: "Người gửi"
+        address: "Địa chỉ"
+        attachments: "Tệp đính kèm"
+        download_all_file: "Tải tất cả các tệp"
+        reply: "Phản hồi"
+        reply_all: "Phản hồi tất cả"
+        send_on: "Chuyển tiếp"
+      modal_confirm_mark_read_all_mail:
+        read_data: "Đọc  tất cả dữ liệu trong thư mục"
+        mark_all_mail: "Đánh dấu tất cả các dữ liệu trong thư mục"
+        is_read: "là đã đọc."
+        mark_mail_note: "Các thông báo được đánh dấu là đã đọc bởi hành động này sẽ không được hiển thị trong lịch sử thông báo."
+        mark_as_read: "Đánh dấu đã đọc"
+        cancel: "Hủy"
+      table_send:
+        to: "Tới"
+      table_trash:
+        to: "Tới"
+        trash_note: "Dữ liệu trong thùng rác được lưu trữ trong 30 ngày."
+        deleted_date_time: "Xóa thời gian"
+    new:
+      list_user:
+        full_name: "Họ và tên"
+        mail: "Mail"
+        department: "Phòng ban"
+      modal_choose_email:
+        list_users: "Danh sách người dùng"
+        department: "Phòng ban"
+        all: "Tất cả"
+        address: "Địa chỉ"
+        save: "Lưu"
+        no: "Không"
+      upload_document_mail:
+        upload_file: "Thả tệp tại đây hoặc bấm để tải lên"
+        save_file: "Lưu tệp"
+    show:
+      button_group_header:
+        change: "Đổi"
+        delete: "Xóa"
+      content_mail:
+        date_time: "Thời gian"
+        sender: "Người gửi"
+        address: "Địa chỉ"
+        attachments: "Tệp đính kèm"
+        reply: "Phản hồi lại"
+        reply_all: "Phản hồi tất cả"
+        send_on: "Chuyển tiếp"
+      modal_confirm_move_mail_to_trash:
+        delete_mail: "Xóa mail"
+        mail: "Bạn có muốn xóa mail"
+        delete_title: "ra khỏi thùng rác ?"
+        mail_2: "Bạn có muốn di chuyển mail"
+        move_title: "tới thùng rác ?"
+        yes_button: "Có"
+        no_button: "Không"
+    button_group_folder_mail:
+      folder: "Thư mục"
+      add_folder: "Thêm thư mục"
+      change_folder_order: "Thay đổi thứ tự thư mục"
+    form:
+      address: "Địa chỉ"
+      title: "Tiêu đề"
+      text: "Nội dung"
+      file: "Tệp"
+      delete: "Xóa"
+      submit: "Nộp"
+      send: "Gửi"
+      save_draft: "Lưu nháp"
+      cancel: "Hủy"
+      incorrect_information: "Thông tin không chính xác"
+      close: "Đóng"
+    modal_new_mail:
+      new_mess: "New Message"
+      address: "Địa chỉ"
+      title: "Tiêu đề"
+      text: "Nội dung"
+      send_mess: "Gửi tin nhắn"
+      cancel: "Hủy"
+    js:
+      error_upload_1: "Tệp quá nặng để tải lên: "
+      error_upload_2: "Kích thước tệp lớn nhất: 15MiB."
+    controller:
+      to: "Tới"
+      forwarded_message: "Tin nhắn được chuyển tiếp"
+      subject: "Tiêu đề"
+      date: "Ngày"
+      from: "Từ"
+      wrote: "Đã viết"
+      re: "Về"
+      inbox: "Hộp thư đến"
+      sent_mail: "Thư đã gửi"
+      draft: "Thư nháp"
+      important: "Thư quan trọng"
+      trash: "Thùng rác"
+
+

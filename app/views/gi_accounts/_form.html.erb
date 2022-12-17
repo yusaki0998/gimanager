@@ -1,0 +1,52 @@
+<%= form_with(model: gi_account) do |form| %>
+  <% if gi_account.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(gi_account.errors.count, "error") %> prohibited this gi_account from being saved:</h2>
+
+      <ul>
+        <% gi_account.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :account_mail, style: "display: block" %>
+    <%= form.text_field :account_mail %>
+  </div>
+
+  <div>
+    <%= form.label :account_pass, style: "display: block" %>
+    <%= form.text_field :account_pass %>
+  </div>
+
+  <div>
+    <%= form.label :account_phone, style: "display: block" %>
+    <%= form.text_field :account_phone %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.check_box :status %>
+  </div>
+
+  <div>
+    <%= form.label :note, style: "display: block" %>
+    <%= form.text_field :note %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :owner, style: "display: block" %>
+    <%= form.number_field :owner %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

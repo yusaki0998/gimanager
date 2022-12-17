@@ -1,0 +1,94 @@
+vi:
+  data_folders:
+    common:
+      home_page: "Trang chủ"
+      file_management: "Quản lý tệp"
+      mon: "Thứ 2"
+      tue: "Thứ 3"
+      wed: "Thứ 4"
+      thu: "Thứ 5"
+      fri: "Thứ 6"
+      sat: "Thứ 7"
+      sun: "CN"
+    button_create:
+      create: "Tạo"
+      add_folder: "Thêm tập tin"
+      add_file: "Thêm tệp"
+    confirm_delete_multiple_file:
+      file_deletion: "Bạn có muốn xóa tệp này không?"
+      delete: "Xóa"
+      cancel: "Hủy"
+    confirm_destroy:
+      file_deletion: "Bạn có muốn xóa thư mục này không?"
+      delete: "Xóa"
+      cancel: "Hủy"
+    decentralize_block:
+      rename_folder: "Đổi tên tệp"
+      permission_setting: "Cài đặt quyền truy cập"
+      move: "Di chuyển"
+      delete: "Xóa"
+    decentralize:
+      permission_setting: "Cài đặt quyền truy cập"
+      addtion: "Thêm"
+      delete: "Xóa"
+      set: "Đặt"
+      cancel: "Hủy"
+    edit:
+      change_file_name: "Đổi tên tệp"
+      add_folder: "Thêm thư mục"
+      required_field: "Phần bắt buộc"
+      folder_name: "Tên thư mục"
+      position: "Vị trí"
+      change: "Đổi"
+      cancel: "Hủy"
+    form_table_decentralize: 
+      read_only: "Chỉ đọc"
+      full_permission: "Có thể xem, thay đổi, và thêm mới"
+    form:
+      change_file_name: "Đổi tên tệp"
+      add_folder: "Thêm thư mục"
+      required_field: "Phần bắt buộc"
+      folder_name: "Tên thư mục"
+      position: "Vị trí"
+      add: "Thêm"
+      cancel: "Hủy"
+    relocation_multiple_file":
+      move_file_position: "Thay đổi vị trí tệp"
+      file_to_move: "Tệp cần di chuyển"
+      parent_folder_before_move: "Thư mục cha trước khi di chuyển"
+      parent_folder_after_move: "Thư mục cha sau khi di chuyển"
+      moving: "Di chuyển"
+      cancel: "Hủy"
+    relocation:
+      move_folder_position: "Thay đổi vị trí thư mục"
+      folder_to_move: "Tệp cần di chuyển"
+      parent_folder_before_move: "Thư mục cha trước khi di chuyển"
+      parent_folder_after_move: "Thư mục cha sau khi di chuyển"
+      moving: "Di chuyển"
+      cancel: "Hủy"
+    sub_folder_block:
+      organization_folder: "Tổ chức thư mục"
+      no_subfolders: "Thư mục này không có thư mục con"
+      shared_by_admin: "Thư mục được chia sử từ quản trị viên hệ thống"
+      shared_folder: "Chia sẻ thư mục"
+    sub_folder_relocation_file:
+      organization_folder: "Tổ chức thư mục"
+      no_subfolders: "Thư mục này không có thư mục con"
+      shared_folder: "Chia sẻ thư mục"
+    sub_folder_relocation:
+      organization_folder: "Tổ chức thư mục"
+      no_subfolders: "Thư mục này không có thư mục con"
+      shared_folder: "Chia sẻ thư mục"
+    table_department_deventralize:
+      read_only: "Chỉ đọc"
+      full_permission: "Có thể xem, thay đổi, và thêm mới"
+    table_file:
+      file: "Tệp"
+      download: "Tải xuống"
+      moving: "Di chuyển"
+      delete: "Xóa"
+      number: "STT"
+      title: "Tiêu đề"
+      changer: "Người thay đổi"
+      date_time: "Thời gian"
+      size: "Kích thước tệp"

@@ -1,0 +1,20 @@
+<span class="menu-title">Schedule</span>
+<% if params[:user_id].present? || params[:department_id].present? %>
+    <%= link_to week_schedule_path(start_date:Date.current,department_id:current_user.departments.blank? ? "" : current_user.departments.first.id), class: 'button-menu-bar item-active' do %>
+        <i class="dripicons-calendar me-1"></i>
+        <span class="align-middle d-none d-sm-inline-block"><%=t('schedules.menu_bar.schedule')%></span>
+    <% end %>
+    <%= link_to schedule_equipment_week_schedule_path(start_date:Date.current, category_id: Category.find_by(group_id: current_user.group_id)), class: "button-menu-bar" do %>
+        <i class="mdi mdi-billboard me-1"></i>
+        <span class="align-middle d-none d-sm-inline-block"><%=t('schedules.menu_bar.schedule_equipment')%></span>
+    <% end %>
+<% else %>
+    <%= link_to week_schedule_path(start_date:Date.current,department_id:current_user.departments.blank? ? "" : current_user.departments.first.id), class: 'button-menu-bar' do %>
+        <i class="dripicons-calendar me-1"></i>
+        <span class="align-middle d-none d-sm-inline-block"><%=t('schedules.menu_bar.schedule')%></span>
+    <% end %>
+    <%= link_to schedule_equipment_week_schedule_path(start_date:Date.current, category_id: Category.find_by(group_id: current_user.group_id)), class: "button-menu-bar item-active" do %>
+        <i class="mdi mdi-billboard me-1"></i>
+        <span class="align-middle d-none d-sm-inline-block"><%=t('schedules.menu_bar.schedule_equipment')%></span>
+    <% end %>
+<% end %>

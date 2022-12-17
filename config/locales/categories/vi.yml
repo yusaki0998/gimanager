@@ -1,0 +1,42 @@
+vi:
+  categories:
+    category_row:
+      number: "STT"
+      category_name: "Tên nhóm"
+    change_index_categories:
+      sort_categories: "Thay đổi thứ tự các nhóm"
+      instructions_for_change: "Thay đổi thứ tự, sau đó bấm [Lưu] để lưu sự thay đổi đó "
+      change_button: "Thay đổi"
+      no_button: "Không"
+    modal_confirm_destroy:
+      delete_title: "Xóa các dữ liệu đã chọn"
+      delete_button: "Xóa"
+      close_up: "Đóng"
+    new_category:
+      add_category: "Thêm nhóm"
+      required_field: "Phần bắt buộc"
+      change_category: "Sửa nhóm"
+      category_name: "Tên nhóm"
+      add_button: "Thêm"
+      close_up: "Đóng"
+    table_category:
+      category_setting: "Cài đặt danh mục"
+      add_button: "Thêm"
+      reorder: "Đặt lại"
+      change_button: "Thay đổi"
+      delete_button: "Xóa"
+    index:
+      homepage: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      schedule_setting: "Cài đặt lịch trình"
+      category_setting: "Cài đặt nhóm"
+      category: "Nhóm"
+      equipments: "Trang hiết bị"
+      holiday: "Nghỉ lể"
+      type_meetings: "Loại cuộc họp"
+      setting_schedules: "Cài đặt chung - Lịch trình"
+      import_schedule: "Nhập lịch"
+    controller:
+      created: "Thêm nhóm thành công"
+      updated: "Cập nhật nhóm thành công"
+      deleted: "Xóa nhóm thành công"

@@ -1,0 +1,9 @@
+
+	$("#modal-position-new").modal('hide');   
+	$('#list_post').DataTable().destroy();
+   $('body').removeClass('modal-open');
+   $('.modal-backdrop').remove();
+   $('#tbl-postion-container').html("<%= j render :partial => 'positions/position_row', :locals => { positions: @positions} %>");
+   formatTablePosition();
+   <%= render "shared/alert/alert" %>
+

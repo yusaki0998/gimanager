@@ -1,0 +1,21 @@
+vi:
+  export_bulletins:
+    index:
+      breadcrumd:
+        home_page: "Trang chủ"
+        company_setting: "Cài đặt hệ thống"
+        bulletin_board_settings: "Cài đặt bảng tin"
+        export_to_CSV_file: "Xuất ra tệp CSV"
+      menu_tab:
+        general_setting_bulletin: "Cài đặt chung"
+        category_settings: "Quản lý quyền truy cập"
+        manage_bulletins: "Quản lý bản tin"
+        read_from_CSV: "Đọc tệp CSV"
+        export_to_CSV: "Xuất ra tệp CSV"
+        bulk_delete: "Xóa tin"
+      tab_pane_export_bulletins:
+        export_CSV: "Xuất ra tệp CSV"
+        category: "Nhóm"
+        select_category: "（Vui lòng chọn một nhóm để viết vào）"
+        period: "Giai đoạn"
+        write: "Viết"

@@ -1,0 +1,21 @@
+<div class="leftside-menu menuitem-active">    
+
+      <a href="<%= root_path %>" class="logo text-center">
+        <span class="logo-lg logo-background">
+            <img src="<%= root_path %>assets/images/Lotus.png" alt="" height="40">                    
+            <span class="side-nav-link align-middle fw-bold ms-1">Teipa</span>
+         </span>
+         <span class="logo-sm logo-background">
+               <img src="<%= root_path %>assets/images/Lotus.png" alt="" height="40">
+         </span>
+      </a>
+
+
+   <div class="leftside-menu-container h-100 show" id="leftside-menu-container" data-simplebar="init">
+    <%= render 'wrapper/leftside-menu/leftside-menu-container/simplebar-wrapper'%>
+    <%= render 'wrapper/leftside-menu/leftside-menu-container/simplebar-horizontal'%>
+    <%= render 'wrapper/leftside-menu/leftside-menu-container/simplebar-vertical'%>
+   </div>
+</div>
+
+

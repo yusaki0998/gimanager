@@ -1,0 +1,62 @@
+vi:
+  type_meeting: 
+    change_index_type_modal:
+      change_order_type_meeting: "Thay đổi thứ tự của danh sách loại cuộc họp"
+      instructions_for_change: "Thay đổi thứ tự, sau đó bấm [Lưu] để lưu sự thay đổi đó "
+      change: "Thay đổi"
+      no_button: "Không"
+    modal_confirm_destroy:
+      delete_title: "Xóa những dữ liệu đã chọn"
+      delete_button: "Xóa"
+      close_up: "Đóng"
+    new_type_meeting:
+      add_type_meeting: "Thêm loại cuôc họp"
+      required_field: "Phần bắt buộc."
+      change_type_meeting: "Thay đổi loại cuộc họp"
+      type_meeting_name: "Tên loại cuộc họp"
+      background_color: "Màu"
+      add_button: "Thêm"
+      close_up: "Đóng"
+    table_type_meeting:
+      type_meeting_setting: "Cài đặt loại cuộc họp"
+      add_button: "Thêm"
+      reorder: "Sắp xếp lại"
+      change_button: "Thay đổi"
+      delete_button: "Xóa"
+    type_meeting_row:
+      number: "STT"
+      type_meeting_name: "Tên loại cuộc họp"
+      preview: "Xem trước"
+    index:
+      homepage: "Trang chủ"
+      company_setting: "Cài đặt hệ thống"
+      schedule_setting: "Cài đặt lịch trình"
+      type_meeting_setting: "Cài đặt loại cuộc họp"
+      category: "Nhóm"
+      equipment: "Thiết bị"
+      holiday: "Nghỉ lễ"
+      type_meetings: "Loại cuộc họp"
+      setting_schedules: "Cài đặt chung - Lịch trình"
+      import_schedule: "Nhập lịch trình" 
+    controller:
+      created: "Tạo loại cuộc họp thành công."
+      updated: "Cập nhật loại cuộc họp thành công."
+      destroyed: "Xóa loại cuộc họp thành công."
+
+
+
+
+  
+
+
+
+
+    
+
+  
+
+
+
+
+
+  

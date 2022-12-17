@@ -1,0 +1,12 @@
+$("#modal-addUser").find(".modal-content").html("");
+$("#modal-addUser").find(".modal-content").html("<%= j (render 'new_user') %>");
+$("#modal-addUser").modal('show');
+$("#modal-addPersonalSeal").on('hidden.bs.modal', function () {
+  $("#modal-addUser").css("opacity", "");
+});
+$("#modal-addJobSeal").on('hidden.bs.modal', function () {
+    $("#modal-addUser").css("opacity", "");
+});
+$("#modal_add_company_stamp").on('hidden.bs.modal', function () {
+  $("#modal-addUser").css("opacity", "");
+});

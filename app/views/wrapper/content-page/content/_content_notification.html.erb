@@ -1,0 +1,18 @@
+<div class="card-body">
+    <span class="float-end noti-close-btn <%= unread_notification(notification.id)%>"><i class="mdi mdi-close"></i></span>   
+    <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <div class="notify-icon bg-primary">
+                <i class="<%= icon %>"></i>
+            </div>
+        </div>
+        <div class="flex-grow-1 text-truncate ms-2" data-toggle="tooltip" data-placement="top" title="<%= notification.message %>">
+            <h5 class="noti-item-title fw-semibold font-14"><%= get_sender_user(notification.user_id_sender)%>
+                <% unless type === "later" %>
+                    <small class="fw-normal <%= unread_notification(notification.id)%> ms-1"><%= distance_of_time_in_words(notification.created_at,Time.now ) %></small>
+                <% end %>
+            </h5>
+            <small class="noti-item-subtitle <%= unread_notification(notification.id)%>"><%= notification.message %></small>
+        </div>
+    </div>
+</div>

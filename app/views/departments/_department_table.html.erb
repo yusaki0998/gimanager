@@ -1,0 +1,21 @@
+<table class="table mb-0 tbl_depart" id="tbl_depart">
+    <thead>
+        <tr>
+            <th style="width:7%;"><%= check_box_tag 'department_id', 'true', false, class: 'selectAll_depart' %></th>
+            <th style="width:10%;">番号</th>
+            <th> 役職名</th> 
+        </tr>
+    </thead>
+    <tbody id="appenddepartant">
+		<% Department.all.each_with_index do |department, index| %>
+			<tr id="row_<%= department.id %>" data-item-id=<%= "#{department.id}" %> >
+				<td style="width:7%;"><%= check_box_tag 'department_id', 'true', false , class: 'selectRow' %></td>
+				<td style="width:10%;"><%= index + 1 %></td>
+				<td><%= department.name %></td>
+			</tr>
+		<% end %>
+    </tbody>
+</table>
+
+
+

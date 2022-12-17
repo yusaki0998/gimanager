@@ -1,0 +1,2 @@
+class GiAccountWeapon < ApplicationRecord
+end

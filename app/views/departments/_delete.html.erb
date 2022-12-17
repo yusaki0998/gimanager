@@ -1,0 +1,11 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="myModalLabel"><%= t('departments.delete.ask_to_delete') %></h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+</div>
+
+<div class="modal-footer">	
+    <%= link_to  delete_mul_departments_path(ids: @departments.pluck(:id)),remote: true, id: "btnModalDelete", class: "btn btn-danger btnDeleteDepart" do %>
+        <i class="uil uil-minus-circle iconDeleteDepart"></i><%= t('departments.delete.delete') %>
+    <% end %>
+    <button type="button" class="btn btn-light" data-bs-dismiss="modal"><%= t('departments.delete.close_up') %></button>
+</div>

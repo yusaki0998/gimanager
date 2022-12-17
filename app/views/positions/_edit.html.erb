@@ -1,0 +1,18 @@
+<%= form_for @position, html: {class: "form-horizontal", remote: true} do |form| %>
+	<div>
+		<div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel"><%= t('positions.edit.position_change') %></h4>
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+		</div>
+		<div class="modal-body">
+		  <%= render 'form', form: form %>
+		</div>
+
+		<div class="modal-footer">
+			<%= button_tag(:type => 'submit', :class => 'btn btn-info') do %>
+				<i class="dripicons-document-edit iconEditDepart"></i><%= t('positions.edit.rename') %>
+			<% end %>
+		  	<button type="button" class="btn btn-light" data-bs-dismiss="modal"><%= t('positions.edit.close_up') %></button>
+		</div>
+	</div>
+<% end %>

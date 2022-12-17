@@ -1,0 +1,64 @@
+vi:
+  bulletins:
+    system_import_bulletin:
+      bread_crumb:
+        homepage: "Trang chủ"
+        company_setting: "Cài đặt hệ thống"
+        bulletin_board_settings: "Cài đặt bản tin"
+        read_from_CSV: "Đọc file CSV"
+      content:
+        import_CSV: "Nhập từ file CSV (bảng tin)"
+        instructions: "Chọn một nhóm và lấy dữ liệu bảng tin từ tệp CSV."
+        category: "Nhóm"
+        please_select: "(Vui lòng chọn 1 nhóm.)"
+        CSV_file: "Tệp CSV"
+        delete: "Xóa"
+        cancel: "Hủy"
+      menu_tab:
+        general_setting_bulletin: "Cài đặt chung"
+        category_settings: "Quản lý quyền truy cập"
+        manage_bulletins: "Quản lý bản tin"
+        read_from_CSV: "Đọc tệp CSV"
+        export_to_CSV: "Xuất ra tệp CSV"
+        bulk_delete: "Xóa tin"
+      result_import_bulletin:
+        result: "Kết quả"
+        invalid_description: "Không thể đọc dữ liệu vì có 1 mô tả không phù hợp"
+        item: "tin"
+        status: "Trạng thái"
+    setting_delete_multi_bulletin:
+      bread_crumb:
+        homepage: "Trang chủ"
+        company_setting: "Cài đặt hệ thống"
+        bulletin_board_settings: "Cài đặt bản tin"
+        bulk_delete: "Xóa tin"
+      content:
+        bulk_delete: "Xóa tin"
+        required_field: "Phần bắt buộc"
+        delete_instructions: "Chọn nhóm và khoảng thời gian, xong xóa tất cả các tin trong đó"
+        target_category: "Nhóm được chỉ định"
+        select_to_delete: "Chọn nhóm dể được xóa"
+        reference_date: "Ngày dự kiến"
+        select_date_note_1: "Chọn một ngày để xóa"
+        select_date_note_2: "Xóa các bài viết chưa được cập nhật kể từ ngày đã chọn."
+        delete: "Xóa"
+        cancel: "Hủy"
+      menu_tab:
+        general_setting_bulletin: "Cài đặt chung"
+        category_settings: "Quản lý quyền truy cập"
+        manage_bulletins: "Quản lý bản tin"
+        read_from_CSV: "Đọc tệp CSV"
+        export_to_CSV: "Xuất ra tệp CSV"
+        bulk_delete: "Xóa tin"
+      modal_confirm_delete_bulletin:
+        bulk_delete: "Xóa tin"
+        ask_to_delete: "Xóa các thông tin dưới đây"
+        target_category: "Nhóm được chỉ định"
+        reference_date: "Ngày dự kiến"
+        unupdated_bulletin: "Tin không được cập nhật trước đó"
+        delete_instructions_1: "※ Những người dùng khác không thể sử dụng bảng thông báo trong quá trình xóa."
+        delete_instructions_2: "Nên thực hiện nó trong thời gian mà người dùng ít hoạt động nhất có thể."
+        delete_instructions_3: "※ Không thể khôi phục các tin đã xóa."
+        delete_instructions_4: "※ Tin được xóa sẽ không được hiển thị với tất cả mọi người."
+        delete: "Xóa"
+        close_up: "Đóng"

@@ -1,0 +1,35 @@
+ja:
+  sign_in:
+    title: 'Đăng nhập'
+    guidline: 'Nhập địa chỉ email và mật khẩu để đăng nhập vào hệ thống SANZE'
+    email: 'Địa chỉ email: '
+    email_placeholder: 'Nhập địa chỉ email:'
+    forgot: 'Bạn đã quên mật khẩu của bạn?'
+    pass: 'Mật khẩu'
+    pass_placeholder: 'Nhập mật khẩu:'
+    remember: 'Ghi nhớ đăng nhập cho lần sau'
+    btnLogin: 'Đăng nhập'
+    recommend: 'Nếu bạn chưa có tài khoản?'
+    btnRegister: 'Đăng ký'
+  users:
+    header:
+      hello: 'Welcome !' 
+      account: 'My Account'
+      personal: ' 個人設定'
+      system: 'Cài đặt hệ thống'
+      update_pass: 'Thay doi mat khau'
+      stamp: 'Danh sach con dau'
+      logout: 'Dang xuat'
+    index:
+      user: 'Người dùng'
+      name: 'Tên'
+      email: 'Địa chỉ mail'
+      show: 'Xem chi tiết'
+      edit: 'Chinh sửa'
+      destroy: 'Xóa'
+      new_user: 'Thêm người dùng'
+      date: 'Ngày tạo'
+  pdf:
+    index:
+      file_name: 'japan'
+

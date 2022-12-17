@@ -1,0 +1,42 @@
+ja:
+  categories:
+    category_row:
+      number: "番号"
+      category_name: "施設グループ名"
+    change_index_categories:
+      sort_categories: "施設グループの順番変更"
+      instructions_for_change: "で順番を変更し、最後に[変更する]をクリックしてください。"
+      change_button: "変更する"
+      no_button: "いいえ"
+    modal_confirm_destroy:
+      delete_title: "次のデータを削除します。"
+      delete_button: "削除する"
+      close_up: "閉じる"
+    new_category:
+      add_category: "施設グループの追加"
+      required_field: "は必須項目です。"
+      change_category: "施設グループの変更"
+      category_name: "施設グループ名"
+      add_button: "追加する"
+      close_up: "閉じる"
+    table_category:
+      category_setting: "施設グループの設定"
+      add_button: "追加する"
+      reorder: "順番変更する"
+      change_button: "変更する"
+      delete_button: "削除する"
+    index:
+      homepage: "トップページ"
+      company_setting: "会社設定"
+      schedule_setting: "スケジュール設定"
+      category_setting: "施設グループの設定"
+      category: "施設グループ"
+      equipments: "施設"
+      holiday: "祝日"
+      type_meetings: "予定メニュー"
+      setting_schedules: "一般設定"
+      import_schedule: "インポート"
+    controller:
+      created: "Category was successfully created."
+      updated: "Category was successfully updated."
+      destroyed: "Category was successfully destroyed."

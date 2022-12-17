@@ -1,0 +1,75 @@
+en:
+  folder_mails:
+    show_folder:
+      breadcrumb:
+        homepage: "Home page"
+        mail: "Mail"
+        folder_details: "Folder details"
+      change_notification_folder_mail:
+        noti_settings: "Update notification settings"
+        folder: "folder"
+        set_for: "Update notification settings for"
+        update_now: "Update notifications are"
+        setting_up: "setting up"
+        canceling: "canceling"
+        desu: "."
+        note: "※ If you set the update notification, it will be notified in the latest information part of the top page when the mail is sorted and saved in the folder."
+        cancel_update: "Cancel notification"
+        update: "Notify me of Updates"
+        no: "No"
+      table_detail_folder_mail:
+        change: "Change"
+        delete: "Delete"
+        delete_all: "Delete all data in folder"
+        folder_name: "Folder name"
+        position: "Position"
+        root_folder_under: "（Root folder） under"
+        note: "Note"
+      table_noti_folder:
+        cancel_update: "Cancel update notification"
+        update: "Set up update notifications"
+        noti_settings: "Update notification settings"
+        notifyling: "Notifyling"
+        canceling: "Canceling"
+    change_index_folder:
+      change_folder_order: "Change folder order"
+      reorder_folders: "Reorder the following folders:"
+      target_data: "Target data"
+      root_folder: "（Root Folder）"
+      subfolder_within: "Subfolder within"
+      instructions_for_change: "Change the order ,then click [Change] button to save that."
+      change: "Change"
+      no: "No"
+    modal_confirm_delete_all_data_in_folder:
+      empty_trash: "Empty trash"
+      delete_all: "Delete all data in folder"
+      delete_all_from_trash: "Delete all data in the Recycle Bin"
+      move_from: "Move all data from Folder"
+      to_trash: "To the Recycle Bin."
+      cannot_delete: "※ Main Folder is not deleted "
+      move_to_trash: "※ All data in the folder will be moved to the Recycle Bin."
+      moving: "Moving"
+      cancel: "Cancel"
+    modal_confirm_delete_folder_mail:
+      delete_folder: "Delete folder"
+      cannot_recovered: "※ Deleted folders cannot be restored."
+      move_to_trash: "※ All data in the folder will be moved to the Recycle Bin."
+      delete: "Delete"
+      cancel: "Cancel"
+    new_folder_mail:
+      add_folder: "Add Folder"
+      change_folder_info: "Change Folder"
+      required_field: "Required Field"
+      folder_name: "Folder Name"
+      position: "Position"
+      root_folder: "（Root Folder）"
+      under: "Under"
+      note: "Note"
+      add: "Add"
+      close_up: "Close"
+    show:
+      folder_detail: "Folder detail"
+      setting_info: "Setting Infomation"
+      back_to_mail: "Back to mail"
+
+      

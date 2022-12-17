@@ -1,0 +1,9 @@
+en:
+  shared:
+    stamps:
+      homepage: "Home page"
+      display_stamp: "Show Stamp"
+      stamp_for: "'s Stamp"
+      seal: "Personal seal"
+      office_seal: "Office seal"
+      company_seal: "Company seal"

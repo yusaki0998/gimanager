@@ -1,0 +1,62 @@
+vi:
+  bulletin_subject:
+    index:
+      breadcrumb: 
+        homepage: "Trang chủ"
+        company_setting: "Cài đặt hệ thống"
+        bulletin_board_settings: "Cài đặt bản tin"
+        manage_bulletins: "Quản lý tin tức"
+      menu_tab:
+        general_setting_bulletin: "Cài đặt chung"
+        category_settings: "Quản lý quyền truy cập"
+        manage_bulletins: "Quản lý bản tin"
+        read_from_CSV: "Đọc tệp CSV"
+        export_to_CSV: "Xuất ra tệp CSV"
+        bulk_delete: "Xóa tin"
+      modal_confirm_remove_multi_bulletin:
+        bulk_delete: "Xóa tin"
+        ask_to_delete: "Xóa những dữ liệu vừa chọn ?"
+        number_of_deletions: "Số lượng xóa: "
+        item: "tin"
+        delete_alert_1: "※ Không thể khôi phục các tin đã xóa."
+        delete_alert_2: "※ Tin được xóa sẽ không được hiển thị với tất cả mọi người."
+        delete: "Xóa"
+        close_up: "Đóng"
+      tab_pane_bulletin_subject:
+        organization_category: "Nhóm"
+        category: "Nhóm"
+        delete: "Xóa"
+        move: "Di chuyển"
+      table_bulletin_subject:
+        title: "Tiêu đề"
+        status: "Trạng thái"
+        sender: "Người gửi"
+        updated_at: "Thời gian"
+    show:
+      breadcrumb: 
+        homepage: "Trang chủ"
+        company_setting: "Cài đặt hệ thống"
+        manage_bulletins: "Quản lý bản tin"
+        bulletin_details: "Chi tiết"
+      modal_confirm_delete_bulletin:
+        delete_bulletin_board: "Xóa bản tin này (thuộc quyền quản trị hệ thống)"
+        ask_to_delete: "Xóa thông tin sau ?"
+        title: "Tiêu đề: "
+        delete_alert: "※ Tin được xóa sẽ không được hiển thị với tất cả mọi người."
+        delete: "Xóa"
+        close_up: "Đóng"
+      show_detail_bulletin:
+        category: "Nhóm:"
+        sender: "Người gửi:"
+        last_updated_by: "Cập nhật lần cuối bởi:"
+        bulletin_period: "Thời hạn bản tin"
+        reaction: "Cảm xúc"
+        manage_bulletins: "Quản lý bản tin"
+    show_bullestin_subject:
+      change: "Đổi"
+      delete: "Xóa"
+      export_to_file: "Xuất ra tệp"
+    hepler:
+      waiting_for_posting: "Chờ để đăng"
+      now_open: "Đang mở"
+      expired: "Quá hạn"

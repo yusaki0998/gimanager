@@ -1,0 +1,62 @@
+en:
+  bulletin_subject:
+    index:
+      breadcrumb: 
+        homepage: "Home page"
+        company_setting: "Company setting"
+        bulletin_board_settings: "Bulletin Board Settings"
+        manage_bulletins: "Manage bulletins"
+      menu_tab:
+        general_setting_bulletin: "General setting"
+        category_settings: "Category settings"
+        manage_bulletins: "Manage bulletins"
+        read_from_CSV: "Read from CSV file"
+        export_to_CSV: "Export to CSV file"
+        bulk_delete: "Bulk deletion of bulletins"
+      modal_confirm_remove_multi_bulletin:
+        bulk_delete: "Bulk deletion of bulletins"
+        ask_to_delete: "Delete the following data ?"
+        number_of_deletions: "Number of deletions"
+        item: "item"
+        delete_alert_1: "※ Deletedbulletins cannot be restored."
+        delete_alert_2: "※ Deleting a bulletin makes it invisible to all users."
+        delete: "Delete"
+        close_up: "Close"
+      tab_pane_bulletin_subject:
+        organization_category: "Organization category"
+        category: "Category"
+        delete: "Delete"
+        move: "Move"
+      table_bulletin_subject:
+        title: "Title"
+        status: "Status"
+        sender: "Sender"
+        updated_at: "Updatet at"
+    show:
+      breadcrumb: 
+        homepage: "Home page"
+        company_setting: "Company setting"
+        manage_bulletins: "Manage bulletins"
+        bulletin_details: "Bulletin details"
+      modal_confirm_delete_bulletin:
+        delete_bulletin_board: "Delete bulletin board (system administrator authority)"
+        ask_to_delete: "Delete the following data?"
+        title: "Title:"
+        delete_alert: "※ Deleting a bulletin makes it invisible to all users."
+        delete: "Delete"
+        close_up: "Close"
+      show_detail_bulletin:
+        category: "Category:"
+        sender: "Sender:"
+        last_updated_by: "Last updated by:"
+        bulletin_period: "Bulletin period"
+        reaction: "Reaction"
+        manage_bulletins: "Manage bulletins"
+    show_bullestin_subject:
+      change: "Change"
+      delete: "Delete"
+      export_to_file: "Export to file"
+    hepler:
+      waiting_for_posting: "Waiting for posting"
+      now_open: "Opening"
+      expired: "Expired"

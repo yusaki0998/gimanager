@@ -1,0 +1,5 @@
+$("#modal-deleteDepartment").modal('hide');
+$('#tbl_depart').DataTable().destroy();
+$('#table_depart_container').html("<%= j render :partial => 'departments/department_row', :locals => { departs: @departments} %>");	
+<%= render "shared/alert/alert" %>
+formatDataTable();	

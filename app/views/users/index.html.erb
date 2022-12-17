@@ -1,0 +1,199 @@
+
+  <div id="msg_id"><%= render partial: 'shared/messages'%></div>
+          
+  <!-- start page title -->
+  <div class="row">
+    <div class="col-12">
+      <div class="page-title-box">
+        <div class="page-title-right">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><%= link_to t('users.common_text.home_page_breadcrumb'), root_path %></li>
+            <li class="breadcrumb-item"><a href="javascript: void(0);"><%= t('users.index.company_setting')%></a></li>
+            <li class="breadcrumb-item active"><%= t('users.index.staff_management')%></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>     
+  <!-- end page title --> 
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card custom-card">
+        <div class="card-body">
+          <div class="row mb-2">
+            <div class="col-sm-4">
+              <%= link_to new_user_path, remote: true, class:"btn btn-primary mb-2" do %><i class="mdi mdi-plus-circle mr-2"></i><%= t('users.index.register')%>
+              <% end %>
+            </div>
+            <div class="col-sm-8 text-end">
+              <div class="">
+                <%= button_tag(:type => 'button', :class => "btn btn-primary mb-2 btnUploadCsv", 'data-bs-toggle' => 'modal', 'data-bs-target' => '#modal-uploadCsv') do %>
+                  <i class=" dripicons-download mr-1"></i><%= t('users.index.import')%>
+                <% end %>
+                <%= button_tag(:type => 'button', :class => "btn btn-info mb-2 btnEditUser",id: "btnEditUser",:remote => true) do %>
+                  <i class="dripicons-document-edit mr-1"></i><%= t('users.index.edit')%>
+                <% end %>
+
+              </div>
+            </div><!-- end col-->
+          </div>
+
+          <div class="table-responsive custom-table-responsive">
+            <%= render partial: 'user_row', locals: { users: @users} %>
+          </div>
+          <div class="row mb-2">
+            <div class="col-sm-12">
+              <%= button_tag(:type => 'button', :class => "btn btn-primary mb-2", id:"btnSendMailUser",:remote => true) do %>
+                <i class="mdi mdi-email-send mr-2"></i><%= t('users.index.pass_setting_request')%>
+              <% end %>
+              <span><%= t('users.index.only_for_selected_staff_mail')%></span>
+            </div>
+            <div class="col-sm-12">
+              <span><%= t('users.index.default_pass')%></span>
+            </div>
+          </div>
+        </div> <!-- end card-body-->
+      </div> <!-- end card-->
+    </div> <!-- end col -->
+  </div>
+
+  <div id="modal-uploadCsv" class="modal hide" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-primary">
+                <h4 class="modal-title" id="myModalLabel"><%= t('users.index.only_for_selected_staff_mail')%></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3 row">
+                    <div class="col-sm-12" style="padding-left: 30px;">
+追加する社員情報を記載したCSVファイルを指定してください。<br>
+<br>
+CSV形式: <br>
+　メール(※),IC No(※),Emp Code(※),氏名,部署,役職,状態(※),パスワード,認印, 役職STAMP(※),角印(※) <br>
+　<br>
+(※)がありフィールドの説明: <br>
+　メール (xxx@domain.co.jp形式)<br>
+ 　IC No (タイムカードの番号)<br>
+ 　Emp Code (社員番号)<br>
+ 　状態 (1:有効にする、0:無効にする)<br>
+ 　パスワード （6桁以上設定ください　例:123456）<br>
+ 　役職STAMP-日付が無し (各の役職を␣で分ける　例:役職1␣役職2)<br>
+ 　役職STAMP (各の役職を␣で分ける　例:役職1␣役職2)<br>
+ 　角印 (1:有効にする、0:無効にする)<br>
+                            
+                    </div>
+                </div>
+                <div class="mb-3 row text-center">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal"><%= t('users.index.close_up')%></button>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- User Modal -->
+  <div id="modal-addUser" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" ></div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<!-- Stamp personal Modal -->
+  <div id="modal-addPersonalSeal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content custom-modal"></div>
+      </div>
+  </div>
+
+<!-- Stamp job Modal -->
+  <div id="modal-addJobSeal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content"></div>
+      </div>
+  </div>
+<!-- Edit User Modal -->
+  <div id="modal-user-edit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Stamp Personal Edit Modal -->
+  <div id="modalEdit-addPersonalSeal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Stamp Job Edit Modal -->
+  <div id="modalEdit-addJobSeal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Modal edit personal stamp in modal edit user -->
+  <div id="modal_edit_personal_stamp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Modal edit personal stamp in modal add user -->
+  <div id="modal_edit_personal_temp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Modal edit job stamp no date in modal add user -->
+  <div id="modal_edit_job_temp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Modal edit job stamp has date in modal add user -->
+  <div id="modal_edit_job_temp_hasdate" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Modal edit job stamp no date in modal edit user -->
+  <div id="modal_edit_job_seal_nodate" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+<!-- Modal edit job stamp has date in modal edit user -->
+  <div id="modal_edit_job_seal_hasdate" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  <div id="modal_add_company_stamp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">        
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_confirm_company_stamp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="compose-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">        
+      </div>
+    </div>
+  </div>
+  <%= render partial: "shared/loading_modal" %>
+  <div class="rightbar-overlay"></div>
+  <!-- /Right-bar -->
+
+
+

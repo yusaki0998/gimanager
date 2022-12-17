@@ -1,0 +1,62 @@
+ja:
+  bulletin_subject:
+    index:
+      breadcrumb: 
+        homepage: "トップページ"
+        company_setting: "会社設定"
+        bulletin_board_settings: "掲示板設定"
+        manage_bulletins: "掲示の管理"
+      menu_tab:
+        general_setting_bulletin: "一般設定"
+        category_settings: "カテゴリの設定"
+        manage_bulletins: "掲示の管理"
+        read_from_CSV: "CSVファイルからの読み込み"
+        export_to_CSV: "CSVファイルへの書き出し"
+        bulk_delete: "掲示の一括削除"
+      modal_confirm_remove_multi_bulletin:
+        bulk_delete: "掲示の一括削除"
+        ask_to_delete: "次のデータを削除します。"
+        number_of_deletions: "削除件数"
+        item: "件"
+        delete_alert_1: "※ 削除した掲示は元に戻せません。"
+        delete_alert_2: "※ 掲示を削除すると、すべてのユーザーから閲覧できなくなります。"
+        delete: "一括削除する"
+        close_up: "閉じる"
+      tab_pane_bulletin_subject:
+        organization_category: "組織カテゴリ"
+        category: "カテゴリ"
+        delete: "削除する"
+        move: "移動する"
+      table_bulletin_subject:
+        title: "標題"
+        status: "状態"
+        sender: "差出人"
+        updated_at: "更新日時"
+    show:
+      breadcrumb: 
+        homepage: "トップページ"
+        company_setting: "会社設定"
+        manage_bulletins: "掲示の管理"
+        bulletin_details: "掲示の詳細"
+      modal_confirm_delete_bulletin:
+        delete_bulletin_board: "掲示の削除（システム管理権限）"
+        ask_to_delete: "次のデータを削除します。"
+        title: "タイトル:"
+        delete_alert: "※ 掲示を削除すると、すべてのユーザーから閲覧できなくなります。"
+        delete: "一括削除する"
+        close_up: "閉じる"
+      show_detail_bulletin:
+        category: "カテゴリ:"
+        sender: "差出人:"
+        last_updated_by: "最終更新者:"
+        bulletin_period: "掲示期間"
+        reaction: "リアクション"
+        manage_bulletins: "掲示の管理"
+    show_bullestin_subject:
+      change: "変更する"
+      delete: "削除する"
+      export_to_file: "ファイルに出力する"
+    hepler:
+      waiting_for_posting: "掲示開始待ち"
+      now_open: "公開中"
+      expired: "期限切れ"

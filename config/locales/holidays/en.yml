@@ -1,0 +1,58 @@
+en:
+  holidays:
+    holiday_row:
+      date: "Date"
+      holiday_name: "Holiday"
+    modal_confirm_destroy_holiday:
+      delete_title: "Delete holidays"
+      delete_button: "Delete"
+      close_up: "Close"
+    new_holiday:
+      add_holiday: "Add holiday"
+      required_field: "Required field"
+      change_holiday: "Change holiday"
+      date: "Date"
+      holiday_name: "Holiday name"
+      add_button: "Add"
+      close_up: "Close"
+    table_import_holiday:
+      result: "Result"
+      number: "No."
+      date: "Date"
+      holiday_name: "Holiday name"
+      status: "Status"
+      close: "Close"
+    index:
+      homepage: "Home page"
+      company_setting: "Company settings"
+      schedule_setting: "Schedule settings"
+      schedule_and_equipment_reservation: "Schedule and Equipment reservation"
+      category: "Category"
+      equipment: "Equipment"
+      holiday: "Holiday"
+      type_meetings: "Type meetings"
+      setting_schedules: "General setting - Schedules"
+      import_schedule: "Import schedule"  
+      holiday_setting: "Holiday setting"
+      year: " "
+      add_button: "Add"
+      this_year: "Current year"
+      change_button: "Change"
+      delete_button: "Delete"
+      read_CSV: "Read from CSV file"
+      export_all_holidays: "Export all holidays in the year to a CSV file"
+      import_holidays: "Import Holidays from CSV file"
+      read_from_CSV: "※ Read from the CSV file in the following order of items:"
+      date_holiday_name: "(date and holiday name)"
+      format_note: "※ The date notation is yyyy/mm/dd."
+      import: "Import"
+    controller:
+      created: "Holiday was successfully created."
+      updated: "Holiday was successfully updated."
+      name_alert: "Equipment name not null."
+      file_alert: "Incorrect file format."
+      invalid_date: "Invalid date."
+
+
+
+  

@@ -1,0 +1,22 @@
+<table class="table dt-responsive nowrap w-100 table-hover table-centered mb-0 tbl_position">
+
+<thead class="thead-light">
+<tr>
+    <th></th>
+    <th class="num_pos"><%= t('positions.position_row.delete') %></th>
+    <th class="name_pos"><%= t('positions.position_row.position_name') %></th> 
+    <th><%= t('positions.position_row.group') %></th>
+</tr>
+</thead>
+    <tbody>
+        <% @positions.each_with_index do |position, index| %>
+            <tr>
+                <td class="col_checkbox" data-item="<%= position.id  %>"><%= position.id %></td>      
+                <td><%= index + 1 %></td>
+                <td><%= position.name %></td>
+                <td><%= position.group.name %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+

@@ -1,0 +1,2 @@
+module GiAccountsHelper
+end

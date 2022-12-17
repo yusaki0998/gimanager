@@ -1,0 +1,45 @@
+<!-- Start Content-->
+<div class="container-fluid" >
+    <div id="mess_depart"></div>
+    <div class="row mb-2">
+        <div class="col-sm-4">
+            <%= link_to new_department_path, class: "btn btn-primary", 'data-toggle' => 'modal', 'data-target' => '#add-department' ,:remote => true do %>
+                <i class="mdi mdi-plus-circle mr-2"></i><%= t('departments.department_content.register') %>
+            <% end %>
+        </div>
+        <div class="col-sm-8">
+            <div class="text-end">
+                <%= button_tag(:type => 'button', :class => "btn btn-info mb-2 mr-1 btnEditDepartment",id: "btn_edit_department", :remote => true) do %>
+                    <i class="dripicons-document-edit mr-1 iconEditDepart"></i><%= t('departments.department_content.rename') %>
+                <% end %>
+                <%= button_tag(:type => 'button', :class => "btn btn-danger mb-2 btnDeleteDepartment",id: "btn_delete_department" ,:remote => true) do %>
+                    <i class="uil uil-minus-circle iconDeleteDepart"></i><%= t('departments.department_content.delete') %>
+                <% end %>
+            </div>
+        </div><!-- end col-->
+    </div>
+<div id="table_depart_container" >       
+    <%= render partial: 'departments/department_row' %>
+</div>
+    <!-- end row -->        
+</div> <!-- container -->
+
+<div id="add-department" class="modal hide fade modal_new_department" tabindex="-1" role="dialog" aria-labelledby="standard-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+<div id="modal-editDepartment" class="modal hide fade modal_new_department" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+<div id="modal-deleteDepartment" class="modal hide fade modal_new_department" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"></div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+en:
+  bulletin_categories:
+    breadcrumb: 
+      homepage: "Home page"
+      company_setting: "Company setting"
+      bulletin_board_settings: "Bulletin Board Settings"
+      category_settings: "Category setting"
+    form:
+      add_category: "Add Category"
+      change_category: "Change Category"
+      required_field: "Required field"
+      category_name: "Category name"
+      update_notification: "update notification"
+      groups_to_notifi: "The group is informed"
+      addition: "Addition"
+      delete: "Delete"
+      group_list: "Group list"
+      add: "Add"
+      close_up: "Close"
+    menu_tab:
+      general_setting_bulletin: "General setting"
+      category_settings: "Category settings"
+      manage_bulletins: "Manage bulletins"
+      read_from_CSV: "Read from CSV file"
+      export_to_CSV: "Export to CSV file"
+      bulk_delete: "Bulk deletion ofbulletins"
+      whole: "（全体）"
+    modal_change_index_bulletin_category:
+      change_oder_categories: "Change the order of categories"
+      instructions_for_change: "Change the order ,then click [Change] button to save that."
+      change_button: "Change"
+      no_button: "No"
+    modal_change_permission_bulletin_category:
+      access_rights: "Permission settings (categories)"
+      organization_category: "Organization Categpry"
+      groups_to_notifi: "The group is informed"
+      group_list: "Group list"
+      addition: "Addition"
+      delete: "Delete"
+      set: "Set"
+      cancel: "Cancel"
+    modal_confirm_destroy:
+      ask_to_delete: "Delete the following data ?"
+      delete: "Delete"
+      close_up: "Close"
+    tab_pane_bulletin_category:
+      category_settings: "Category settings"
+      add: "Add"
+      reorder: "Re-order"
+      delete: "Delete"
+    table_bulletin_category_default:
+      organization_category: "Organization categpry"
+      limited_access : "Limited access"
+      change_permissions: "Change permissions"
+    table_bulletin:
+      category: "Category"
+      limited_access : "Limited access"
+      change_permissions: "Change permissions"
+      change_button: "Change "
+    table_bulletin_department_permission_selected:
+      read_only: "Read only"
+      view_and_comment: "View & comment"
+      full_permission: "View, comment & created"
+    controller:
+      everyone: "（全員）"
+      created: "Bulletin category was successfully created."
+      updated: "Bulletin category was successfully updated."
+      deleted: "Bulletin category was successfully destroyed."
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+    
+

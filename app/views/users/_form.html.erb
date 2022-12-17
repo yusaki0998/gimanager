@@ -1,0 +1,62 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :employee_code, style: "display: block" %>
+    <%= form.text_field :employee_code %>
+  </div>
+
+  <div>
+    <%= form.label :admin, style: "display: block" %>
+    <%= form.check_box :admin %>
+  </div>
+
+  <div>
+    <%= form.label :active, style: "display: block" %>
+    <%= form.check_box :active %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.check_box :status %>
+  </div>
+
+  <div>
+    <%= form.label :language, style: "display: block" %>
+    <%= form.text_field :language %>
+  </div>
+
+  <div>
+    <%= form.label :schema_color, style: "display: block" %>
+    <%= form.check_box :schema_color %>
+  </div>
+
+  <div>
+    <%= form.label :password_default, style: "display: block" %>
+    <%= form.text_field :password_default %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

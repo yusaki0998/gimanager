@@ -1,0 +1,21 @@
+<table class="table mb-0 tbl_position" id="list_post">
+    <thead>
+        <tr>
+            <th class="chk_pos"></th>
+            <th class="num_pos">番号</th>
+            <th class="name_pos"> 役職名</th> 
+        </tr>
+    </thead>
+
+    <tbody id="appendposition">
+		<% Position.all.each_with_index do |position, index| %>
+			<tr id="row_<%= position.id %>" data-item-id=<%= "#{position.id}" %> >
+				<td class="chk_pos"></td>
+				<td class="num_pos"><%= index + 1 %></td>
+				<td class="name_pos"><%= position.name %></td>
+			</tr>
+		<% end %>
+    </tbody>
+</table>
+
+

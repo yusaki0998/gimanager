@@ -1,0 +1,11 @@
+ja:
+  data_folder_files:
+    form: 
+      add_file: "ファイルの追加"
+      required_field: "は必須項目です。"
+      registered_person: "登録者"
+      position: "位置"
+      add: "追加する"
+      cancel: "キャンセルする"
+      
+

@@ -1,0 +1,17 @@
+en:
+  setting_interactions:
+    new:
+      homepage: "Home page"
+      personal_settings: "Personal settings"
+      set_a_stamp_group: "Set a stamp group"
+    form:
+      stamp_group_name: "Stamp group name"
+      error_explanation: "Prohibited this setting interaction from being saved:"
+      all: "All"
+      department: "Department"
+      back_button: "Back"
+      save_button: "Save"
+      addition: "Addition"
+      delete: "Delete"
+    controller:
+      save_success: "Save success."

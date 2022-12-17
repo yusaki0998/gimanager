@@ -1,0 +1,127 @@
+<div data-controller="hello">
+
+</div>
+
+
+<body class="authentication-bg" data-layout-config="{&quot;darkMode&quot;:false}" data-layout-color="light">
+<div id="mess_sign_in">
+<% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+</div>
+<div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-4 col-lg-5">
+                <div class="card">
+
+                     <%= render "users/shared/header" %>
+
+                    <div class="card-body p-4">
+                        
+                        <div class="text-center w-75 m-auto">
+                            <h4 class="text-dark-50 text-center mt-0 fw-bold"><%= t("sign_in.title") %> </h4>
+                            <p class="text-muted mb-4"><%= t("sign_in.guidline") %> </p>
+                        </div>
+
+                        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+                            <div class="mb-3">
+                                <%= f.label :email, t("sign_in.email")%>
+                                <%= f.email_field :email, autofocus: true, autocomplete: "off", class: 'form-control', placeholder: t("sign_in.email_placeholder") %>
+                            </div>
+
+                            <div class="mb-3">
+
+                            <% if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+                                <%= link_to t("sign_in.forgot"), new_password_path(resource_name) ,class: "text-muted float-end"%>
+                            <% end %>
+
+                            <label for="password" class="form-label"><%= t("sign_in.pass") %></label>
+                            <div class="input-group input-group-merge">
+                                <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: t("sign_in.pass_placeholder") %>
+                                <div class="input-group-append" data-password="false">
+                                    <div class="input-group-text">
+                                        <span class="password-eye"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="mb-3 mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkbox-signin" checked="">
+                                    <label class="form-check-label" for="checkbox-signin"><%= t("sign_in.remember") %> </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 mb-0 text-center">
+                                <%= f.submit t("sign_in.btnLogin"), class: 'btn btn-primary my-2' %>
+                            </div>
+
+                        <% end %>
+                    </div> <!-- end card-body -->
+                </div>
+                <!-- end card -->
+
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                    <p class="text-muted"><%= t("sign_in.recommend") %> 
+                        <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+                            <%= link_to t("sign_in.btnRegister"), new_registration_path(resource_name) %><br />
+                        <% end %>
+                    </p>
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+
+            </div> <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</div>
+<!-- end page -->
+
+<%= render "users/shared/footer" %>   
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
+<%= render "users/shared/links" %>
+ -->

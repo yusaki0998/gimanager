@@ -1,0 +1,17 @@
+ja:
+  setting_interactions:
+    new:
+      homepage: "トップページ"
+      personal_settings: "個人設定"
+      set_a_stamp_group: "押印グループを設定します。"
+    form:
+      stamp_group_name: "押印グループ名"
+      error_explanation: "Prohibited this setting_interaction from being saved:"
+      all: "全部"
+      department: "部署"
+      back_button: "戻る"
+      save_button: "保存する"
+      addition: "追加"
+      delete: "削除"
+    controller:
+      save_success: "Save success."

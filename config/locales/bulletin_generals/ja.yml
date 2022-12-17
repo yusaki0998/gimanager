@@ -1,0 +1,28 @@
+ja:
+  bulletin_generals:
+    breadcrumb: 
+      homepage: "トップページ"
+      company_setting: "会社設定"
+      bulletin_board_settings: "掲示板設定"
+      general_setting_bulletin: "一般設定"
+    form:
+      general_setting_bulletin: "一般設定"
+      error_explanation: "prohibited this bulletin_general from being saved:"
+      initial_value_setting: "初期値の設定"
+      text_default_check_comment: "コメント機能の初期値を「チェックあり」にする"
+      set: "設定する"
+      cancel: "キャンセルする"
+    menu_tab:
+      general_setting_bulletin: "一般設定"
+      category_settings: "カテゴリの設定"
+      manage_bulletins: "掲示の管理"
+      read_from_CSV: "CSVファイルからの読み込み"
+      export_to_CSV: "CSVファイルへの書き出し"
+      bulk_delete: "掲示の一括削除"
+      whole: "（全体）"
+      
+
+
+    
+
+      

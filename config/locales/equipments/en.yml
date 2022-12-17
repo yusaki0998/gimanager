@@ -1,0 +1,100 @@
+en:
+  equipments:
+    confirm_destroy_equipments:
+      destroy_title: "Delet the following data:"
+      delete_button: "Delete"
+      close_up: "Close"
+    confirm_destroy:
+      destroy_title: "Are you delete?"
+      delete_button: "Delete"
+      close_up: "Close"
+    edit_equipment:
+      edit_equipment: "Edit equipment"
+      required_field: "Required field"
+      equipment_name: "Equipment name"
+      category: "Category"
+      all_equipment: "(All equipments)"
+      note: "Note"
+      file: "File"
+      delete_button: "Delete" 
+      add_button: "Add"
+      close_up: "Close"
+    form:
+      equipment_name: "Equipment name"
+      category: "Category"
+      all_equipment: "All equipments"
+      note: "Note"
+      file: "File"
+      submit: "Submit"
+      back_button: "Back"
+    new_equipment:
+      new_equipment: "New equipment"
+      required_field: "Required field"
+      equipment_name: "Equipment name"
+      category: "Category"
+      all_equipment: "(All equipments)"
+      note: "Note"
+      file: "File"
+      add_button: "Add"
+      close_up: "Close"
+    option_categoty_items:
+      all_equipment: "(All equipments)"
+    relocate_items_equipment:
+      change_the_order: "Change the order of equipments"
+      instructions_for_change: "Change the order ,then click [Change] button to save that."
+      change: "Change"
+      close_up: "Close"
+    table_equipment_items:
+      number: "No."
+      equipment_name: "Equipment name"
+    table_import_equipment:
+      result: "Result"
+      number: "No."
+      equipment_name: "Equipment name"
+      status: "Status"
+      close: "Close"
+    index:
+      homepage: "Home page"
+      company_setting: Company settings"
+      schedule_setting: "Schedule settings"
+      equipment_setting: "Equipment setting"
+      category: "Category"
+      equipment: "Equipment"
+      holiday: "Holiday"
+      type_meetings: "Meeting types"
+      setting_schedules: "General setting - Schedules"
+      import_schedule: "Import schedule"
+      add_button: "Add"
+      reorder: "Re-Order"
+      change_button: "Change"
+      delete_button: "Delete"
+      import_csv: "Read CSV File"
+      export_csv: "Export to CSV file"
+      import_csv_2: "Import from CSV file (Equipment)"
+    controller:
+      created_mess: "Equipment was successfully created."
+      destroyed_mess: "Category was successfully destroyed."
+      name_alert: "Equipment name not null."
+      file_alert: "Incorrect file format."
+      import_done: "Import completed."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

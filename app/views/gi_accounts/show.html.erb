@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @gi_account %>
+
+<div>
+  <%= link_to "Edit this gi account", edit_gi_account_path(@gi_account) %> |
+  <%= link_to "Back to gi accounts", gi_accounts_path %>
+
+  <%= button_to "Destroy this gi account", @gi_account, method: :delete %>
+</div>

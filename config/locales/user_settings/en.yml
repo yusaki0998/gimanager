@@ -1,0 +1,16 @@
+en:
+  user_settings:
+    index:
+      home_page_breadcrumb: "Home page"
+      personal_settings: "Personal settings"
+      select_item: "Select the item to set."
+      department: "Department"
+    system_setting:
+      home_page_breadcrumb: "Home page"
+      system_setting: "System setting"
+      group: "Group"
+      user: "User"
+      department_and_position: "Department & Position"
+      modules: "Modules"
+      schedule: "Schedule"
+      bulletin_setting: "Bulletin setting"

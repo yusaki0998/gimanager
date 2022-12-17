@@ -1,0 +1,62 @@
+en:
+  type_meeting: 
+    change_index_type_modal:
+      change_order_type_meeting: "Change the order of the meeting types menu"
+      instructions_for_change: "Change the order ,then click [Change] button to save that."
+      change: "Change"
+      no_button: "No"
+    modal_confirm_destroy:
+      delete_title: "Delete the following data:"
+      delete_button: "Delete"
+      close_up: "Close"
+    new_type_meeting:
+      add_type_meeting: "Add meeting types"
+      required_field: "Required field"
+      change_type_meeting: "Change meeting types"
+      type_meeting_name: "Meeting type name"
+      background_color: "Background Color"
+      add_button: "Add"
+      close_up: "Close"
+    table_type_meeting:
+      type_meeting_setting: "Setting type meeting"
+      add_button: "Add"
+      reorder: "Reorder"
+      change_button: "Change"
+      delete_button: "Delete"
+    type_meeting_row:
+      number: "No."
+      type_meeting_name: "Meeting type name"
+      preview: "Preview"
+    index:
+      homepage: "Home page"
+      company_setting: "Company settings"
+      schedule_setting: "Schedule settings"
+      type_meeting_setting: "Meeting types setting"
+      category: "Category"
+      equipment: "Equipment"
+      holiday: "Holiday"
+      type_meetings: "Meeting types"
+      setting_schedules: "General setting - Schedule"
+      import_schedule: "Import schedule" 
+    controller:
+      created: "Meeting types was successfully created."
+      updated: "Meeting types was successfully updated."
+      destroyed: "Meeting types was successfully destroyed."
+
+
+
+
+  
+
+
+
+
+    
+
+  
+
+
+
+
+
+  
