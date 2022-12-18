@@ -1,4 +1,5 @@
 class CharatersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_charater, only: %i[ show edit update destroy ]
 
   # GET /charaters or /charaters.json

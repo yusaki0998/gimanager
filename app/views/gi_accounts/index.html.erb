@@ -2,13 +2,48 @@
 
 <h1>Gi accounts</h1>
 
-<div id="gi_accounts">
+<%
+=begin%>
+ <div id="gi_accounts">
   <% @gi_accounts.each do |gi_account| %>
     <%= render gi_account %>
     <p>
       <%= link_to "Show this gi account", gi_account %>
     </p>
   <% end %>
-</div>
+</div> 
+<%
+=end%>
 
 <%= link_to "New gi account", new_gi_account_path %>
+
+<table class="table mb-0 tbl_account" id="tbl_account">
+    <thead>
+        <tr>
+            <th class=""></th>
+            <th class="">STT</th>
+            <th class="">Detail</th>
+            <th class="">Price</th> 
+            <th class="">Mail</th> 
+            <th class="">Pass</th> 
+            <th class="">Phone</th> 
+            <th class="">Owner</th> 
+        </tr>
+    </thead>
+
+    <tbody id="">
+      <% @gi_accounts.each_with_index do |gi_account, index| %>
+        <tr id="row_<%= gi_account.id %>" data-item-id=<%= "#{gi_account.id}" %> >
+          <td class=""><%= index + 1 %></td>
+          <td class=""><%= index + 1 %></td>
+          <td class=""><%= gi_account.note %></td>
+          <td class=""><%= gi_account.price %></td>
+          <td class=""><%= gi_account.account_mail %></td>
+          <td class=""><%= gi_account.account_pass %></td>
+          <td class=""><%= gi_account.account_phone %></td>
+          <td class=""><%= gi_account.owner %></td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>
+

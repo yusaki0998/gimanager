@@ -1,0 +1,19 @@
+<select class="select2 form-control select2-multiple  weapon-select" data-toggle="select2" multiple="multiple" data-placeholder="Choose ..." required>
+                <% @weapons.each.with_index do |w, idx| %>
+                    <% unless f.object.list_character.blank?  %>
+                        <% if f.object.list_character.split(',').include? (w.id.to_s) %>
+
+                            <option value="<%=w.id%>" selected><%= w.name %></option>                            
+                        <% else %>
+
+                            <option value="<%=w.id%>"><%= w.name %></option>
+                        <% end %>
+                    <% else %>
+
+                         <option value="<%=w.id%>"><%= w.name %></option>
+                    <% end %>                   
+                <% end %>
+
+    <%= f.hidden_field  :list_weapon, class: "hidden-list-weapons" %>
+</select> 
+

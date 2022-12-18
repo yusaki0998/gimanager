@@ -1,0 +1,19 @@
+<select class="select2 form-control select2-multiple  character-select" data-toggle="select2" multiple="multiple" data-placeholder="Choose ..." required>
+                <% @charaters.each.with_index do |c, idx| %>
+                    <% unless f.object.list_character.blank?  %>
+                        <% if f.object.list_character.split(',').include? (c.id.to_s) %>
+
+                            <option value="<%=c.id%>" selected><%= c.name %></option>                            
+                        <% else %>
+
+                            <option value="<%=c.id%>"><%= c.name %></option>
+                        <% end %>
+                    <% else %>
+
+                         <option value="<%=c.id%>"><%= c.name %></option>
+                    <% end %>                   
+                <% end %>
+
+    <%= f.hidden_field  :list_character, class: "hidden-list-characters" %>
+</select> 
+

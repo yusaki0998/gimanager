@@ -17,23 +17,14 @@
   </div>
 
   <div>
-    <%= form.label :image_name, style: "display: block" %>
-    <%= form.text_field :image_name %>
-  </div>
-
-  <div>
     <%= form.label :image_path, style: "display: block" %>
-    <%= form.text_field :image_path %>
+    <%= form.file_field :image_path, accept: "image/jpeg, image/gif, image/png, image/jpg" %>
   </div>
+  <%= image_tag charater.image_path.url if charater.image_path? %>
 
   <div>
     <%= form.label :start, style: "display: block" %>
     <%= form.number_field :start %>
-  </div>
-
-  <div>
-    <%= form.label :status, style: "display: block" %>
-    <%= form.check_box :status %>
   </div>
 
   <div>

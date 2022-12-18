@@ -10,6 +10,9 @@ window.formatDataTable = function inItDatatable(){
     $('.dataTables_info').parent().remove();
     formatTableUser();
     formatTableDepartment();
+    formatTableCharacter();
+    formatTableWeapon();
+    formatTableAccount();
 }
 
 function formatTableUser(){
@@ -245,5 +248,110 @@ window.formatTablePosition = function (){
                 console.log("AJAX Error: #{textStatus}")
             }
         })
-});   
+    });
+    
+}
+
+function formatTableCharacter(){
+    var tbl_character = document.getElementsByClassName("tbl_character");
+    if (tbl_character.length > 0) {
+        tbl_character = window.$('.tbl_character').DataTable({
+            'stateSave': false,
+            'destroy': true,
+            "lengthMenu": [5,10,15,20],
+            'columnDefs': [
+            {
+                'targets': 0,
+                'width': "4%",
+                'checkboxes': {
+                'selectRow': true
+                }
+            },
+            { "width": "30%", "targets": 1 },
+            { "width": "25%", "targets": 2 },
+            { "width": "15%", "targets": 3 },
+            { "width": "26%", "targets": 4 }                
+            ],
+            'select': {
+            'style': 'multi'
+            },
+            'order': [1, 'asc'],
+            drawCallback: function() {
+            $(".dataTables_paginate > .pagination").addClass("pagination-rounded");
+            },
+            language:{paginate:{
+            previous:"<i class='mdi mdi-chevron-left'>",
+            next:"<i class='mdi mdi-chevron-right'>"}},
+        });
+    };
+}
+
+function formatTableWeapon(){
+    var tbl_weapon = document.getElementsByClassName("tbl_weapon");
+    if (tbl_weapon.length > 0) {
+        tbl_weapon = window.$('.tbl_weapon').DataTable({
+            'stateSave': false,
+            'destroy': true,
+            "lengthMenu": [5,10,15,20],
+            'columnDefs': [
+            {
+                'targets': 0,
+                'width': "4%",
+                'checkboxes': {
+                'selectRow': true
+                }
+            },
+            { "width": "30%", "targets": 1 },
+            { "width": "25%", "targets": 2 },
+            { "width": "15%", "targets": 3 },
+            { "width": "26%", "targets": 4 }                
+            ],
+            'select': {
+            'style': 'multi'
+            },
+            'order': [1, 'asc'],
+            drawCallback: function() {
+            $(".dataTables_paginate > .pagination").addClass("pagination-rounded");
+            },
+            language:{paginate:{
+            previous:"<i class='mdi mdi-chevron-left'>",
+            next:"<i class='mdi mdi-chevron-right'>"}},
+        });
+    };
+}
+function formatTableAccount(){
+    var tbl_account = document.getElementsByClassName("tbl_account");
+    if (tbl_account.length > 0) {
+        tbl_account = window.$('.tbl_account').DataTable({
+            'stateSave': false,
+            'destroy': true,
+            "lengthMenu": [5,10,15,20],
+            'columnDefs': [
+            {
+                'targets': 0,
+                'width': "4%",
+                'checkboxes': {
+                'selectRow': true
+                }
+            },
+            { "width": "4%", "targets": 1 },
+            { "width": "22%", "targets": 2 },
+            { "width": "10%", "targets": 3 },
+            { "width": "15%", "targets": 4 },
+            { "width": "15%", "targets": 5 },    
+            { "width": "15%", "targets": 6 },      
+            { "width": "15%", "targets": 7 },    
+            ],
+            'select': {
+            'style': 'multi'
+            },
+            'order': [1, 'asc'],
+            drawCallback: function() {
+            $(".dataTables_paginate > .pagination").addClass("pagination-rounded");
+            },
+            language:{paginate:{
+            previous:"<i class='mdi mdi-chevron-left'>",
+            next:"<i class='mdi mdi-chevron-right'>"}},
+        });
+    };
 }

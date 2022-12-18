@@ -1,14 +1,31 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Weapons</h1>
-
-<div id="weapons">
-  <% @weapons.each do |weapon| %>
-    <%= render weapon %>
-    <p>
-      <%= link_to "Show this weapon", weapon %>
-    </p>
-  <% end %>
-</div>
-
 <%= link_to "New weapon", new_weapon_path %>
+
+<table class="table mb-0 tbl_weapon" id="tbl_weapon">
+    <thead>
+        <tr>
+            <th class=""></th>
+            <th class="">Weapon Image</th>
+            <th class="">Weapon Name</th> 
+            <th class="">Weapon Start</th> 
+            <th class="">Weapon Note</th> 
+        </tr>
+    </thead>
+
+    <tbody id="">
+		<% @weapons.each_with_index do |weapon, index| %>
+			<tr id="row_<%= weapon.id %>" data-item-id=<%= "#{weapon.id}" %> >
+				<td class=""><%= index + 1 %></td>
+        <td class=""><%= image_tag weapon.image_path.url if weapon.image_path? %></td>
+				<td class=""><%= weapon.name %></td>
+				<td class=""><%= weapon.stars %></td>
+        <td class=""><%= weapon.note %></td>
+			</tr>
+		<% end %>
+    </tbody>
+</table>
+
+
+

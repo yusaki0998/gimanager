@@ -1,0 +1,62 @@
+<%= form_with(model: @gi_account) do |f|%>
+  <div class="row mb-3">
+    <div class="offset-sm-2 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :account_mail, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0">
+      <%= f.text_field :account_mail, class:"form-control text-field-css", :required=> true %>
+    </div>
+    <div class="offset-sm-1 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :account_pass, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.text_field :account_phone, class:"form-control text-field-css", :required=> true %>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="offset-sm-2 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :account_phone, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.text_field :account_phone, class:"form-control text-field-css" %>
+    </div>
+    <div class="offset-sm-1 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :price, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.text_field :price, class:"form-control text-field-css", :required=> true %>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="offset-sm-2 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :account_phone, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= render 'gi_accounts/select_characters', f: f%>
+    </div>
+    <div class="offset-sm-1 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :price, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= render 'gi_accounts/select_weapon', f: f%>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-center ">
+      <%= link_to 'Back' , gi_accounts_path, class:"btn btn-secondary me-2" %>
+        <%= f.submit "Save" ,class: 'btn btn-primary mdi mdi-plus', id:"add_account" %>
+    </div>
+  </div>
+  <% end %>

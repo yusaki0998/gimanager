@@ -8,15 +8,21 @@ class GiAccountsController < ApplicationController
 
   # GET /gi_accounts/1 or /gi_accounts/1.json
   def show
+    @charaters = Charater.all
+    @weapons = Weapon.all
   end
 
   # GET /gi_accounts/new
   def new
     @gi_account = GiAccount.new
+    @charaters = Charater.all
+    @weapons = Weapon.all
   end
 
   # GET /gi_accounts/1/edit
   def edit
+    @charaters = Charater.all
+    @weapons = Weapon.all
   end
 
   # POST /gi_accounts or /gi_accounts.json
@@ -65,6 +71,6 @@ class GiAccountsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def gi_account_params
-      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner)
+      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner, :list_character)
     end
 end

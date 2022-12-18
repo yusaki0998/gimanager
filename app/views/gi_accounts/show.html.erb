@@ -1,6 +1,20 @@
-<p style="color: green"><%= notice %></p>
 
-<%= render @gi_account %>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-sm-12 modal-colored-header bg-primary">
+            <h4 class="title_header">Genshin Impact account</h4>
+          </div>
+        </div>
+        <div class="" id="id_form_account_new">
+          <%= render 'new_form' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div>
   <%= link_to "Edit this gi account", edit_gi_account_path(@gi_account) %> |

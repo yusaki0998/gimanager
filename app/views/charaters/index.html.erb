@@ -2,13 +2,44 @@
 
 <h1>Charaters</h1>
 
-<div id="charaters">
+<%
+=begin%>
+ <div id="charaters">
   <% @charaters.each do |charater| %>
     <%= render charater %>
     <p>
       <%= link_to "Show this charater", charater %>
     </p>
   <% end %>
-</div>
+</div> 
+<%
+=end%>
 
 <%= link_to "New charater", new_charater_path %>
+
+<table class="table mb-0 tbl_character" id="tbl_character">
+    <thead>
+        <tr>
+            <th class=""></th>
+            <th class="">Character Image</th>
+            <th class="">Character Name</th> 
+            <th class="">Character Start</th> 
+            <th class="">Character Note</th> 
+        </tr>
+    </thead>
+
+    <tbody id="">
+		<% @charaters.each_with_index do |charater, index| %>
+			<tr id="row_<%= charater.id %>" data-item-id=<%= "#{charater.id}" %> >
+				<td class=""><%= index + 1 %></td>
+        <td class=""><%= image_tag charater.image_path.url if charater.image_path? %></td>
+				<td class=""><%= charater.name %></td>
+				<td class=""><%= charater.start %></td>
+        <td class=""><%= charater.note %></td>
+			</tr>
+		<% end %>
+    </tbody>
+</table>
+
+
+

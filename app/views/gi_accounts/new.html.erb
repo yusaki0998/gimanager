@@ -1,9 +1,16 @@
-<h1>New gi account</h1>
-
-<%= render "form", gi_account: @gi_account %>
-
-<br>
-
-<div>
-  <%= link_to "Back to gi accounts", gi_accounts_path %>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-sm-12 modal-colored-header bg-primary">
+            <h4 class="title_header">New Genshin Impact account</h4>
+          </div>
+        </div>
+        <div class="" id="id_form_account_new">
+          <%= render 'new_form' %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

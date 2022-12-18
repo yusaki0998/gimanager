@@ -1,4 +1,5 @@
 class WeaponsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_weapon, only: %i[ show edit update destroy ]
 
   # GET /weapons or /weapons.json
