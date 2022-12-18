@@ -17,9 +17,9 @@
     <tbody id="">
 		<% @weapons.each_with_index do |weapon, index| %>
 			<tr id="row_<%= weapon.id %>" data-item-id=<%= "#{weapon.id}" %> >
-				<td class=""><%= index + 1 %></td>
+				<td class=""><% index + 1 %></td>
         <td class=""><%= image_tag weapon.image_path.url if weapon.image_path? %></td>
-				<td class=""><%= weapon.name %></td>
+				<td class=""><%= link_to weapon.name, weapon %></td>
 				<td class=""><%= weapon.stars %></td>
         <td class=""><%= weapon.note %></td>
 			</tr>

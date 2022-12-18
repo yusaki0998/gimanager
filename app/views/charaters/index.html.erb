@@ -33,7 +33,7 @@
 			<tr id="row_<%= charater.id %>" data-item-id=<%= "#{charater.id}" %> >
 				<td class=""><%= index + 1 %></td>
         <td class=""><%= image_tag charater.image_path.url if charater.image_path? %></td>
-				<td class=""><%= charater.name %></td>
+				<td class=""><%= link_to charater.name, charater%></td>
 				<td class=""><%= charater.start %></td>
         <td class=""><%= charater.note %></td>
 			</tr>
