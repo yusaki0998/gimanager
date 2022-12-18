@@ -80,7 +80,6 @@ GEM
       sassc-rails (>= 2.0.0)
     bootstrap_tokenfield_rails (0.12.1)
     builder (3.2.4)
-    cancancan (3.4.0)
     capybara (3.38.0)
       addressable
       matrix
@@ -296,9 +295,7 @@ DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2.0)
   bootstrap_tokenfield_rails
-  cancancan
   capybara
-  carrierwave
   carrierwave-base64
   cocoon
   debug

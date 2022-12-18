@@ -27,8 +27,6 @@ gem 'bootstrap_tokenfield_rails'
 gem 'rails-i18n', '~> 7.0.0'
 gem "cocoon"
 gem "tabs_on_rails"
-gem 'cancancan'
-gem "carrierwave"
 gem 'carrierwave-base64'
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
