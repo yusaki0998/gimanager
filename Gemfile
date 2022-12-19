@@ -13,7 +13,7 @@ gem "redis", "~> 4.0"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "devise", "~> 4.8"
-gem "sqlite3"
+
 
 gem 'turbolinks', '~> 5.2.0'
 gem 'webpacker', '~> 5.x'
@@ -30,6 +30,7 @@ gem "tabs_on_rails"
 gem 'carrierwave'
 gem 'cancancan'
 group :development, :test do
+gem 'sqlite3'
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'pry-rails'
 end
@@ -42,4 +43,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+group :production do
+  gem 'pg', '~> 0.18'
 end
