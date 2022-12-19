@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^3"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start"
   }
 }
