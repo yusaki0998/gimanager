@@ -14,7 +14,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "devise", "~> 4.8"
 
-
 gem 'turbolinks', '~> 5.2.0'
 gem 'webpacker', '~> 5.x'
 gem 'bootstrap', '~> 5.2.0'
@@ -30,7 +29,7 @@ gem "tabs_on_rails"
 gem 'carrierwave'
 gem 'cancancan'
 group :development, :test do
-gem 'sqlite3'
+  gem 'sqlite3'
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'pry-rails'
 end
@@ -39,11 +38,13 @@ group :development do
   gem "web-console"
 end
 
+group :production do
+  gem 'pg', '~> 0.18'
+end
+
+
 group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-end
-group :production do
-  gem 'pg', '~> 0.18'
 end

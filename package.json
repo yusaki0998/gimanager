@@ -20,6 +20,7 @@
     "webpack-dev-server": "^3"
   },
   "scripts": {
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
     "start": "react-scripts --openssl-legacy-provider start"
-  }
+}
 }
