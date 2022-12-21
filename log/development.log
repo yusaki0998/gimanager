@@ -20588,3 +20588,125 @@ Processing by GiAccountsController#index as HTML
 Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.5ms | Allocations: 8525)
 
 
+Started GET "/gi_accounts" for ::1 at 2022-12-20 23:40:05 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GiAccountsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+Completed 401 Unauthorized in 95ms (ActiveRecord: 2.9ms | Allocations: 24740)
+
+
+Started GET "/gi_accounts" for ::1 at 2022-12-20 23:40:06 +0700
+Processing by GiAccountsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gi_accounts/index.html.erb within layouts/application
+  [1m[36mGiAccount Load (1.1ms)[0m  [1m[34mSELECT "gi_accounts".* FROM "gi_accounts"[0m
+  ↳ app/views/gi_accounts/index.html.erb:35:in `each_with_index'
+  Rendered gi_accounts/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 7288)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/yusakithejoker/last/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 95dedcb6fdfc8ef25e71
+Version: webpack 4.46.0
+Time: 1555ms
+Built at: 12/20/2022 11:40:10 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-a27e4c982c0307a47e0e.js  1.12 MiB       application  [emitted] [immutable]  application
+     js/application-a27e4c982c0307a47e0e.js.map  1.31 MiB       application  [emitted] [dev]        application
+           js/character-55edf8b9830f2b92ec03.js   318 KiB         character  [emitted] [immutable]  character
+       js/character-55edf8b9830f2b92ec03.js.map   374 KiB         character  [emitted] [dev]        character
+    js/format_datatable-5d542a1dac68cba8f62a.js   327 KiB  format_datatable  [emitted] [immutable]  format_datatable
+js/format_datatable-5d542a1dac68cba8f62a.js.map   386 KiB  format_datatable  [emitted] [dev]        format_datatable
+               js/users-971ae41cf39870109dbb.js   424 KiB             users  [emitted] [immutable]  users
+           js/users-971ae41cf39870109dbb.js.map   495 KiB             users  [emitted] [dev]        users
+                                  manifest.json  1.33 KiB                    [emitted]              
+Entrypoint application = js/application-a27e4c982c0307a47e0e.js js/application-a27e4c982c0307a47e0e.js.map
+Entrypoint character = js/character-55edf8b9830f2b92ec03.js js/character-55edf8b9830f2b92ec03.js.map
+Entrypoint format_datatable = js/format_datatable-5d542a1dac68cba8f62a.js js/format_datatable-5d542a1dac68cba8f62a.js.map
+Entrypoint users = js/users-971ae41cf39870109dbb.js js/users-971ae41cf39870109dbb.js.map
+[./app/javascript/packs/application.js] 889 bytes {application} [built]
+[./app/javascript/packs/character.js] 1.22 KiB {character} {application} [built]
+[./app/javascript/packs/format_datatable.js] 9.98 KiB {format_datatable} {application} [built]
+[./app/javascript/packs/users.js] 78 KiB {users} {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 474 bytes {application} [built]
+    + 8 hidden modules
+
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 1.0ms | Allocations: 170)
+  Rendered shared/_library.html.erb (Duration: 1.1ms | Allocations: 501)
+  Rendered layout layouts/application.html.erb (Duration: 4299.0ms | Allocations: 12802)
+Completed 200 OK in 4337ms (Views: 4316.7ms | ActiveRecord: 2.2ms | Allocations: 16439)
+
+
+Started GET "/" for ::1 at 2022-12-20 23:40:15 +0700
+Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 675)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-20 23:40:15 +0700
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_header.html.erb (Duration: 5.3ms | Allocations: 253)
+  Rendered users/shared/_footer.html.erb (Duration: 2.2ms | Allocations: 114)
+  Rendered users/shared/_links.html.erb (Duration: 3.2ms | Allocations: 660)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 88.0ms | Allocations: 6814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered shared/_library.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 106.5ms | Allocations: 9727)
+Completed 200 OK in 156ms (Views: 138.4ms | ActiveRecord: 0.0ms | Allocations: 11925)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-12-20 23:40:17 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"yusakithejoker@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "yusakithejoker@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mUser Update (10.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2022-12-20 16:40:17.830156"], ["sign_in_count", 18], ["current_sign_in_at", "2022-12-20 16:40:17.829892"], ["last_sign_in_at", "2022-12-18 14:18:11.426173"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "127.0.0.1"], ["id", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yusakithejoker@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `create'
+Redirected to http://localhost:3000/gi_accounts
+Completed 302 Found in 728ms (ActiveRecord: 13.7ms | Allocations: 9160)
+
+
+Started GET "/gi_accounts" for ::1 at 2022-12-20 23:40:17 +0700
+Processing by GiAccountsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  Rendering layout layouts/application.html.erb
+  Rendering gi_accounts/index.html.erb within layouts/application
+  [1m[36mGiAccount Load (0.1ms)[0m  [1m[34mSELECT "gi_accounts".* FROM "gi_accounts"[0m
+  ↳ app/views/gi_accounts/index.html.erb:35:in `each_with_index'
+  Rendered gi_accounts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered wrapper/leftside-menu/leftside-menu-container/_left_bar.html.erb (Duration: 2.5ms | Allocations: 391)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-wrapper.html.erb (Duration: 9.1ms | Allocations: 630)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-horizontal.html.erb (Duration: 0.6ms | Allocations: 82)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-vertical.html.erb (Duration: 0.5ms | Allocations: 82)
+  Rendered wrapper/_leftside-menu.html.erb (Duration: 14.4ms | Allocations: 1386)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  [1m[36mDepartment Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "departments" INNER JOIN "user_departments" ON "departments"."id" = "user_departments"."department_id" WHERE "user_departments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  Rendered wrapper/content-page/content/top-menu/_all-menu.html.erb (Duration: 3.3ms | Allocations: 143)
+  Rendered wrapper/content-page/content/_navbar-custom.html.erb (Duration: 133.5ms | Allocations: 20399)
+  Rendered wrapper/content-page/content/_container-fluid.html.erb (Duration: 1.0ms | Allocations: 110)
+  Rendered wrapper/_content-page.html.erb (Duration: 140.8ms | Allocations: 20870)
+  Rendered end-bar/_rightbar-title.html.erb (Duration: 0.8ms | Allocations: 87)
+  Rendered end-bar/rightbar-content/_simplebar-wrapper.html.erb (Duration: 4.9ms | Allocations: 1181)
+  Rendered end-bar/rightbar-content/_simplebar-horizontal.html.erb (Duration: 0.7ms | Allocations: 81)
+  Rendered end-bar/rightbar-content/_simplebar-vertical.html.erb (Duration: 0.7ms | Allocations: 82)
+  Rendered end-bar/_rightbar-content.html.erb (Duration: 9.5ms | Allocations: 1835)
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 1.2ms | Allocations: 13)
+  Rendered shared/_library.html.erb (Duration: 0.2ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 193.7ms | Allocations: 28269)
+Completed 200 OK in 199ms (Views: 190.8ms | ActiveRecord: 3.9ms | Allocations: 29751)
+
+
