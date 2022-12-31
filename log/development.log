@@ -20710,3 +20710,281 @@ Processing by GiAccountsController#index as HTML
 Completed 200 OK in 199ms (Views: 190.8ms | ActiveRecord: 3.9ms | Allocations: 29751)
 
 
+Started GET "/" for ::1 at 2022-12-31 10:55:54 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms | Allocations: 2107)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-31 10:55:54 +0700
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+Started GET "/users/sign_in" for ::1 at 2022-12-31 10:55:58 +0700
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_header.html.erb (Duration: 9478.7ms | Allocations: 140612)
+  Rendered users/shared/_footer.html.erb (Duration: 0.5ms | Allocations: 119)
+  Rendered users/shared/_links.html.erb (Duration: 1.5ms | Allocations: 660)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 9629.0ms | Allocations: 179622)
+[Webpacker] Compiling...
+  Rendered users/shared/_header.html.erb (Duration: 6251.4ms | Allocations: 124093)
+  Rendered users/shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered users/shared/_links.html.erb (Duration: 0.4ms | Allocations: 184)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 6256.5ms | Allocations: 126373)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning package.json: No license field
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/babel-loader/lib/index.js:44:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v18.12.1
+
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.9ms | Allocations: 163)
+  Rendered shared/_library.html.erb (Duration: 2.2ms | Allocations: 501)
+  Rendered layout layouts/application.html.erb (Duration: 9570.4ms | Allocations: 134807)
+Completed 200 OK in 9574ms (Views: 9571.4ms | ActiveRecord: 0.0ms | Allocations: 135776)
+
+
+[Webpacker] Compilation failed:
+warning package.json: No license field
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/Users/yusakithejoker/deploy-gimanager/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /Users/yusakithejoker/deploy-gimanager/node_modules/babel-loader/lib/index.js:44:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v18.12.1
+
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered shared/_library.html.erb (Duration: 0.2ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 13437.0ms | Allocations: 210304)
+Completed 200 OK in 13472ms (Views: 13444.3ms | ActiveRecord: 0.9ms | Allocations: 231394)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-12-31 10:56:18 +0700
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"yusakithejoker@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "yusakithejoker@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2022-12-31 03:56:19.101536"], ["sign_in_count", 19], ["current_sign_in_at", "2022-12-31 03:56:19.083167"], ["last_sign_in_at", "2022-12-20 16:40:17.829892"], ["last_sign_in_ip", "::1"], ["id", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yusakithejoker@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 360ms (ActiveRecord: 7.4ms | Allocations: 10576)
+
+
+Started GET "/" for ::1 at 2022-12-31 10:56:19 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered wrapper/leftside-menu/leftside-menu-container/_left_bar.html.erb (Duration: 1.3ms | Allocations: 400)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-wrapper.html.erb (Duration: 3.2ms | Allocations: 639)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-horizontal.html.erb (Duration: 0.4ms | Allocations: 82)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-vertical.html.erb (Duration: 0.4ms | Allocations: 82)
+  Rendered wrapper/_leftside-menu.html.erb (Duration: 7.2ms | Allocations: 1376)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  [1m[36mDepartment Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "departments" INNER JOIN "user_departments" ON "departments"."id" = "user_departments"."department_id" WHERE "user_departments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  Rendered wrapper/content-page/content/top-menu/_all-menu.html.erb (Duration: 0.4ms | Allocations: 143)
+  Rendered wrapper/content-page/content/_navbar-custom.html.erb (Duration: 56.6ms | Allocations: 16799)
+  Rendered wrapper/content-page/content/_container-fluid.html.erb (Duration: 1.4ms | Allocations: 111)
+  Rendered wrapper/_content-page.html.erb (Duration: 59.8ms | Allocations: 17271)
+  Rendered end-bar/_rightbar-title.html.erb (Duration: 0.8ms | Allocations: 87)
+  Rendered end-bar/rightbar-content/_simplebar-wrapper.html.erb (Duration: 2.2ms | Allocations: 1181)
+  Rendered end-bar/rightbar-content/_simplebar-horizontal.html.erb (Duration: 0.6ms | Allocations: 81)
+  Rendered end-bar/rightbar-content/_simplebar-vertical.html.erb (Duration: 0.5ms | Allocations: 82)
+  Rendered end-bar/_rightbar-content.html.erb (Duration: 5.4ms | Allocations: 1835)
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered shared/_library.html.erb (Duration: 1.1ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 100.7ms | Allocations: 28747)
+Completed 200 OK in 107ms (Views: 100.2ms | ActiveRecord: 3.7ms | Allocations: 30964)
+
+
+Started GET "/charaters" for ::1 at 2022-12-31 10:56:26 +0700
+Processing by CharatersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  Rendering layout layouts/application.html.erb
+  Rendering charaters/index.html.erb within layouts/application
+  [1m[36mCharater Load (0.2ms)[0m  [1m[34mSELECT "charaters".* FROM "charaters"[0m
+  ↳ app/views/charaters/index.html.erb:32:in `each_with_index'
+  Rendered charaters/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 5919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered wrapper/leftside-menu/leftside-menu-container/_left_bar.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-wrapper.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-horizontal.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-vertical.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered wrapper/_leftside-menu.html.erb (Duration: 1.6ms | Allocations: 446)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  [1m[36mDepartment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "departments" INNER JOIN "user_departments" ON "departments"."id" = "user_departments"."department_id" WHERE "user_departments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  Rendered wrapper/content-page/content/top-menu/_all-menu.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered wrapper/content-page/content/_navbar-custom.html.erb (Duration: 7.1ms | Allocations: 2122)
+  Rendered wrapper/content-page/content/_container-fluid.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered wrapper/_content-page.html.erb (Duration: 7.5ms | Allocations: 2261)
+  Rendered end-bar/_rightbar-title.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/rightbar-content/_simplebar-wrapper.html.erb (Duration: 0.5ms | Allocations: 695)
+  Rendered end-bar/rightbar-content/_simplebar-horizontal.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/rightbar-content/_simplebar-vertical.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/_rightbar-content.html.erb (Duration: 1.1ms | Allocations: 892)
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_library.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 17078)
+Completed 200 OK in 60ms (Views: 46.8ms | ActiveRecord: 2.1ms | Allocations: 20692)
+
+
+Started GET "/weapons" for ::1 at 2022-12-31 10:56:27 +0700
+Processing by WeaponsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  Rendering layout layouts/application.html.erb
+  Rendering weapons/index.html.erb within layouts/application
+  [1m[36mWeapon Load (0.2ms)[0m  [1m[34mSELECT "weapons".* FROM "weapons"[0m
+  ↳ app/views/weapons/index.html.erb:18:in `each_with_index'
+  Rendered weapons/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 4342)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered wrapper/leftside-menu/leftside-menu-container/_left_bar.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-wrapper.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-horizontal.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-vertical.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered wrapper/_leftside-menu.html.erb (Duration: 2.0ms | Allocations: 446)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  [1m[36mDepartment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "departments" INNER JOIN "user_departments" ON "departments"."id" = "user_departments"."department_id" WHERE "user_departments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  Rendered wrapper/content-page/content/top-menu/_all-menu.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered wrapper/content-page/content/_navbar-custom.html.erb (Duration: 6.1ms | Allocations: 2118)
+  Rendered wrapper/content-page/content/_container-fluid.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered wrapper/_content-page.html.erb (Duration: 6.5ms | Allocations: 2257)
+  Rendered end-bar/_rightbar-title.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/rightbar-content/_simplebar-wrapper.html.erb (Duration: 1.0ms | Allocations: 695)
+  Rendered end-bar/rightbar-content/_simplebar-horizontal.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered end-bar/rightbar-content/_simplebar-vertical.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/_rightbar-content.html.erb (Duration: 1.8ms | Allocations: 892)
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_library.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 15659)
+Completed 200 OK in 63ms (Views: 54.3ms | ActiveRecord: 1.6ms | Allocations: 19159)
+
+
+Started GET "/gi_accounts" for ::1 at 2022-12-31 10:56:28 +0700
+Processing by GiAccountsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  Rendering layout layouts/application.html.erb
+  Rendering gi_accounts/index.html.erb within layouts/application
+  [1m[36mGiAccount Load (0.2ms)[0m  [1m[34mSELECT "gi_accounts".* FROM "gi_accounts"[0m
+  ↳ app/views/gi_accounts/index.html.erb:35:in `each_with_index'
+  Rendered gi_accounts/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 6668)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered wrapper/leftside-menu/leftside-menu-container/_left_bar.html.erb (Duration: 0.2ms | Allocations: 162)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-wrapper.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-horizontal.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-vertical.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered wrapper/_leftside-menu.html.erb (Duration: 0.9ms | Allocations: 446)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  [1m[36mDepartment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "departments" INNER JOIN "user_departments" ON "departments"."id" = "user_departments"."department_id" WHERE "user_departments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  Rendered wrapper/content-page/content/top-menu/_all-menu.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered wrapper/content-page/content/_navbar-custom.html.erb (Duration: 4.8ms | Allocations: 2122)
+  Rendered wrapper/content-page/content/_container-fluid.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered wrapper/_content-page.html.erb (Duration: 5.1ms | Allocations: 2261)
+  Rendered end-bar/_rightbar-title.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/rightbar-content/_simplebar-wrapper.html.erb (Duration: 0.7ms | Allocations: 695)
+  Rendered end-bar/rightbar-content/_simplebar-horizontal.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/rightbar-content/_simplebar-vertical.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered end-bar/_rightbar-content.html.erb (Duration: 1.2ms | Allocations: 892)
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_library.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 18007)
+Completed 200 OK in 45ms (Views: 35.0ms | ActiveRecord: 1.5ms | Allocations: 20665)
+
+
+Started GET "/charaters" for ::1 at 2022-12-31 10:56:31 +0700
+Processing by CharatersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `set_locale'
+  Rendering layout layouts/application.html.erb
+  Rendering charaters/index.html.erb within layouts/application
+  [1m[36mCharater Load (0.2ms)[0m  [1m[34mSELECT "charaters".* FROM "charaters"[0m
+  ↳ app/views/charaters/index.html.erb:32:in `each_with_index'
+  Rendered charaters/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered wrapper/leftside-menu/leftside-menu-container/_left_bar.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-wrapper.html.erb (Duration: 0.7ms | Allocations: 207)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-horizontal.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered wrapper/leftside-menu/leftside-menu-container/_simplebar-vertical.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered wrapper/_leftside-menu.html.erb (Duration: 1.6ms | Allocations: 422)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  [1m[36mDepartment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "departments" INNER JOIN "user_departments" ON "departments"."id" = "user_departments"."department_id" WHERE "user_departments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/wrapper/content-page/content/_navbar-custom.html.erb:140
+  Rendered wrapper/content-page/content/top-menu/_all-menu.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered wrapper/content-page/content/_navbar-custom.html.erb (Duration: 8.7ms | Allocations: 1972)
+  Rendered wrapper/content-page/content/_container-fluid.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered wrapper/_content-page.html.erb (Duration: 9.0ms | Allocations: 2107)
+  Rendered end-bar/_rightbar-title.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered end-bar/rightbar-content/_simplebar-wrapper.html.erb (Duration: 0.9ms | Allocations: 682)
+  Rendered end-bar/rightbar-content/_simplebar-horizontal.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered end-bar/rightbar-content/_simplebar-vertical.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered end-bar/_rightbar-content.html.erb (Duration: 1.5ms | Allocations: 876)
+  Rendered shared/alert/_modal_based_alerts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered shared/_library.html.erb (Duration: 0.2ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 12015)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.8ms | Allocations: 13499)
+
+
