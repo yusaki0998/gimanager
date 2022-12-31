@@ -71,3 +71,5 @@ yarn-debug.log*
 vendor/
 
 .rspec
+
+/config/master.key
