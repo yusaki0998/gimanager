@@ -10,7 +10,6 @@ set :repo_url, "git@github.com:yusaki0998/gimanager.git"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/#{fetch :application}"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-set :keep_releases, 5
 # Default value for :format is :airbrussh.
 
 # set :format, :airbrussh
@@ -23,8 +22,8 @@ set :keep_releases, 5
 # set :pty, true
 
 # Default value for :linked_files is []
-# append :linked_files, "config/database.yml", 'config/master.key'
 
+append :linked_files, "config/master.key"
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "tmp/webpacker", "public/system", "vendor", "storage"
 
