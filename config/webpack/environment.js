@@ -1,18 +1,7 @@
 
 const { environment } = require('@rails/webpacker');
-const erb = require('./loaders/erb')
 
 const webpack = require('webpack');
-
-
-// resolve-url-loader must be used before sass-loader
-environment.loaders.get('sass').use.splice(-1, 0, {
-    loader: 'resolve-url-loader',
-    options: {
-        attempts: 1
-    }
-});
-
 
 // Add an additional plugin of your choosing : ProvidePlugin
 
