@@ -91,22 +91,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.require_master_key = true
-  config.active_record.dump_schema_after_migration = false
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { host: '178.128.60.109', port: 3000 }
-  config.hosts << "178.128.60.109"
-  config.action_mailer.perform_caching = false
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'example.com',
-    user_name:            'info@lotusys.vn',
-    password:             'Lotusys@2021',
-    authentication:       'plain',
-    enable_starttls_auto: true }
-  config.action_mailer.default_url_options = { :host => '178.128.60.109' }
-  config.action_cable.url = 'wss://178.128.60.109/cable'
-  config.action_cable.allowed_request_origins = ["https://178.128.60.109"]
 end
