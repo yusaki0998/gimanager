@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   devise_scope :user do
+    authenticated :user do
+      root 'pages#index', as: :authenticated_root
+    end
     get "users/confirm_mail/:id"=> "users/registrations#confirm_mail", :as => "confirm_mail_registration"
     get "users/logout"=> "users/registrations#logout", :as => "logout_registration"
     end

@@ -20,7 +20,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def create
     build_resource(sign_up_params)  
     resource.admin = 1
-    resource.active = 0
+    resource.active = 1
     resource.status = 1
     if User.maximum(:employee_code).nil?
       resource.employee_code = "1".rjust(6,"0")
@@ -33,28 +33,28 @@ class Users::RegistrationsController < Devise::RegistrationsController
     @group.name = 'Admin'            
     @group.save
     resource.group_id = @group.id
-
+    resource.skip_confirmation!
     ActiveRecord::Base.transaction do
       if resource.save
         # this block will be used when user is saved in database
-        if resource.active_for_authentication?
-          # this block will be used when user is active or not required to be confirmed
-          set_flash_message :notice, :signed_up if is_navigational_format?
-          sign_up(resource_name, resource)
-          respond_with resource, :location => after_sign_up_path_for(resource)
-        else
-          # this block will be used when user is required to be confirmed
-          user_flash_msg if is_navigational_format? #created a custom method to set flash message
-          expire_data_after_sign_in!
-          respond_with resource, :location => after_inactive_sign_up_path_for(resource)
-        end
+        # if resource.active_for_authentication?
+        #   # this block will be used when user is active or not required to be confirmed
+        #   set_flash_message :notice, :signed_up if is_navigational_format?
+        #   sign_up(resource_name, resource)
+          respond_with resource, :location => root_path
+        # else
+        #   # this block will be used when user is required to be confirmed
+        #   user_flash_msg if is_navigational_format? #created a custom method to set flash message
+        #   expire_data_after_sign_in!
+        #   respond_with resource, :location => after_inactive_sign_up_path_for(resource)
+        # end
       else
-        @group.destroy
-        # this block is used when validation fails
-        clean_up_passwords resource
-        respond_to do |format|
-            format.js
-        end
+        # @group.destroy
+        # # this block is used when validation fails
+        # clean_up_passwords resource
+        # respond_to do |format|
+        #     format.js
+        # end
       end
     end
   end
@@ -108,9 +108,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # The path used after sign up.
-  # def after_sign_up_path_for(resource)
-  #   super(resource)
-  # end
+  def after_sign_up_path_for(resource)
+    redirect_to root_path
+  end
 
   # The path used after sign up for inactive accounts.
   # def after_inactive_sign_up_path_for(resource)
