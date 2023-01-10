@@ -1,45 +1,40 @@
-<p style="color: green"><%= notice %></p>
 
 <h1>Charaters</h1>
 
-<%
-=begin%>
- <div id="charaters">
-  <% @charaters.each do |charater| %>
-    <%= render charater %>
-    <p>
-      <%= link_to "Show this charater", charater %>
-    </p>
-  <% end %>
-</div> 
-<%
-=end%>
+<div class="card">
+  <div class="card-body">
+    <p style="color: green"><%= notice %></p>
+    <%= link_to "New charater", new_charater_path, class:"btn btn-primary btn-custom" %>
+    <div class="table-responsive mt-2">
+      <table class="table mb-0 tbl_character " id="tbl_character">
+          <thead>
+              <tr>
+                  <th class=""></th>
+                  <th class="">Character Image</th>
+                  <th class="">Character Name</th> 
+                  <th class="">Character Start</th> 
+                  <th class="">Character Role</th> 
+                  <th class="">Character Note</th> 
+                  <th class="">
+              </tr>
+          </thead>
 
-<%= link_to "New charater", new_charater_path %>
-
-<table class="table mb-0 tbl_character" id="tbl_character">
-    <thead>
-        <tr>
-            <th class=""></th>
-            <th class="">Character Image</th>
-            <th class="">Character Name</th> 
-            <th class="">Character Start</th> 
-            <th class="">Character Note</th> 
-        </tr>
-    </thead>
-
-    <tbody id="">
-		<% @charaters.each_with_index do |charater, index| %>
-			<tr id="row_<%= charater.id %>" data-item-id=<%= "#{charater.id}" %> >
-				<td class=""><%= index + 1 %></td>
-        <td class=""><%= image_tag charater.image_path.url if charater.image_path? %></td>
-				<td class=""><%= link_to charater.name, charater%></td>
-				<td class=""><%= charater.start %></td>
-        <td class=""><%= charater.note %></td>
-			</tr>
-		<% end %>
-    </tbody>
-</table>
-
+          <tbody id="">
+          <% @charaters.each_with_index do |charater, index| %>
+            <tr id="row_<%= charater.id %>" data-item-id=<%= "#{charater.id}" %> >
+              <td class=""><%= index + 1 %></td>
+              <td class=""><%= image_tag charater.image_path.url, height: "106", width: "106"  if charater.image_path? %></td>
+              <td class=""><%= link_to charater.name, edit_charater_path(charater)%></td>
+              <td class=""><%= render_stars(charater.start) %></td>       
+              <td class=""><%= render_roles(charater.role) if charater.role.present? %></td>
+              <td class=""><%= charater.note %></td>
+              <td><%= button_to "Delete", charater, class:"btn btn-danger btn-custom", method: :delete %></td>
+            </tr>
+          <% end %>
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 

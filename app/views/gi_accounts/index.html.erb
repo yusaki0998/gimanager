@@ -1,7 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Gi accounts</h1>
-
+<div class="card">
+  <div class="card-body">
 <%
 =begin%>
  <div id="gi_accounts">
@@ -15,19 +16,17 @@
 <%
 =end%>
 
-<%= link_to "New gi account", new_gi_account_path %>
-
+<%= link_to "New gi account", new_gi_account_path , class:"btn btn-primary btn-custom" %>
+    <div class="table-responsive mt-2">
 <table class="table mb-0 tbl_account" id="tbl_account">
     <thead>
         <tr>
             <th class=""></th>
             <th class="">STT</th>
-            <th class="">Detail</th>
-            <th class="">Price</th> 
-            <th class="">Mail</th> 
-            <th class="">Pass</th> 
-            <th class="">Phone</th> 
-            <th class="">Owner</th> 
+            <th class="">Account Info</th>
+            <th class="">InGame Info</th> 
+            <th class="">Price Info</th> 
+            <th class=""></th>
         </tr>
     </thead>
 
@@ -36,14 +35,26 @@
         <tr id="row_<%= gi_account.id %>" data-item-id=<%= "#{gi_account.id}" %> >
           <td class=""><%= index + 1 %></td>
           <td class=""><%= index + 1 %></td>
-          <td class=""><%= gi_account.note %></td>
-          <td class=""><%= gi_account.price %></td>
-          <td class=""><%= link_to gi_account.account_mail, gi_account %></td>
-          <td class=""><%= gi_account.account_pass %></td>
-          <td class=""><%= gi_account.account_phone %></td>
+          <td class="">
+            <div>Mail: <span><%= link_to gi_account.account_mail, gi_account %></span></div>
+            <div>Pass: <span><%= gi_account.account_pass %></span></div>
+            <div>Birthday: <span><%= gi_account.birthday_acc %></span></div>
+          </td>
+          <td class="">
+            <div>Char: <span><%= render_list_char(gi_account.list_character) if gi_account.list_character.present? %></span></div>
+            <div>Weapons: <span><%= render_list_weap(gi_account.list_weapon) if gi_account.list_weapon.present?%></span></div>
+            <div>Intertwined fate: <span><%= gi_account.intertwined_fate %></span></div>
+            <div>Acquaint fate: <span><%= gi_account.acquaint_fate %></span></div>
+          </td>
+          <td class="">
+            <div>Price: <span><%= gi_account.price %></span></div>
+            <div>Clear Map: <span><%= gi_account.map_clear %></span></div>
+          </td>
           <td class=""><%= gi_account.owner %></td>
         </tr>
       <% end %>
     </tbody>
 </table>
-
+</div>
+</div>
+</div>

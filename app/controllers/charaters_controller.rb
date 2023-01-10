@@ -23,28 +23,17 @@ class CharatersController < ApplicationController
   # POST /charaters or /charaters.json
   def create
     @charater = Charater.new(charater_params)
-
-    respond_to do |format|
+    @charaters = Charater.all
       if @charater.save
-        format.html { redirect_to charater_url(@charater), notice: "Charater was successfully created." }
-        format.json { render :show, status: :created, location: @charater }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @charater.errors, status: :unprocessable_entity }
+        render action: "index"
       end
-    end
   end
 
   # PATCH/PUT /charaters/1 or /charaters/1.json
   def update
-    respond_to do |format|
-      if @charater.update(charater_params)
-        format.html { redirect_to charater_url(@charater), notice: "Charater was successfully updated." }
-        format.json { render :show, status: :ok, location: @charater }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @charater.errors, status: :unprocessable_entity }
-      end
+    @charaters = Charater.all
+    if @charater.update(charater_params)
+      render action: "index"
     end
   end
 
@@ -66,6 +55,6 @@ class CharatersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def charater_params
-      params.require(:charater).permit(:name, :image_name, :image_path, :start, :status, :note)
+      params.require(:charater).permit(:name, :image_name, :image_path, :start, :status, :role, :note)
     end
 end

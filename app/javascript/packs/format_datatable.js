@@ -267,10 +267,12 @@ function formatTableCharacter(){
                 'selectRow': true
                 }
             },
-            { "width": "30%", "targets": 1 },
-            { "width": "25%", "targets": 2 },
-            { "width": "15%", "targets": 3 },
-            { "width": "26%", "targets": 4 }                
+            { "width": "15%", "targets": 1 },
+            { "width": "15%", "targets": 2 },
+            { "width": "10%", "targets": 3 },
+            { "width": "16%", "targets": 4 },
+            { "width": "30%", "targets": 5 },
+            { "width": "10%", "targets": 6},     
             ],
             'select': {
             'style': 'multi'
@@ -301,10 +303,12 @@ function formatTableWeapon(){
                 'selectRow': true
                 }
             },
-            { "width": "30%", "targets": 1 },
-            { "width": "25%", "targets": 2 },
-            { "width": "15%", "targets": 3 },
-            { "width": "26%", "targets": 4 }                
+            { "width": "17%", "targets": 1 },
+            { "width": "16%", "targets": 2 },
+            { "width": "16%", "targets": 3 },
+            { "width": "10%", "targets": 4 },
+            { "width": "26%", "targets": 5 },     
+            { "width": "11%", "targets": 6 },          
             ],
             'select': {
             'style': 'multi'
@@ -336,11 +340,9 @@ function formatTableAccount(){
             },
             { "width": "4%", "targets": 1 },
             { "width": "22%", "targets": 2 },
-            { "width": "10%", "targets": 3 },
-            { "width": "15%", "targets": 4 },
-            { "width": "15%", "targets": 5 },    
-            { "width": "15%", "targets": 6 },      
-            { "width": "15%", "targets": 7 },    
+            { "width": "40%", "targets": 3 },
+            { "width": "20%", "targets": 4 },
+            { "width": "10%", "targets": 5 },    
             ],
             'select': {
             'style': 'multi'
