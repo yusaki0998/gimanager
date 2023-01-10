@@ -18,54 +18,6 @@
             <input type="checkbox" class="form-check-input" name="color-scheme-mode" value="dark" id="dark-mode-check">
             <label class="form-check-label" for="dark-mode-check">Dark Mode</label>
         </div>
-
-        <!-- Width -->
-        <h5 class="mt-4">Width</h5>
-        <hr class="mt-1">
-        <div class="form-check form-switch mb-1">
-            <input type="checkbox" class="form-check-input" name="width" value="fluid" id="fluid-check" checked="">
-            <label class="form-check-label" for="fluid-check">Fluid</label>
-        </div>
-        <div class="form-check form-switch mb-1">
-            <input type="checkbox" class="form-check-input" name="width" value="boxed" id="boxed-check">
-            <label class="form-check-label" for="boxed-check">Boxed</label>
-        </div>
-
-        <!-- Width -->
-        <h5 class="mt-4">Themes</h5>
-        <hr class="mt-1">
-        <div class="form-check mt-1 ps-0">
-            <% if @type_meeting.nil? %>
-                <%= radio_button_tag 'background_color', "theme0", :checked => true, class:"custom-space-rd colorThemes0 w-auto" %><span class="colorThemes pe-1" id="colorThemes0"><img src="/assets/images/scheduleEventMarkMenu0.png" ></span>
-            <% else %>
-                <%= radio_button_tag 'background_color', "theme0", class:"custom-space-rd colorThemes0" %><span class="colorThemes pe-1" id="colorThemes0"><img src="/assets/images/scheduleEventMarkMenu0.png" ></span>
-            <% end %>	
-            <%= radio_button_tag 'background_color', "theme1", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes1" data-item-id="themes1"><img src="/assets/images/scheduleEventMarkMenu4.png" ></span>
-            <%= radio_button_tag 'background_color', "theme2", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes2" data-item-id="themes2"><img src="/assets/images/scheduleEventMarkMenu1.png" ></span>
-            <%= radio_button_tag 'background_color', "theme3", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes3" data-item-id="themes3"><img src="/assets/images/scheduleEventMarkMenu9.png" ></span>
-            <%= radio_button_tag 'background_color', "theme4", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes4" data-item-id="themes4"><img src="/assets/images/scheduleEventMarkMenu3.png" ></span>
-        </div>
-
-        <div class="form-check mt-1 ps-0">
-            <%= radio_button_tag 'background_color', "theme5", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes5" data-item-id="themes5"><img src="/assets/images/scheduleEventMarkMenu8.png" ></span>
-            <%= radio_button_tag 'background_color', "theme6", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes6" data-item-id="themes6"><img src="/assets/images/scheduleEventMarkMenu5.png" ></span>
-            <%= radio_button_tag 'background_color', "theme7", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes7" data-item-id="themes7"><img src="/assets/images/scheduleEventMarkMenu2.png" ></span>
-            <%= radio_button_tag 'background_color', "theme8", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes8" data-item-id="themes8"><img src="/assets/images/scheduleEventMarkMenu10.png" ></span>
-            <%= radio_button_tag 'background_color', "theme9", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes9" data-item-id="themes9"><img src="/assets/images/scheduleEventMarkMenu11.png" ></span>
-        </div>
-
-        <div class="form-check mt-1 ps-0">
-            <%= radio_button_tag 'background_color', "theme10", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes10" data-item-id="themes10"><img src="/assets/images/scheduleEventMarkMenu6.png" ></span>
-            <%= radio_button_tag 'background_color', "theme11", class:"custom-space-rd colorThemes" %><span class="colorThemes pe-1" id="colorThemes11" data-item-id="themes11"><img src="/assets/images/scheduleEventMarkMenu7.png" ></span>
-        </div>
-        
-
-
-        <div class="d-grid mt-4">
-            <button class="btn btn-primary" id="resetBtn">Reset to Default</button>
-
-            <a href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/" class="btn btn-danger mt-3" target="_blank"><i class="mdi mdi-basket me-1"></i> Purchase Now</a>
-        </div>
     </div> <!-- end padding-->
 
 </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 499px;"></div></div>

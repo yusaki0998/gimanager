@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
-      <%= f.text_field :account_phone, class:"form-control text-field-css", :required=> true %>
+      <%= f.text_field :account_pass, class:"form-control text-field-css", :required=> true %>
     </div>
   </div>
   <div class="row mb-3">
@@ -38,7 +38,7 @@
   <div class="row mb-3">
     <div class="offset-sm-2 col-sm-1">
       <div class="label-form text-end">
-        <%= f.label :account_phone, class:"control-label style-label" %>
+        <%= f.label :list_character, class:"control-label style-label" %>
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
@@ -46,11 +46,57 @@
     </div>
     <div class="offset-sm-1 col-sm-1">
       <div class="label-form text-end">
-        <%= f.label :price, class:"control-label style-label" %>
+        <%= f.label :list_weapon, class:"control-label style-label" %>
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
       <%= render 'gi_accounts/select_weapon', f: f%>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="offset-sm-2 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :birthday_acc, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.text_field :birthday_acc, class:"form-control text-field-css" %>
+    </div>
+    <div class="offset-sm-1 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :account_code, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.text_field :account_code, class:"form-control text-field-css" %>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="offset-sm-2 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :intertwined_fate, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.number_field :intertwined_fate, class:"form-control text-field-css" %>
+    </div>
+    <div class="offset-sm-1 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :acquaint_fate, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.number_field :acquaint_fate, class:"form-control text-field-css"%>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="offset-sm-2 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :map_clear, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.number_field :map_clear, class:"form-control text-field-css" %>
     </div>
   </div>
   <div class="row">

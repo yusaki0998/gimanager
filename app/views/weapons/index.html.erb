@@ -1,16 +1,21 @@
+<h1>Weapons</h1>
+<div class="card">
+  <div class="card-body">
 <p style="color: green"><%= notice %></p>
 
-<h1>Weapons</h1>
-<%= link_to "New weapon", new_weapon_path %>
 
+<%= link_to "New weapon", new_weapon_path, class:"btn btn-primary btn-custom" %>
+    <div class="table-responsive mt-2">
 <table class="table mb-0 tbl_weapon" id="tbl_weapon">
     <thead>
         <tr>
             <th class=""></th>
             <th class="">Weapon Image</th>
             <th class="">Weapon Name</th> 
+            <th class="">Weapon VietNam Name</th> 
             <th class="">Weapon Start</th> 
             <th class="">Weapon Note</th> 
+            <th class=""></th> 
         </tr>
     </thead>
 
@@ -18,14 +23,21 @@
 		<% @weapons.each_with_index do |weapon, index| %>
 			<tr id="row_<%= weapon.id %>" data-item-id=<%= "#{weapon.id}" %> >
 				<td class=""><% index + 1 %></td>
-        <td class=""><%= image_tag weapon.image_path.url if weapon.image_path? %></td>
-				<td class=""><%= link_to weapon.name, weapon %></td>
-				<td class=""><%= weapon.stars %></td>
+        <td class=""><%= image_tag weapon.image_path.url, height: "106", width: "106"  if weapon.image_path? %></td>
+				<td class=""><%= link_to weapon.name, edit_weapon_path(weapon) %></td>
+        <td class=""><%= link_to weapon.vi_weapon_name, edit_weapon_path(weapon) %></td>
+				<td class=""><%= render_stars(weapon.stars) %></td>
         <td class=""><%= weapon.note %></td>
+        <td><%= button_to "Delete", weapon, class:"btn btn-danger btn-custom", method: :delete %></td>
 			</tr>
 		<% end %>
     </tbody>
 </table>
+    </div>
+  </div>
+</div>
+
+
 
 
 

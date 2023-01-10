@@ -1,3 +1,5 @@
+<div class="card">
+  <div class="card-body">
 <%= form_with(model: charater) do |form| %>
   <% if charater.errors.any? %>
     <div style="color: red">
@@ -11,28 +13,35 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="mt-2">
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
-  <div>
+  <div class="mt-2">
     <%= form.label :image_path, style: "display: block" %>
-    <%= form.file_field :image_path, accept: "image/jpeg, image/gif, image/png, image/jpg" %>
+    <%= form.file_field :image_path, accept: "image/jpeg, image/gif, image/png, image/jpg", :size => 106 %>
   </div>
   <%= image_tag charater.image_path.url if charater.image_path? %>
 
-  <div>
+  <div class="mt-2">
     <%= form.label :start, style: "display: block" %>
     <%= form.number_field :start %>
   </div>
 
-  <div>
+  <div class="mt-2">
+    <%= form.label :role, style: "display: block" %>
+    <%= form.select :role, [["Main DSP", 1], ["Support DSP", 2], ["Support", 3]], :prompt => 'Select One' %>
+  </div>
+
+  <div class="mt-2">
     <%= form.label :note, style: "display: block" %>
     <%= form.text_field :note %>
   </div>
 
-  <div>
+  <div class="mt-2">
     <%= form.submit %>
   </div>
 <% end %>
+</div>
+<div>
