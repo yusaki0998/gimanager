@@ -36,7 +36,7 @@
           <td class=""><%= index + 1 %></td>
           <td class=""><%= index + 1 %></td>
           <td class="">
-            <div>Mail: <span><%= link_to gi_account.account_mail, gi_account %></span></div>
+            <div>Mail: <span><%= link_to gi_account.account_mail, edit_gi_account_path(gi_account) %></span></div>
             <div>Pass: <span><%= gi_account.account_pass %></span></div>
             <div>Birthday: <span><%= gi_account.birthday_acc %></span></div>
           </td>
@@ -48,7 +48,9 @@
           </td>
           <td class="">
             <div>Price: <span><%= gi_account.price %></span></div>
+            <div>Price: <span><%= gi_account.sold_price %></span></div>
             <div>Clear Map: <span><%= gi_account.map_clear %></span></div>
+            <div>Note: <span><%= gi_account.note %></span></div>
           </td>
           <td class=""><%= gi_account.owner %></td>
         </tr>

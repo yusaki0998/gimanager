@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   resources :departments
   resources :groups
   
-  root 'pages#index'
+  root 'gi_accounts#index'
 
   devise_scope :user do
     authenticated :user do
-      root 'pages#index', as: :authenticated_root
+      root 'gi_accounts#index', as: :authenticated_root
     end
     get "users/confirm_mail/:id"=> "users/registrations#confirm_mail", :as => "confirm_mail_registration"
     get "users/logout"=> "users/registrations#logout", :as => "logout_registration"

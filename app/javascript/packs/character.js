@@ -24,6 +24,24 @@ function updatevalueWork(){
         field.value = "";
     }		
     $("#gi_account_list_character").val(field.value);
+    var result_1 = $('.weapon-select').next().find('.select2-selection__choice__display');
+    var field_1 = $('.weapon-select').closest("div").find('.hidden-list-weapons');
+    if(result_1.length>0){
+        for (let ind = 0; ind < result_1.length; ind++) {
+            const elem_1 = result_1[ind];
+            var arrStrId = elem_1.id.split('-');
+            if(ind ==0){
+                field_1.value =  arrStrId[arrStrId.length-1];
+            }
+            else{
+                field_1.value = field_1.value + ',' +arrStrId[arrStrId.length-1];
+            }			
+        }			
+    } else {
+        field_1.value = "";
+    }		
+    $("#gi_account_list_weapon").val(field_1.value);
+
 }
 
 
