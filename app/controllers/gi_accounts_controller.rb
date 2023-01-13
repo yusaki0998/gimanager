@@ -28,29 +28,18 @@ class GiAccountsController < ApplicationController
   # POST /gi_accounts or /gi_accounts.json
   def create
     @gi_account = GiAccount.new(gi_account_params)
-
-    respond_to do |format|
+    @gi_accounts = GiAccount.all
       if @gi_account.save
-        format.html { redirect_to gi_account_url(@gi_account), notice: "Gi account was successfully created." }
-        format.json { render :show, status: :created, location: @gi_account }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @gi_account.errors, status: :unprocessable_entity }
+        render action: "index"
       end
-    end
   end
 
   # PATCH/PUT /gi_accounts/1 or /gi_accounts/1.json
   def update
-    respond_to do |format|
+    @gi_accounts = GiAccount.all
       if @gi_account.update(gi_account_params)
-        format.html { redirect_to gi_account_url(@gi_account), notice: "Gi account was successfully updated." }
-        format.json { render :show, status: :ok, location: @gi_account }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @gi_account.errors, status: :unprocessable_entity }
+        redirect_to gi_accounts_url
       end
-    end
   end
 
   # DELETE /gi_accounts/1 or /gi_accounts/1.json
@@ -71,6 +60,6 @@ class GiAccountsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def gi_account_params
-      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner, :list_character)
+      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner,:list_character,:list_weapon, :birthday_acc, :intertwined_fate, :acquaint_fate, :map_clear, :sold_price , :account_code)
     end
 end

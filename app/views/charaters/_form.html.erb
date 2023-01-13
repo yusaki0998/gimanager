@@ -22,7 +22,7 @@
     <%= form.label :image_path, style: "display: block" %>
     <%= form.file_field :image_path, accept: "image/jpeg, image/gif, image/png, image/jpg", :size => 106 %>
   </div>
-  <%= image_tag charater.image_path.url if charater.image_path? %>
+  <%= image_tag charater.image_path.url, :size => 106 if charater.image_path? %>
 
   <div class="mt-2">
     <%= form.label :start, style: "display: block" %>
