@@ -1,44 +1,44 @@
 {
-  "application.js": "/packs/js/application-a27e4c982c0307a47e0e.js",
-  "application.js.map": "/packs/js/application-a27e4c982c0307a47e0e.js.map",
-  "character.js": "/packs/js/character-55edf8b9830f2b92ec03.js",
-  "character.js.map": "/packs/js/character-55edf8b9830f2b92ec03.js.map",
+  "application.js": "/packs/js/application-632a8b734ac8ad6f0b13.js",
+  "application.js.map": "/packs/js/application-632a8b734ac8ad6f0b13.js.map",
+  "character.js": "/packs/js/character-bd81dd6f08827e8fce52.js",
+  "character.js.map": "/packs/js/character-bd81dd6f08827e8fce52.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-a27e4c982c0307a47e0e.js"
+        "/packs/js/application-632a8b734ac8ad6f0b13.js"
       ],
       "js.map": [
-        "/packs/js/application-a27e4c982c0307a47e0e.js.map"
+        "/packs/js/application-632a8b734ac8ad6f0b13.js.map"
       ]
     },
     "character": {
       "js": [
-        "/packs/js/character-55edf8b9830f2b92ec03.js"
+        "/packs/js/character-bd81dd6f08827e8fce52.js"
       ],
       "js.map": [
-        "/packs/js/character-55edf8b9830f2b92ec03.js.map"
+        "/packs/js/character-bd81dd6f08827e8fce52.js.map"
       ]
     },
     "format_datatable": {
       "js": [
-        "/packs/js/format_datatable-5d542a1dac68cba8f62a.js"
+        "/packs/js/format_datatable-42f225fd51750bc036f8.js"
       ],
       "js.map": [
-        "/packs/js/format_datatable-5d542a1dac68cba8f62a.js.map"
+        "/packs/js/format_datatable-42f225fd51750bc036f8.js.map"
       ]
     },
     "users": {
       "js": [
-        "/packs/js/users-971ae41cf39870109dbb.js"
+        "/packs/js/users-49e00e84c2236273572f.js"
       ],
       "js.map": [
-        "/packs/js/users-971ae41cf39870109dbb.js.map"
+        "/packs/js/users-49e00e84c2236273572f.js.map"
       ]
     }
   },
-  "format_datatable.js": "/packs/js/format_datatable-5d542a1dac68cba8f62a.js",
-  "format_datatable.js.map": "/packs/js/format_datatable-5d542a1dac68cba8f62a.js.map",
-  "users.js": "/packs/js/users-971ae41cf39870109dbb.js",
-  "users.js.map": "/packs/js/users-971ae41cf39870109dbb.js.map"
+  "format_datatable.js": "/packs/js/format_datatable-42f225fd51750bc036f8.js",
+  "format_datatable.js.map": "/packs/js/format_datatable-42f225fd51750bc036f8.js.map",
+  "users.js": "/packs/js/users-49e00e84c2236273572f.js",
+  "users.js.map": "/packs/js/users-49e00e84c2236273572f.js.map"
 }

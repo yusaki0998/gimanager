@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_13_192132) do
   create_table "charaters", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "image_name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
     t.string "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "role"
   end
 
   create_table "departments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -56,6 +57,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
     t.datetime "updated_at", null: false
     t.string "list_character"
     t.string "list_weapon"
+    t.string "birthday_acc"
+    t.text "intertwined_fate"
+    t.text "acquaint_fate"
+    t.text "map_clear"
+    t.string "account_code"
+    t.integer "role"
+    t.integer "sold_price"
   end
 
   create_table "groups", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -140,6 +148,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
     t.string "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "vi_weapon_name"
   end
 
   add_foreign_key "departments", "groups"
