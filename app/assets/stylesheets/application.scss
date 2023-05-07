@@ -21,3 +21,36 @@
 .btn-custom{
     border-radius: 16px !important;
 }
+
+.background-image-genshin{
+    background: image-url('background_image.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.background-login-genshin{
+    background: image-url('login_background.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.opaciti-card{
+    opacity: 0.8;
+}
+.custom-card {
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 5px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.8) !important;
+}
+
+.opaciti-background-card{
+    background-color: rgba(255,255,255,0.8) !important;
+}
+
+.content-page{
+    padding: 0px !important;
+}

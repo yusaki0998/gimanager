@@ -1,4 +1,5 @@
 class GiAccountsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_gi_account, only: %i[ show edit update destroy ]
 
   # GET /gi_accounts or /gi_accounts.json
