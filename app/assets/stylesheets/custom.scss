@@ -1,3 +1,29 @@
 .btn-custom{
     border-radius: 16px !important;
 }
+
+.card-body .img-detail-acc{
+    width: 100% !important;
+    margin: auto;
+    padding: 0;
+    content: " ";
+    height: 175px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f0f0f0;
+    border-radius: 6px;
+}
+
+.custom-card {
+    /* Add any other styling for the card here */
+    /* ... */
+    position: relative; /* Ensure relative positioning for the children elements */
+}
+
+.nav-box {
+    overflow: hidden;
+}
+
+.show-more {
+    cursor: pointer;
+}

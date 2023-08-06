@@ -1,0 +1,17 @@
+<%= form_with(model: gi_shopping) do |form| %>
+  <% if gi_shopping.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(gi_shopping.errors.count, "error") %> prohibited this gi_shopping from being saved:</h2>
+
+      <ul>
+        <% gi_shopping.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

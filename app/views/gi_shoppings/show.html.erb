@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @gi_shopping %>
+
+<div>
+  <%= link_to "Edit this gi shopping", edit_gi_shopping_path(@gi_shopping) %> |
+  <%= link_to "Back to gi shoppings", gi_shoppings_path %>
+
+  <%= button_to "Destroy this gi shopping", @gi_shopping, method: :delete %>
+</div>

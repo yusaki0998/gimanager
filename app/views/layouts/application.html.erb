@@ -36,29 +36,59 @@
     <!-- <script src="<%= root_path %>libs/slick/slick.min.js"></script> -->
     
   </head>
-  <% if current_user.nil? %>
+  <%
+=begin%>
+ <% if current_user.nil? %>
     <%= yield %>   
+  <% elsif  request.url.include? "gi_shoppings" %>
+    <%= yield %>   
+  <% else %> 
+<%
+=end%>
+  <% if user_signed_in? %>
+    <% if current_user.admin? %>
+      <body class="show" data-layout="full" data-layout-mode="fluid" data-rightbar-onstart="true" data-leftbar-theme="light"
+      data-turbolinks="false" >   
+        <div class="wrapper">
+          <%= render 'wrapper/leftside-menu'%>
+          <%= render 'wrapper/content-page'%>       
+        </div>
+        <div class="rightbar-overlay"></div>
+        <div class = "commons-modal">
+          <%= render 'shared/alert/modal_based_alerts' %>  
+        </div>
+        <div id = "commons-librarys">
+          <%= render 'shared/library' %>
+        </div>
+      </body>
+    <% else %>
+      <body class="loading" data-layout="topnav" data-turbolinks="false"> 
+        <div class="wrapper">
+          <%= render 'wrapper/content-page'%>       
+        </div>
+        <div class="rightbar-overlay"></div>
+
+        <div class = "commons-modal">
+          <%= render 'shared/alert/modal_based_alerts' %>  
+        </div>
+        <div id = "commons-librarys">
+          <%= render 'shared/library' %>
+        </div>
+      </body>
+    <% end %>
   <% else %>
-  <body class="show" data-layout="full" data-layout-color="<%= get_data_layout_color(current_user.schema_color)%>" data-layout-mode="fluid" data-rightbar-onstart="true" data-leftbar-theme="light"
-  data-turbolinks="false" >   
-    <div class="wrapper">
-      <%= render 'wrapper/leftside-menu'%>
-      <%= render 'wrapper/content-page'%>       
-    </div>
+      <body class="loading" data-layout="topnav" data-turbolinks="false"> 
+        <div class="wrapper">
+          <%= render 'wrapper/content-page'%>       
+        </div>
+        <div class="rightbar-overlay"></div>
 
-    <div class="end-bar">
-      <%= render 'end-bar/rightbar-title'%>
-      <%= render 'end-bar/rightbar-content'%>       
-    </div>
-  <% end %> 
-
-  <div class="rightbar-overlay"></div>
-
-  <div class = "commons-modal">
-    <%= render 'shared/alert/modal_based_alerts' %>  
-  </div>
-  <div id = "commons-librarys">
-    <%= render 'shared/library' %>
-  </div>
-  </body>
+        <div class = "commons-modal">
+          <%= render 'shared/alert/modal_based_alerts' %>  
+        </div>
+        <div id = "commons-librarys">
+          <%= render 'shared/library' %>
+        </div>
+      </body>
+    <% end %>
 </html>

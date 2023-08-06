@@ -1,6 +1,5 @@
 
 <h1>Charaters</h1>
-
 <div class="card">
   <div class="card-body">
     <p style="color: green"><%= notice %></p>
@@ -23,7 +22,13 @@
           <% @charaters.each_with_index do |charater, index| %>
             <tr id="row_<%= charater.id %>" data-item-id=<%= "#{charater.id}" %> >
               <td class=""><%= index + 1 %></td>
-              <td class=""><%= image_tag charater.image_path.url, height: "106", width: "106"  if charater.image_path? %></td>
+              <% if charater.start == 5 %>
+                <td class=""><%= image_tag charater.image_path.url, height: "106", width: "106", class:"rarity-5"  if charater.image_path? %></td>
+              <% elsif charater.start == 4 %>
+                <td class=""><%= image_tag charater.image_path.url, height: "106", width: "106", class:"rarity-4"  if charater.image_path? %></td>
+              <% else %>
+                <td class=""><%= image_tag charater.image_path.url, height: "106", width: "106"  if charater.image_path? %></td>
+              <% end %>
               <td class=""><%= link_to charater.name, edit_charater_path(charater)%></td>
               <td class=""><%= render_stars(charater.start) %></td>       
               <td class=""><%= render_roles(charater.role) if charater.role.present? %></td>
