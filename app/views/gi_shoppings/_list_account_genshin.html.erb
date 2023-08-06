@@ -1,0 +1,108 @@
+
+<% if @gi_accounts.present? %>
+    <% @gi_accounts.each do |gi_account|%>
+        <div class="col-md-6 col-lg-4 mt-1 scrollable" style="height: 400px!important">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div class="labels-rounded product-labels">
+                        <div class="onsale product-label">
+                            <%=image_tag "shopping.png" ,:width => 30, :height => 30, class:"ms-2" %>
+                        </div>
+                    </div>
+                    <div class="ribbon-wrapper ribbon-lg">
+                        <div class="ribbon bg-primary text-md text-white">
+                            <%= gi_account.sold_price.to_s+"đ" %>
+                        </div>
+                    </div>
+                    <%=image_tag "banner_account.webp", class:"img-detail-acc"%>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-start text-info fw-bold">Nhân vật</div>
+                                <% @charaters.each.with_index do |c, idx| %>
+                                <% unless gi_account.list_character.blank?  %>
+                                    <% if gi_account.list_character.split(',').include? (c.id.to_s) %>
+                                        <% charater = Charater.find(c.id) %>
+                                        <% if charater.start == 5 %>
+                                            <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-5", title: charater.name if charater.image_path? %></td>
+                                        <% elsif charater.start == 4 %>
+                                            <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-4", title: charater.name  if charater.image_path? %></td>
+                                        <% else %>
+                                            <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", title: charater.name  if charater.image_path? %></td>
+                                        <% end %>
+                                    <% end %>
+                                <% end %>                   
+                            <% end %>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-start text-info fw-bold">Vũ khí</div>
+                            <% @weapons.each.with_index do |w, idx| %>
+                                <% unless gi_account.list_weapon.blank?  %>
+                                    <% if gi_account.list_weapon.split(',').include? (w.id.to_s) %>
+                                        <% weapon = Weapon.find(w.id) %>
+                                        <% if weapon.stars == 5 %>
+                                            <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon.name  if weapon.image_path? %></td>
+                                        <% elsif weapon.stars == 4 %>
+                                            <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", class:"rarity-4", title: weapon.name   if weapon.image_path? %></td>
+                                        <% else %>
+                                            <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", title: weapon.name   if weapon.image_path? %></td>
+                                        <% end %>
+                                    <% end %>
+                                <% end %>                   
+                            <% end %>
+                        </div>
+                    </div>                                                       
+                    <div class="row">
+                        <div class="col-6" >
+                            <div class="text-start text-info fw-bold">Cầu nguyện Nhân Vật</div>
+                            <% if gi_account.intertwined_fate.present? %>
+                                <span class="text-warning fw-bold"><%= gi_account.intertwined_fate %></span>
+                                <%=image_tag "vien_hong.webp",:width => 30, :height => 30 %>
+                            <% else %>
+                                <span class="text-warning fw-bold">0</span>
+                                <%=image_tag "vien_hong.webp",:width => 30, :height => 30 %>
+                            <% end %>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-start text-info fw-bold">Cầu nguyện Thường</div>
+                            <% if gi_account.intertwined_fate.present? %>
+                                <span class="text-warning fw-bold"><%= gi_account.acquaint_fate %></span>
+                                <%=image_tag "vien_xanh.webp",:width => 30, :height => 30%>
+                            <% else %>
+                                <span class="text-warning fw-bold">0</span>
+                                <%=image_tag "vien_xanh.webp",:width => 30, :height => 30 %>
+                            <% end %>                                        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6" >
+                            <div class="text-start text-info fw-bold">AR</div>
+                            <% if gi_account.ar.present? %>
+                                <span class="text-warning fw-bold"><%= gi_account.ar %></span>
+                            <% else %>
+                                <span class="text-warning fw-bold">10</span>
+                            <% end %>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-start text-info fw-bold">Sinh nhật</div>   
+                            <% if gi_account.birthday_acc.present? %>
+                                <span class="text-warning fw-bold"><%= gi_account.birthday_acc %></span>    
+                            <% else %>      
+                                <span class="text-warning fw-bold">Chưa có</span>       
+                            <% end %>                                         
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" >
+                            <div class="text-start text-info fw-bold">Thông tin thêm</div>
+                            <% if gi_account.note.present? %>
+                                <span class=""><%= gi_account.note %></span>    
+                            <% else %>      
+                                <span class="">VIP acc</span>       
+                            <% end %> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% end %>
+<% end %>

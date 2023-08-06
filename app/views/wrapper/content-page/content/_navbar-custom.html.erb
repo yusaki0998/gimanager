@@ -103,23 +103,6 @@
                             <div class=" dropdown-header noti-title text-center">
                                 <h5 class="text-overflow m-0"><%=t('users.header.hello')%></h5>
                             </div>               
-
-                            <%
-=begin%>
- <%= link_to edit_avatar_user_path(current_user), class: "dropdown-item notify-item" do %>
-                                <i class="mdi mdi-account-circle me-1"></i>
-                                <span> <%=t('users.header.account')%></span>
-                            <% end %>
-
-                            <!-- item-->
-                            <%= link_to edit_user_registration_path, class: "dropdown-item notify-item" do %>
-                                <i class="mdi mdi-lock-outline me-1"></i>
-                                <span> <%=t('users.header.update_pass')%></span>
-                            <% end %> 
-<%
-=end%>
-
-                            <!-- item-->
                             <%= link_to destroy_user_session_path, :method => 'delete', :class=> "dropdown-item notify-item" do %>
                                 <i class="mdi mdi-logout me-1"></i>
                                 <span><%=t('users.header.logout')%></span> 

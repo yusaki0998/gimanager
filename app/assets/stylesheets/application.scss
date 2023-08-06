@@ -16,41 +16,260 @@
  *= require_self
  
  */
-@import "bootstrap";
-
-.btn-custom{
-    border-radius: 16px !important;
-}
-
-.background-image-genshin{
-    background: image-url('background_image.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.background-login-genshin{
-    background: image-url('login_background.jpeg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.opaciti-card{
-    opacity: 0.8;
-}
-.custom-card {
-    box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 5px;
-    border-radius: 5px;
-    background-color: rgba(255,255,255,0.8) !important;
-}
-
-.opaciti-background-card{
-    background-color: rgba(255,255,255,0.8) !important;
-}
-
-.content-page{
-    padding: 0px !important;
-}
+ @import "bootstrap";
+ @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+ 
+ .btn-custom{
+     border-radius: 16px !important;
+ }
+ 
+ body {
+     font-size: 16px !important;
+   }
+ 
+ .background-image-genshin{
+     background: image-url('background_image.png') no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+ 
+ .background-login-genshin{
+     background: image-url('login_background.jpeg') no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 100vh;
+ }
+ 
+ .opaciti-card{
+     opacity: 0.88;
+ }
+ .custom-card {
+     box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 5px;
+     border-radius: 5px;
+     background-color: rgba(255,255,255,0.8) !important;
+ }
+ 
+ .opaciti-background-card{
+     background-color: rgba(255,255,255,0.8) !important;
+ }
+ 
+ .content-page{
+     padding: 0px !important;
+ }
+ 
+ .rarity-5 {
+     background-image: url(https://rerollcdn.com/STARRAIL/Rarity/5_sm.png)!important;
+ }
+ 
+ .rarity-4 {
+     background-image: url(https://rerollcdn.com/STARRAIL/Rarity/4_sm.png)!important;
+ }
+ 
+ .rarity-4, .rarity-5 {
+     background-size: contain!important;
+     background-position: 50%!important;
+     border-radius: 8px !important;
+     margin-bottom: 5px !important;
+ }
+ 
+ .scrollable {
+     height: fit-content;
+     overflow-y: scroll;
+   }
+   
+ .scrollable::-webkit-scrollbar {
+ display: none;
+ }
+ 
+ .ribbon-wrapper.ribbon-lg {
+     height: 120px;
+     width: 120px;
+ }
+ .ribbon-wrapper {
+     height: 70px;
+     overflow: hidden;
+     position: absolute;
+     right: -2px;
+     top: -2px;
+     width: 70px;
+     z-index: 10;
+ }
+ 
+ .ribbon-wrapper.ribbon-lg .ribbon {
+     right: 0;
+     top: 26px;
+     width: 160px;
+ }
+ 
+ .ribbon-wrapper .ribbon {
+     box-shadow: 0 0 3px rgba(0,0,0,.3);
+     font-size: .8rem;
+     line-height: 100%;
+     padding: 0.375rem 0;
+     position: relative;
+     right: -2px;
+     text-align: center;
+     text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+     text-transform: uppercase;
+     top: 10px;
+     -webkit-transform: rotate(45deg);
+     transform: rotate(45deg);
+     width: 90px;
+ }
+ .bg-warning, .bg-warning>a {
+     color: #1f2d3d!important;
+ }
+ .bg-warning {
+     background-color: #84c7ff!important;
+ }
+ 
+ .labels-rounded {
+     top: 7px;
+     inset-inline-start: 7px;
+ }
+ .product-labels {
+     position: absolute;
+     z-index: 1;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     max-width: 50%;
+     transition: opacity .3s ease;
+ }
+ 
+ .labels-rounded .product-label {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px 7px;
+     min-height: 50px;
+     border-radius: 35px;
+     font-size: 14px;
+ }
+ .product-label.onsale {
+     background-color: #5af4ea;
+     direction: ltr;
+ }
+ .product-label {
+     min-width: 50px;
+     color: #fff;
+     text-align: center;
+     text-transform: uppercase;
+     word-break: break-all;
+     font-weight: 600;
+     line-height: 1.2;
+ }
+ 
+ .pages-game-choice-wrap {
+     box-sizing: border-box;
+     margin: auto;
+     margin-top: 5px;
+     font-size: 12px;
+ }
+ 
+ .pages-game-choice-wrap .choice-row:after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+ 
+ .pages-game-choice-wrap .choice-row {
+     position: relative;
+ }
+ 
+ .pages-game-choice-wrap div {
+     box-sizing: border-box;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .show_more {
+     width: 30px;
+     height: 30px;
+     background: #afb2b6;
+     border-radius: 3px;
+     position: absolute;
+     top: 0;
+     right: -35px;
+     cursor: pointer;
+     display: none;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-title .t-text {
+     background: #fff;
+     color: #22c4bb;
+     cursor: pointer;
+     border-left: 3px solid #22c4bb;
+     border-top: 1px solid #ddd;
+     border-bottom: 1px solid #ddd;
+     border-right: 1px solid #ddd;
+     padding: 0.46rem 10px;
+     border-radius: 3px;
+     /* overflow: hidden; */
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     font-weight: bold;
+     position: relative;
+     line-height: normal;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .show_more {
+     width: 30px;
+     height: 30px;
+     background: #afb2b6;
+     border-radius: 3px;
+     position: absolute;
+     top: 0;
+     right: -35px;
+     cursor: pointer;
+     display: none;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-title {
+     width: 170px;
+     float: left;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-box {
+    width: auto;
+     float: left;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-box {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-box .col-list {
+     width: 150px;
+     padding: 5px;
+     white-space: normal !important;
+     box-sizing: border-box;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-box .col-list .choice-btn {
+     border: 1px solid #e0e0e0;
+     background: #fafafa;
+     padding: 2px;
+     border-radius: 3px;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     display: block;
+     text-decoration: none;
+     color: #222222;
+     position: relative;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-box .col-list .choice-btn:hover {
+     border-color: #f6a72c;
+     color: #e58e05;
+ }
+ 
+ .pages-game-choice-wrap .choice-row .nav-box .col-list .check-active {
+     border-color: #ed6f13!important;
+     background: #ed6f13;
+     color: #fff!important;
+     box-shadow: 0 0 10px #ffdfad;
+ }

@@ -46,11 +46,22 @@ class GiAccountsController < ApplicationController
   # DELETE /gi_accounts/1 or /gi_accounts/1.json
   def destroy
     @gi_account.destroy
-
     respond_to do |format|
       format.html { redirect_to gi_accounts_url, notice: "Gi account was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def delete_accounts
+    @accounts = GiAccount.where(id: params[:data][:ids])
+    ActiveRecord::Base.transaction do
+        @accounts.destroy_all  
+    end
+    respond_to do |format|            
+      format.html 
+      format.js
+    end
+    @gi_accounts = GiAccount.all
   end
 
   private
@@ -61,6 +72,6 @@ class GiAccountsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def gi_account_params
-      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner,:list_character,:list_weapon, :birthday_acc, :intertwined_fate, :acquaint_fate, :map_clear, :sold_price , :account_code)
+      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner,:list_character,:list_weapon, :birthday_acc, :intertwined_fate, :acquaint_fate, :map_clear, :sold_price , :account_code, :ar, :role)
     end
 end

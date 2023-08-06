@@ -60,7 +60,7 @@
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
-      <%= f.text_field :map_clear, class:"form-control text-field-css" %>
+      <%= f.number_field :map_clear, class:"form-control text-field-css" %>
     </div>
     <div class="offset-sm-1 col-sm-1">
       <div class="label-form text-end">
@@ -78,7 +78,7 @@
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
-      <%= f.text_field :intertwined_fate, class:"form-control text-field-css" %>
+      <%= f.number_field :intertwined_fate, class:"form-control text-field-css" %>
     </div>
     <div class="offset-sm-1 col-sm-1">
       <div class="label-form text-end">
@@ -86,7 +86,7 @@
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
-      <%= f.text_field :acquaint_fate, class:"form-control text-field-css"%>
+      <%= f.number_field :acquaint_fate, class:"form-control text-field-css"%>
     </div>
   </div>
   <div class="row mb-3">
@@ -96,7 +96,7 @@
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
-      <%= f.text_field :price, class:"form-control text-field-css" %>
+      <%= f.number_field :price, class:"form-control text-field-css" %>
     </div>
     <div class="offset-sm-1 col-sm-1">
       <div class="label-form text-end">
@@ -104,7 +104,26 @@
       </div>
     </div>
     <div class="col-sm-2 ps-0" >
-      <%= f.text_field :sold_price, class:"form-control text-field-css"%>
+      <%= f.number_field :sold_price, class:"form-control text-field-css"%>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="offset-sm-2 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :role, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0 form-controll" >
+      <%= f.select :role, options_for_select([['Acc thường', 1], ['Acc reroll', 0]]), class: "control-label style-label" %>
+    </div>
+    
+    <div class="offset-sm-1 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :ar, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.number_field :ar, class:"form-control text-field-css"%>
     </div>
   </div>
   <div class="row mb-3">

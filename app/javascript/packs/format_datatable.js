@@ -323,7 +323,7 @@ function formatTableWeapon(){
         });
     };
 }
-function formatTableAccount(){
+window.formatTableAccount = function (){
     var tbl_account = document.getElementsByClassName("tbl_account");
     if (tbl_account.length > 0) {
         tbl_account = window.$('.tbl_account').DataTable({
@@ -339,15 +339,15 @@ function formatTableAccount(){
                 }
             },
             { "width": "4%", "targets": 1 },
-            { "width": "22%", "targets": 2 },
-            { "width": "40%", "targets": 3 },
-            { "width": "20%", "targets": 4 },
-            { "width": "10%", "targets": 5 },    
+            { "width": "6%", "targets": 2 },
+            { "width": "16%", "targets": 3 },
+            { "width": "40%", "targets": 4 },
+            { "width": "20%", "targets": 5 },
+            { "width": "10%", "targets": 6 },    
             ],
             'select': {
             'style': 'multi'
             },
-            'order': [1, 'asc'],
             drawCallback: function() {
             $(".dataTables_paginate > .pagination").addClass("pagination-rounded");
             },
@@ -356,4 +356,38 @@ function formatTableAccount(){
             next:"<i class='mdi mdi-chevron-right'>"}},
         });
     };
+
+    $("#delete_selected_account").click(function() {
+        var mydata = [],id;
+
+        $.each($('.tbl_account tbody tr'), function (i, row) {
+                var checkBox = $(row).find("input[type='checkbox']:checked").is(":checked");
+                if (checkBox) 
+                {
+                        id = row.querySelector('.col_checkbox').getAttribute('data-item-id');
+                        mydata.push(id);
+                                     
+                }   
+        });
+
+        if(mydata.length==0) 
+        {return;}
+        $.ajax
+        ({
+                type: 'GET',
+                url: "delete_accounts",
+                dataType: 'script',
+                data: {
+                                data: {ids:mydata},
+                },
+                success: function(data, textStatus, jqXHR){
+                        console.log("AJAX OK!")
+                },
+                error:function(jqXHR, textStatus, errorThrown){
+                        console.log("AJAX Error: #{textStatus}")
+                }
+        })
+
+    
+});
 }
