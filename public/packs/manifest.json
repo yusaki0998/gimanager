@@ -1,15 +1,27 @@
 {
+<<<<<<< HEAD
   "application.js": "/packs/js/application-632a8b734ac8ad6f0b13.js",
   "application.js.map": "/packs/js/application-632a8b734ac8ad6f0b13.js.map",
+=======
+  "application.js": "/packs/js/application-005085719a05e1c794cd.js",
+  "application.js.map": "/packs/js/application-005085719a05e1c794cd.js.map",
+>>>>>>> gi_pj
   "character.js": "/packs/js/character-bd81dd6f08827e8fce52.js",
   "character.js.map": "/packs/js/character-bd81dd6f08827e8fce52.js.map",
   "entrypoints": {
     "application": {
       "js": [
+<<<<<<< HEAD
         "/packs/js/application-632a8b734ac8ad6f0b13.js"
       ],
       "js.map": [
         "/packs/js/application-632a8b734ac8ad6f0b13.js.map"
+=======
+        "/packs/js/application-005085719a05e1c794cd.js"
+      ],
+      "js.map": [
+        "/packs/js/application-005085719a05e1c794cd.js.map"
+>>>>>>> gi_pj
       ]
     },
     "character": {
@@ -22,10 +34,25 @@
     },
     "format_datatable": {
       "js": [
+<<<<<<< HEAD
         "/packs/js/format_datatable-42f225fd51750bc036f8.js"
       ],
       "js.map": [
         "/packs/js/format_datatable-42f225fd51750bc036f8.js.map"
+=======
+        "/packs/js/format_datatable-0d169a52b9c632dfbee5.js"
+      ],
+      "js.map": [
+        "/packs/js/format_datatable-0d169a52b9c632dfbee5.js.map"
+      ]
+    },
+    "gi_shoppings": {
+      "js": [
+        "/packs/js/gi_shoppings-1daff6d2ca657bfb19d9.js"
+      ],
+      "js.map": [
+        "/packs/js/gi_shoppings-1daff6d2ca657bfb19d9.js.map"
+>>>>>>> gi_pj
       ]
     },
     "users": {
@@ -37,8 +64,15 @@
       ]
     }
   },
+<<<<<<< HEAD
   "format_datatable.js": "/packs/js/format_datatable-42f225fd51750bc036f8.js",
   "format_datatable.js.map": "/packs/js/format_datatable-42f225fd51750bc036f8.js.map",
+=======
+  "format_datatable.js": "/packs/js/format_datatable-0d169a52b9c632dfbee5.js",
+  "format_datatable.js.map": "/packs/js/format_datatable-0d169a52b9c632dfbee5.js.map",
+  "gi_shoppings.js": "/packs/js/gi_shoppings-1daff6d2ca657bfb19d9.js",
+  "gi_shoppings.js.map": "/packs/js/gi_shoppings-1daff6d2ca657bfb19d9.js.map",
+>>>>>>> gi_pj
   "users.js": "/packs/js/users-49e00e84c2236273572f.js",
   "users.js.map": "/packs/js/users-49e00e84c2236273572f.js.map"
 }

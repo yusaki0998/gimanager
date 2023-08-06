@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
 	protect_from_forgery with: :null_session
 	before_action :set_locale
+  before_action :authenticate_user!, except: [:index, :show]
 	ALLOWED_LOCALES = %w( ja en vi ).freeze
   DEFAULT_LOCALE = 'vi'.freeze
 

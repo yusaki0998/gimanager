@@ -1,0 +1,9 @@
+<%if user_signed_in? %>
+    <%if current_user.admin? %>
+        <%= render "gi_accounts/index" %>
+    <% else %>
+        <%= render "gi_shoppings/home" %>
+    <% end %>
+<% else %>
+<%= render "gi_shoppings/home" %>
+<% end %>

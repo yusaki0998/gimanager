@@ -1,0 +1,49 @@
+<table class="table mb-0 tbl_account" id="tbl_account">
+          <thead>
+              <tr>
+                  <th class=""></th>
+                  <th class="">STT</th>
+                  <th class="">Loại Acc</th>
+                  <th class="">Account Info</th>
+                  <th class="">InGame Info</th> 
+                  <th class="">Price Info</th> 
+                  <th class="">Owner</th>
+              </tr>
+          </thead>
+          <tbody id="">
+            <% @gi_accounts.each_with_index do |gi_account, index| %>
+              <tr id="row_<%= gi_account.id %>" data-item-id=<%= "#{gi_account.id}" %> >
+                <td class="col_checkbox" data-item-id=<%= "#{gi_account.id}"%>><%= index + 1 %></td>
+                <td class=""><%= index + 1 %></td>
+                <td class="">
+                    <%if gi_account.role == 0 %>
+                        Acc Reroll
+                    <% elsif gi_account.role == 1 %>
+                        Acc Thường
+                    <% else %>
+                        Cập nhật loại acc
+                    <% end %>
+                </td>
+                <td class="">
+                  <div>Mail: <span><%= link_to gi_account.account_mail, edit_gi_account_path(gi_account) %></span></div>
+                  <div>Pass: <span><%= gi_account.account_pass %></span></div>
+                  <div>Birthday: <span><%= gi_account.birthday_acc %></span></div>
+                </td>
+                <td class="">
+                  <div>Char: <span><%= render_list_char(gi_account.list_character) if gi_account.list_character.present? %></span></div>
+                  <div>Vũ khí: <span><%= render_list_weap(gi_account.list_weapon) if gi_account.list_weapon.present?%></span></div>
+                  <div>Viên hồng: <span><%= gi_account.intertwined_fate %></span></div>
+                  <div>Viên xanh: <span><%= gi_account.acquaint_fate %></span></div>
+                  <div>AR: <span><%= gi_account.ar %></span></div>
+                </td>
+                <td class="">
+                  <div>Giá mua: <span><%= gi_account.price %></span></div>
+                  <div>Giá bán: <span><%= gi_account.sold_price %></span></div>
+                  <div>Clean Map: <span><%= gi_account.map_clear %></span></div>
+                  <div>Ghi chú: <span><%= gi_account.note %></span></div>
+                </td>
+                <td class=""><%= gi_account.owner %></td>
+              </tr>
+            <% end %>
+          </tbody>
+      </table>
