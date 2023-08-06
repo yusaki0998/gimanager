@@ -18592,7 +18592,7 @@ body[data-layout-color=dark] .task-modal-content .form-control-light {
   height: 150px;
 }
 
-@media (max-width: 648px) {
+@media (max-width: 786px) {
   .page-aside-left {
     width: 100%;
     float: none;
