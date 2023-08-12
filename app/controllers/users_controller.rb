@@ -40,9 +40,7 @@ class UsersController < ApplicationController
     else current_user.admin
       @users = User.includes(:group, :user_departments, :departments,:user_positions, :positions).where(group_id: current_user.group_id)
     end 
-    binding.pry
     @user = User.new(user_params) 
-    binding.pry
     @user.password_confirmation="123456"
     @user.password="123456"
     @user.status=0

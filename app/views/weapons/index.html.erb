@@ -23,7 +23,13 @@
 		<% @weapons.each_with_index do |weapon, index| %>
 			<tr id="row_<%= weapon.id %>" data-item-id=<%= "#{weapon.id}" %> >
 				<td class=""><% index + 1 %></td>
-        <td class=""><%= image_tag weapon.image_path.url, height: "106", width: "106"  if weapon.image_path? %></td>
+        <% if weapon.stars == 5 %>
+          <td class=""><%= image_tag weapon.image_path.url, height: "106", width: "106", class:"rarity-5"  if weapon.image_path? %></td>
+        <% elsif weapon.stars == 4 %>
+          <td class=""><%= image_tag weapon.image_path.url, height: "106", width: "106", class:"rarity-4"  if weapon.image_path? %></td>
+        <% else %>
+          <td class=""><%= image_tag weapon.image_path.url, height: "106", width: "106"  if weapon.image_path? %></td>
+        <% end %>
 				<td class=""><%= link_to weapon.name, edit_weapon_path(weapon) %></td>
         <td class=""><%= link_to weapon.vi_weapon_name, edit_weapon_path(weapon) %></td>
 				<td class=""><%= render_stars(weapon.stars) %></td>

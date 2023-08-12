@@ -1,0 +1,215 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card background-image-genshin">
+            <div class="card-body">
+                <div class="page-aside-left">
+
+                    <div class="btn-group d-block mb-2">
+                        <button type="button" class="btn btn-primary dropdown-toggle w-100" data-bs-toggle="dropdown">Trò chơi</button>
+                        <div class="dropdown-menu">
+                            <% if  request.url.include? "gi_shoppings" %>
+                                <%= link_to gi_shoppings_path, class:"dropdown-item" do %><%=image_tag "paimon.png" ,:width => 40, :height => 40%> Genshin Impact <% end %>
+                            <% else %>
+                                <%= link_to gi_shoppings_path , class:"dropdown-item" do %><%=image_tag "paimon.png" ,:width => 40, :height => 40%> Genshin Impact <% end %>
+                            <% end %>
+                            <a href="#" class="dropdown-item"><%=image_tag "honkai.png" ,:width => 40, :height => 40%> Star Rails </a>
+                        </div>
+                    </div>
+                    <div class="email-menu-list mt-3">
+                        <a href="#" class="list-group-item border-0 text-success custom-card text-center dt"><%=image_tag "acc_thuong.webp" ,:width => 40, :height => 40, class:"me-1" %>
+                        Acc Thường<%=image_tag "acc_thuong.webp" ,:width => 40, :height => 40, class:"ms-1" %></a>
+                        <a href="#" class="list-group-item border-0 text-primary custom-card text-center mt-1 dt"><%=image_tag "acc_reroll.webp" ,:width => 40, :height => 40, class:"me-1"%>
+                        Acc Reroll<%=image_tag "acc_reroll.webp" ,:width => 40, :height => 40, class:"ms-1"%></a>  
+                    </div>
+                </div>
+                <!-- End Left sidebar -->
+
+                <div class="page-aside-right">
+
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <div class="mt-3 pages-game-choice-wrap" >
+                                <h5 class="mb-2">Filter</h5>
+
+                                <div id="mode1" class="choice-row row">
+                                    <div class="nav-title show-more-button" data-item="1">
+                                        <div class="t-text ">
+                                            <span>Nhân vật 5 sao<span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-box">
+                                        <% if @charaters_5_start.present? %>
+                                            <% @charaters_5_start.each do |charater_5_start|%>
+                                                <div class="col-list class_tags">
+                                                    <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= charater_5_start.id%>" title="<%= charater_5_start.name%>">
+                                                        <%= image_tag charater_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: charater_5_start.name if charater_5_start.image_path? %>
+                                                        <span class="ms-1"><%= charater_5_start.name %></span>
+                                                    </a>
+                                                </div>   
+                                            <% end %>  
+                                        <% end %> 
+
+
+                                            <% if @other_characters_5_star.present? %>
+                                                <% @other_characters_5_star.each do |other_charater_5_start|%>
+                                                    <div class="col-list class_tags show-other-item d-none">
+                                                        <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= other_charater_5_start.id%>" title="<%= other_charater_5_start.name%>">
+                                                            <%= image_tag other_charater_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: other_charater_5_start.name if other_charater_5_start.image_path? %>
+                                                            <span class="ms-1"><%= other_charater_5_start.name %></span>
+                                                        </a>
+                                                    </div>   
+                                                <% end %>  
+                                            <% end %> 
+                                          
+                                    </div>
+                                </div>
+                                <div id="mode2" class="choice-row row">
+                                    <div class="nav-title show-more-button" data-item="2">
+                                        <div class="t-text">
+                                            <span>Nhân vật 4 sao<span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-box">
+                                        <% if @charaters_4_start.present? %>
+                                            <% @charaters_4_start.each do |charater_4_start|%>
+                                                <div class="col-list class_tags">
+                                                    <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= charater_4_start.id%>" title="<%= charater_4_start.name%>">
+                                                        <%= image_tag charater_4_start.image_path.url, height: "30", width: "30", class:"rarity-4", title: charater_4_start.name if charater_4_start.image_path? %>
+                                                        <span class="ms-1"><%= charater_4_start.name %></span>
+                                                    </a>
+                                                </div>   
+                                            <% end %>  
+                                        <% end %>  
+
+                                            <% if @other_characters_4_star.present? %>
+                                                <% @other_characters_4_star.each do |other_charater_4_start|%>
+                                                    <div class="col-list class_tags show-other-item d-none">
+                                                        <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= other_charater_4_start.id%>" title="<%= other_charater_4_start.name%>">
+                                                            <%= image_tag other_charater_4_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: other_charater_4_start.name if other_charater_4_start.image_path? %>
+                                                            <span class="ms-1"><%= other_charater_4_start.name %></span>
+                                                        </a>
+                                                    </div>   
+                                                <% end %>                                                 
+                                            <% end %>  
+ 
+                                    </div>
+                                </div>
+                                <div id="mode3" class="choice-row row">
+                                    <div class="nav-title show-more-button" data-item="3">
+                                        <div class="t-text">
+                                            <span>Vũ khí 5 sao<span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-box">
+                                        <% if @weapons_5_start.present? %>
+                                            <% @weapons_5_start.each do |weapon_5_start|%>
+                                                <div class="col-list class_tags">
+                                                    <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_5_start.id%>" title="<%= weapon_5_start.name%>">
+                                                        <%= image_tag weapon_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon_5_start.name if weapon_5_start.image_path? %>
+                                                        <span class="ms-1"><%= weapon_5_start.name %></span>
+                                                    </a>
+                                                </div>   
+                                            <% end %>  
+                                        <% end %>   
+
+                                            <% if @other_characters_5_star.present? %>
+                                                <% @other_characters_5_star.each do |weapon_5_start|%>
+                                                    <div class="col-list class_tags show-other-item d-none">
+                                                        <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_5_start.id%>" title="<%= weapon_5_start.name%>">
+                                                            <%= image_tag weapon_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon_5_start.name if weapon_5_start.image_path? %>
+                                                            <span class="ms-1"><%= weapon_5_start.name %></span>
+                                                        </a>
+                                                    </div>   
+                                                <% end %>  
+                                            <% end %>
+    
+                                    </div>
+                                </div>
+                                <div id="mode4" class="choice-row row">
+                                    <div class="nav-title show-more-button" data-item="4">
+                                        <div class="t-text">
+                                            <span>Vũ khí 4 sao<span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-box">
+                                        <% if @weapons_4_start.present? %>
+                                            <% @weapons_4_start.each do |weapon_4_start|%>
+                                                <div class="col-list class_tags ">
+                                                    <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_4_start.id%>" title="<%= weapon_4_start.name%>">
+                                                        <%= image_tag weapon_4_start.image_path.url, height: "30", width: "30", class:"rarity-4", title: weapon_4_start.name if weapon_4_start.image_path? %>
+                                                        <span class="ms-1"><%= weapon_4_start.name %></span>
+                                                    </a>
+                                                </div>   
+                                            <% end %>  
+                                        <% end %>
+
+                                            <% if @other_characters_4_star.present? %>
+                                                    <% @other_characters_4_star.each do |weapon_4_start|%>
+                                                        <div class="col-list class_tags show-other-item d-none">
+                                                            <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_4_start.id%>" title="<%= weapon_4_start.name%>">
+                                                                <%= image_tag weapon_4_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon_4_start.name if weapon_4_start.image_path? %>
+                                                                <span class="ms-1"><%= weapon_4_start.name %></span>
+                                                            </a>
+                                                        </div>   
+                                                    <% end %>  
+                                            <% end %>       
+
+                                    </div>
+                                </div>
+                                <div id="mode5" class="choice-row row">
+                                    <div class="nav-title">
+                                        <div class="t-text">
+                                            <span>Cầu nguyện nhân vật<span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-box" style="padding-bottom:5px ;">
+                                        <input class="form-control" style="padding-left: 5px; width: 30%" id="vien_hong_so_luong">
+                                    </div>
+                                </div>
+                                <div id="mode6" class="choice-row row">
+                                    <div class="nav-title">
+                                        <div class="t-text">
+                                            <span>Cầu nguyện thường<span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-box" style="padding-bottom:5px ;">
+                                        <input class="form-control" style="padding-left: 5px; width: 30%" id="vien_xanh_so_luong">
+                                    </div>
+                                </div>
+
+                                <div id="mode2" class="choice-row row">
+                                    <div class="nav-title">
+                                        <div class="t-text">
+                                            <span>AR<span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-box" style="padding-bottom:5px ;">
+                                        <input class="form-control" style="padding-left: 5px; width: 30%" id="ar_search">
+                                    </div>
+                                </div>
+                                <button name="search" value="search" type="button" class="btn btn-primary text-white font-weight-bold" id="searching_account"><i class="fab fa-searchengin ml-2"></i> Tìm kiếm
+                                </button>
+                            </div> <!-- end .mt-3-->
+                        </div>
+                    </div>
+                    <div class="card mt-3 custom-card scrollable" style="max-height: 900px">
+                        <div class="card-body">
+                            <div class="mt-3">
+                                <h4 class="mb-3 text-center">
+                                <%=image_tag "acc_thuong_1.webp" ,:width => 40, :height => 40, class:"me-2" %>Acc Thường Genshin
+                                <%=image_tag "acc_thuong_1.webp" ,:width => 40, :height => 40, class:"ms-2" %></h4>
+                                <div class="row scrollable" id="list_account_genshin">
+                                    <%= render "gi_shoppings/list_account_genshin" %>
+                                </div>
+                            </div> <!-- end .mt-3-->
+                        </div>
+                    </div>
+                </div> 
+                <!-- end inbox-rightbar-->
+            </div>
+            <!-- end card-body -->
+            <div class="clearfix"></div>
+        </div> <!-- end card-box -->
+
+    </div>
+</div>

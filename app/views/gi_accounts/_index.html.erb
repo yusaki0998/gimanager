@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Gi accounts</h1>
+<div class="card">
+  <div class="card-body">
+    <%= link_to "New gi account", new_gi_account_path , class:"btn btn-primary btn-custom" %>
+    <button  class="btn btn-danger btn-custom" id="delete_selected_account">
+      Delete Account
+    </button>
+    <div class="table-responsive mt-2" id="my_account_table">
+      <%= render "gi_accounts/tble_account" %>
+    </div>
+  </div>
+</div>

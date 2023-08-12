@@ -1,0 +1,2 @@
+class GiShopping < ApplicationRecord
+end
