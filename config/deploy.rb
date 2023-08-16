@@ -3,11 +3,12 @@ lock "~> 3.17.1"
 
 set :application, "deploy-gimanager"
 set :repo_url, "git@github.com:yusaki0998/gimanager.git"
-
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
+set :branch, 'deploy'
+
 set :deploy_to, "/home/deploy/#{fetch :application}"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 # Default value for :format is :airbrussh.
