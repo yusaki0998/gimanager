@@ -76,7 +76,6 @@ class GiShoppingsController < ApplicationController
           end
           @filter_account = true
         end
-        binding.pry
         if vien_hong.present?
           @gi_accounts = @gi_accounts.select do |account|
             account.intertwined_fate.to_i < vien_hong.to_i

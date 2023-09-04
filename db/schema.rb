@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_08_164546) do
   create_table "charaters", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "image_name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
     t.string "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "role"
   end
 
   create_table "departments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -56,6 +57,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
     t.datetime "updated_at", null: false
     t.string "list_character"
     t.string "list_weapon"
+    t.string "birthday_acc"
+    t.text "intertwined_fate"
+    t.text "acquaint_fate"
+    t.text "map_clear"
+    t.string "account_code"
+    t.integer "role"
+    t.integer "sold_price"
+    t.integer "ar"
+  end
+
+  create_table "gi_shoppings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "groups", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -119,14 +133,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
     t.integer "failed_attempts", default: 0, null: false
     t.string "unlock_token"
     t.datetime "locked_at"
-    t.bigint "group_id", null: false
     t.string "avatar"
     t.string "ic_no"
     t.string "telephone"
     t.boolean "is_full_time"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["group_id"], name: "index_users_on_group_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
@@ -140,6 +152,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
     t.string "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "vi_weapon_name"
   end
 
   add_foreign_key "departments", "groups"
@@ -148,5 +161,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_025421) do
   add_foreign_key "user_departments", "users"
   add_foreign_key "user_positions", "positions"
   add_foreign_key "user_positions", "users"
-  add_foreign_key "users", "groups"
 end
