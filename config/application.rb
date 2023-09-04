@@ -21,6 +21,6 @@ module Deploy_gimanager
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
     config.i18n.available_locales = [:en, :ja, :vi]
     config.i18n.default_locale = :vi
-    config.assets.initialize_on_precompile = false
+    # config.assets.initialize_on_precompile = false
   end
 end
