@@ -7,7 +7,7 @@ role :db, "#{user_str}@#{server_str}"
 
 server server_str, user: user_str, roles: %w[web app]
 
-set :branch, "main"
+set :branch, "develop"
 set :rails_env, "production"
 set :linked_files, %w[database.yml].map { |str| "config/#{str}" }
 
