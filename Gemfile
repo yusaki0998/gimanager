@@ -34,8 +34,6 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'pry-rails'
   
-  gem 'capistrano-secrets-yml'
-
   # gem deploy
   gem "capistrano", "~> 3.17"
   gem "capistrano-rails", "~> 1.6", ">= 1.6.2"
