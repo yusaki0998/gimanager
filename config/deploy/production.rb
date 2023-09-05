@@ -9,7 +9,7 @@ server server_str, user: user_str, roles: %w[web app]
 
 set :branch, "develop"
 set :rails_env, "production"
-set :linked_files, %w[database.yml].map { |str| "config/#{str}" }
+set :linked_files, %w[database.yml master.key].map { |str| "config/#{str}" }
 
 set :deploy_to, "~/deploy-gimanager"
 set :passenger_restart_command,

@@ -14,12 +14,12 @@ default: &default
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: 
+  password: root
   socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  database: deploy_gimanager
+  database: gi_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -51,5 +51,5 @@ test:
 production:
   <<: *default
   database: deploy_gimanager
-  username: Gi
-  password: <%= ENV["Gi_DATABASE_PASSWORD"] %>
+  username: root
+  password: password

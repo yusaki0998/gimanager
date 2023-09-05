@@ -28,18 +28,23 @@ gem "cocoon"
 gem "tabs_on_rails"
 gem 'carrierwave'
 gem 'cancancan'
-gem 'capistrano', '~> 3.11'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
-gem 'capistrano-secrets-yml'
-  gem 'net-ssh', '>= 6.0.2'
-  gem 'ed25519', '>= 1.2', '< 2.0'
-  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
 group :development, :test do
   gem 'sqlite3'
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'pry-rails'
+  
+  gem 'capistrano-secrets-yml'
+
+  # gem deploy
+  gem "capistrano", "~> 3.17"
+  gem "capistrano-rails", "~> 1.6", ">= 1.6.2"
+  gem "capistrano-rbenv", "~> 2.2"
+  gem "capistrano-passenger", "~> 0.2.1"
+
+  gem 'net-ssh', '>= 6.0.2'
+  gem 'ed25519', '>= 1.2', '< 2.0'
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 end
 
 group :development do
