@@ -4,6 +4,16 @@ $(document).on('turbolinks:load', function () {
         updatevalueWork();
         return true; // return false to cancel form action
     });
+
+    $("#btn_submit_import_list_acc").click(function() {
+        if(document.getElementById("gi_account_file_file").value != "") {
+         window.$("#loadMe").modal({
+            backdrop: "static", //remove ability to close modal with click
+            keyboard: false, //remove option to close with keyboard
+            show: true //Display loader!
+          });
+        }
+      });
 })
 function updatevalueWork(){	
 	var listOption = $('.character-select');
