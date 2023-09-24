@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'delete_accounts' => 'gi_accounts#delete_accounts'
   get '/show_result_searching' => 'gi_shoppings#show_result_searching'
   resources :gi_shoppings
+  get 'import_new_list_acc' => 'gi_accounts#import_new_list_acc'
+  post 'import_list_acc' => 'gi_accounts#import_list_acc'
   resources :gi_accounts
   resources :weapons
   resources :charaters

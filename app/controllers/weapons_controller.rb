@@ -55,6 +55,6 @@ class WeaponsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def weapon_params
-      params.require(:weapon).permit(:name, :stars, :image_name, :image_path, :status, :note, :vi_weapon_name)
+      params.require(:weapon).permit(:name, :stars, :image_name, :image_path, :status, :note, :vi_weapon_name, :main_character)
     end
 end
