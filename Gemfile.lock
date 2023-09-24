@@ -345,6 +345,7 @@ DEPENDENCIES
   jstreejs-rails
   mysql2 (~> 0.5)
   net-ssh (>= 6.0.2)
+  pry
   pry-rails
   puma (~> 5.0)
   rails (~> 7.0.4)
