@@ -38,8 +38,8 @@
                                         </div>
                                     </div>
                                     <div class="nav-box">
-                                        <% if @charaters_5_start.present? %>
-                                            <% @charaters_5_start.each do |charater_5_start|%>
+                                        <% if @charaters_5_stars.present? %>
+                                            <% @charaters_5_stars.each do |charater_5_start|%>
                                                 <div class="col-list class_tags">
                                                     <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= charater_5_start.id%>" title="<%= charater_5_start.name%>">
                                                         <%= image_tag charater_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: charater_5_start.name if charater_5_start.image_path? %>
@@ -50,8 +50,8 @@
                                         <% end %> 
 
 
-                                            <% if @other_characters_5_star.present? %>
-                                                <% @other_characters_5_star.each do |other_charater_5_start|%>
+                                            <% if @other_characters_5_stars.present? %>
+                                                <% @other_characters_5_stars.each do |other_charater_5_start|%>
                                                     <div class="col-list class_tags show-other-item d-none">
                                                         <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= other_charater_5_start.id%>" title="<%= other_charater_5_start.name%>">
                                                             <%= image_tag other_charater_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: other_charater_5_start.name if other_charater_5_start.image_path? %>
@@ -70,8 +70,8 @@
                                         </div>
                                     </div>
                                     <div class="nav-box">
-                                        <% if @charaters_4_start.present? %>
-                                            <% @charaters_4_start.each do |charater_4_start|%>
+                                        <% if @charaters_4_stars.present? %>
+                                            <% @charaters_4_stars.each do |charater_4_start|%>
                                                 <div class="col-list class_tags">
                                                     <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= charater_4_start.id%>" title="<%= charater_4_start.name%>">
                                                         <%= image_tag charater_4_start.image_path.url, height: "30", width: "30", class:"rarity-4", title: charater_4_start.name if charater_4_start.image_path? %>
@@ -81,8 +81,8 @@
                                             <% end %>  
                                         <% end %>  
 
-                                            <% if @other_characters_4_star.present? %>
-                                                <% @other_characters_4_star.each do |other_charater_4_start|%>
+                                            <% if @other_characters_4_stars.present? %>
+                                                <% @other_characters_4_stars.each do |other_charater_4_start|%>
                                                     <div class="col-list class_tags show-other-item d-none">
                                                         <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= other_charater_4_start.id%>" title="<%= other_charater_4_start.name%>">
                                                             <%= image_tag other_charater_4_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: other_charater_4_start.name if other_charater_4_start.image_path? %>
@@ -101,8 +101,8 @@
                                         </div>
                                     </div>
                                     <div class="nav-box">
-                                        <% if @weapons_5_start.present? %>
-                                            <% @weapons_5_start.each do |weapon_5_start|%>
+                                        <% if @weapons_5_stars.present? %>
+                                            <% @weapons_5_stars.each do |weapon_5_start|%>
                                                 <div class="col-list class_tags">
                                                     <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_5_start.id%>" title="<%= weapon_5_start.name%>">
                                                         <%= image_tag weapon_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon_5_start.name if weapon_5_start.image_path? %>
@@ -112,8 +112,8 @@
                                             <% end %>  
                                         <% end %>   
 
-                                            <% if @other_characters_5_star.present? %>
-                                                <% @other_characters_5_star.each do |weapon_5_start|%>
+                                            <% if @other_weapons_5_stars.present? %>
+                                                <% @other_weapons_5_stars.each do |weapon_5_start|%>
                                                     <div class="col-list class_tags show-other-item d-none">
                                                         <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_5_start.id%>" title="<%= weapon_5_start.name%>">
                                                             <%= image_tag weapon_5_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon_5_start.name if weapon_5_start.image_path? %>
@@ -132,8 +132,8 @@
                                         </div>
                                     </div>
                                     <div class="nav-box">
-                                        <% if @weapons_4_start.present? %>
-                                            <% @weapons_4_start.each do |weapon_4_start|%>
+                                        <% if @weapons_4_stars.present? %>
+                                            <% @weapons_4_stars.each do |weapon_4_start|%>
                                                 <div class="col-list class_tags ">
                                                     <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_4_start.id%>" title="<%= weapon_4_start.name%>">
                                                         <%= image_tag weapon_4_start.image_path.url, height: "30", width: "30", class:"rarity-4", title: weapon_4_start.name if weapon_4_start.image_path? %>
@@ -143,8 +143,8 @@
                                             <% end %>  
                                         <% end %>
 
-                                            <% if @other_characters_4_star.present? %>
-                                                    <% @other_characters_4_star.each do |weapon_4_start|%>
+                                            <% if @other_weapons_4_stars.present? %>
+                                                    <% @other_weapons_4_stars.each do |weapon_4_start|%>
                                                         <div class="col-list class_tags show-other-item d-none">
                                                             <a class="choice-btn tags_btn" href="javascript:void(0);" data-zid="all_445" data-type="tags" data-multi="1" data-val="<%= weapon_4_start.id%>" title="<%= weapon_4_start.name%>">
                                                                 <%= image_tag weapon_4_start.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon_4_start.name if weapon_4_start.image_path? %>
