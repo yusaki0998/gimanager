@@ -22,9 +22,9 @@
                                 <% unless gi_account.list_character.blank?  %>
                                     <% if gi_account.list_character.split(',').include? (c.id.to_s) %>
                                         <% charater = Charater.find(c.id) %>
-                                        <% if charater.start == 5 %>
+                                        <% if charater.stars == 5 %>
                                             <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-5", title: charater.name if charater.image_path? %></td>
-                                        <% elsif charater.start == 4 %>
+                                        <% elsif charater.stars == 4 %>
                                             <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-4", title: charater.name  if charater.image_path? %></td>
                                         <% else %>
                                             <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", title: charater.name  if charater.image_path? %></td>
