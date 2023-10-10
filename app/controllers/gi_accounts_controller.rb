@@ -177,6 +177,7 @@ class GiAccountsController < ApplicationController
   # end
 
   def import_list_acc
+    @gi_accounts = GiAccount.all
     if params[:gi_account_file].present?
       # Initialize variables for error handling
       @row_error = []
@@ -194,7 +195,6 @@ class GiAccountsController < ApplicationController
         @is_error = true
         @error_code = 1
       end
-
       unless @is_error
         # Initialize an array to store processed IDs to prevent duplicates
         ids = []
@@ -212,8 +212,7 @@ class GiAccountsController < ApplicationController
         # Process each row in the CSV file
         @file.each do |row|
           begin
-            account_mail, account_pass, user, ar, list_character, list_weapon, birthday_acc, intertwined_fate, acquaint_fate, map_clear, account_code, price, sold_price, role = row
-
+            account_mail, account_pass, user, ar, list_character, list_weapon, birthday_acc, intertwined_fate, acquaint_fate, map_clear, account_code, price, sold_price, note, role = row
             # Create a new GiAccount
             @gi_account = GiAccount.new(
               account_mail: account_mail,
@@ -222,16 +221,14 @@ class GiAccountsController < ApplicationController
               ar: ar,
               birthday_acc: birthday_acc,
               note: note,
-              owner: owner,
               intertwined_fate: intertwined_fate,
               acquaint_fate: acquaint_fate,
               map_clear: map_clear,
               account_code: account_code,
               price: price,
               sold_price: sold_price,
-              role: role,
+              role: role
             )
-
             # Process character names and weapons
             if list_character.present?
               character_names = list_character.split(',').map(&:strip)
