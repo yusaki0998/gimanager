@@ -212,24 +212,24 @@ class GiAccountsController < ApplicationController
         # Process each row in the CSV file
         @file.each do |row|
           begin
-            account_mail, account_pass, account_phone, status, note, owner, list_character, list_weapon, birthday_acc, intertwined_fate, acquaint_fate, map_clear, account_code, price, sold_price, role = row
+            account_mail, account_pass, user, ar, list_character, list_weapon, birthday_acc, intertwined_fate, acquaint_fate, map_clear, account_code, price, sold_price, role = row
 
             # Create a new GiAccount
             @gi_account = GiAccount.new(
               account_mail: account_mail,
               account_pass: account_pass,
-              account_phone: account_phone,
-              status: status,
+              account_phone: user,
+              ar: ar,
+              birthday_acc: birthday_acc,
               note: note,
               owner: owner,
-              birthday_acc: birthday_acc,
               intertwined_fate: intertwined_fate,
               acquaint_fate: acquaint_fate,
               map_clear: map_clear,
               account_code: account_code,
               price: price,
               sold_price: sold_price,
-              role: role
+              role: role,
             )
 
             # Process character names and weapons
