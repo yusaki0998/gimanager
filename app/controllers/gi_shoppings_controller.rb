@@ -13,10 +13,10 @@ class GiShoppingsController < ApplicationController
     @other_characters_4_stars = Charater.where(start: 4).where.not(id: @charaters_4_stars.pluck(:id))
 
     @weapons_4_stars = Weapon.where(stars: 4).limit(9)
-    @other_weapons_4_starss = Weapon.where(start: 4).where.not(id: @weapons_4_stars.pluck(:id))
+    @other_weapons_4_stars = Weapon.where(start: 4).where.not(id: @weapons_4_stars.pluck(:id))
     
     @weapons_5_stars = Weapon.where(stars: 5).limit(9)
-    @other_weapons_5_starss = Weapon.where(start: 5).where.not(id: @weapons_5_stars.pluck(:id))
+    @other_weapons_5_stars = Weapon.where(start: 5).where.not(id: @weapons_5_stars.pluck(:id))
   end
 
   # GET /gi_shoppings/1 or /gi_shoppings/1.json
