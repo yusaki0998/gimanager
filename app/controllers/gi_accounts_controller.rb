@@ -231,17 +231,27 @@ class GiAccountsController < ApplicationController
             )
             # Process character names and weapons
             if list_character.present?
-              character_names = list_character.split(',').map(&:strip)
-              matching_ids = character_names.map { |name| characters_hash[name] }.compact.uniq
-              @gi_account.list_character = matching_ids.join(',')
+              character_info = list_character.split(',').map(&:strip)
+              character_ids_and_constellations = character_info.map do |info|
+                name, constellation = info.split(' C')
+                character_id = characters_hash[name]
+                "#{character_id}_#{constellation}"
+              end
+              binding.pry
+              @gi_account.list_character = character_ids_and_constellations.join(', ')
+
             end
 
             if list_weapon.present?
-              weapon_names = list_weapon.split(',').map(&:strip)
-              matching_ids = weapon_names.map { |name| weapons_by_name[name] }.compact.uniq
-              @gi_account.list_weapon = matching_ids.join(',')
+              weapon_info = list_weapon.split(',').map(&:strip)
+              weapon_ids_and_refinements = weapon_info.map do |info|
+                name, refinement = info.split(' R')
+                weapon_id = weapons_by_name[name]
+                "#{weapon_id}_#{refinement}"
+              end
+              @gi_account.list_weapon = weapon_ids_and_refinements.join(', ')
             end
-
+            
             # Save the GiAccount record
             ActiveRecord::Base.transaction do
               @gi_account.save!
