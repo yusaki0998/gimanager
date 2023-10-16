@@ -237,7 +237,6 @@ class GiAccountsController < ApplicationController
                 character_id = characters_hash[name]
                 "#{character_id}_#{constellation}"
               end
-              binding.pry
               @gi_account.list_character = character_ids_and_constellations.join(', ')
 
             end
