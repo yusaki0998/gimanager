@@ -3,7 +3,7 @@
                 <% @weapons.each.with_index do |w, idx| %>
                     <% unless f.object.list_weapon.blank?  %>
                         <% weapon_ids = f.object.list_weapon.split(',').map { |entry| entry.split('_').first.strip } %>
-                        <% new_list_weapon = character_ids.join(',') %>
+                        <% new_list_weapon = weapon_ids.join(',') %>
                         <% if new_list_weapon.split(',').include? (w.id.to_s) %>
 
                             <option value="<%=w.id%>" selected><%= w.name %></option>                            
