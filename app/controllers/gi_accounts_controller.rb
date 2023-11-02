@@ -275,7 +275,7 @@ class GiAccountsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def gi_account_params
-      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner,:list_character,:list_weapon, :birthday_acc, :intertwined_fate, :acquaint_fate, :map_clear, :sold_price , :account_code, :ar, :role)
+      params.require(:gi_account).permit(:account_mail, :account_pass, :account_phone, :status, :note, :price, :owner,:list_character,:list_weapon, :birthday_acc, :intertwined_fate, :acquaint_fate, :map_clear, :sold_price , :account_code, :ar, :role, :image_path)
     end
 
     def remove_space(str)

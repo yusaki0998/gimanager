@@ -135,6 +135,16 @@
     <div class="col-sm-2 ps-0" >
       <%= f.text_area :note, :cols => 10, :rows => 5, class:"form-control text-field-css" %>
     </div>
+    <div class="offset-sm-1 col-sm-1">
+      <div class="label-form text-end">
+        <%= f.label :image_path, class:"control-label style-label" %>
+      </div>
+    </div>
+    <div class="col-sm-2 ps-0" >
+      <%= f.file_field :image_path, accept: "image/jpeg, image/gif, image/png, image/jpg", class:"form-control text-field-css"%>
+    </div>
+  </div>
+  <%= image_tag @gi_account.image_path.url , :size => 106 if @gi_account.image_path? %>
   </div>
   <div class="row">
     <div class="d-flex justify-content-center ">

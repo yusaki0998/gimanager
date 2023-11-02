@@ -14,13 +14,18 @@
                             <%= gi_account.sold_price.to_s+"đ" %>
                         </div>
                     </div>
-                    <%=image_tag "banner_account.webp", class:"img-detail-acc"%>
+                    <% if gi_account.image_path? %>
+                        <%=image_tag gi_account.image_path.url, class:"img-detail-acc"%>
+                    <% else %>
+                        <%=image_tag "banner_account.webp", class:"img-detail-acc"%>
+                    <% end %>
                     <div class="row">
                         <div class="col-6">
                             <div class="text-start text-info fw-bold">Nhân vật</div>
                                 <% @charaters.each.with_index do |c, idx| %>
                                 <% unless gi_account.list_character.blank?  %>
-                                    <% if gi_account.list_character.split(',').include? (c.id.to_s) %>
+                                    <% character_ids = gi_account.list_character.split(',').map { |pair| pair.split('_').first } %>
+                                    <% if character_ids.include? (c.id.to_s) %>
                                         <% charater = Charater.find(c.id) %>
                                         <% if charater.stars == 5 %>
                                             <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-5", title: charater.name if charater.image_path? %></td>
