@@ -3,7 +3,12 @@ module GiAccountsHelper
         list_char = list_char.tr('[]', '').split(',').map(&:strip)
         character_info = list_char.map do |info|
           character_id, constellation = info.split('_')
-          character_name = Charater.find(character_id).name
+          character = Charater.find_by(id: character_id)
+          if character.present?
+            character_name = character.name
+          else
+            character_name = ""
+          end
           if constellation.present?
             "#{character_name} C#{constellation}"
           else
@@ -18,7 +23,12 @@ module GiAccountsHelper
         list_weap = list_weap.tr('[]', '').split(',').map(&:strip)
         weapon_info = list_weap.map do |info|
           weapon_id, refinement = info.split('_')
-          weapon_name = Weapon.find(weapon_id).name
+          weapon = Weapon.find_by(id: weapon_id)
+          if weapon.present?
+            weapon_name = weapon.name
+          else
+            weapon_name = ""
+          end
           if refinement.present?
             "#{weapon_name} R#{refinement}"
           else
