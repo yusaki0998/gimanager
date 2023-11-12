@@ -1,3 +1,21 @@
 $('#my_account_table').html("");
 $('#my_account_table').html("<%= j render :partial => 'gi_accounts/tble_account' %>");
 formatTableAccount();
+<% if @error_code == 3 %>
+	$('#modal_error_import_schedule').find(".modal-content").html("");
+	$("#modal_error_import_schedule").find(".modal-content").html("<%= j (render 'table_error_import_schedule') %>");
+	$('#modal_error_import_schedule').modal('show');
+	$('#modal_error_import_schedule').on('shown.bs.modal', function () {
+	  $('#loadMe').modal('hide');
+	});
+	window.$('.tbl_error_import_schedule').DataTable({
+    'scrollCollapse': true,
+    "searching": true,
+    language: {
+      paginate: {
+        next: '<i class="mdi mdi-chevron-right"></i>',
+        previous: '<i class="mdi mdi-chevron-left"></i>'
+      }
+    }
+	});
+<% end %>

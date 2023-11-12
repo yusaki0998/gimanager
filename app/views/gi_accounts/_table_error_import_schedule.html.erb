@@ -1,0 +1,30 @@
+<div class="modal-header modal-colored-header bg-primary">
+  <h4 class="modal-title" id="myModalLabel">Lỗi</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+</div>
+<div class="modal-body">
+	<div class="table-csv">
+		<table id="tbl-error-import-schedule" class="table dt-responsive nowrap w-100 table-hover table-centered tbl_error_import_schedule" >
+			<thead class="thead-light">
+				<tr>
+					<th>STT</th>
+					<th>Acc có thông tin</th>
+					<th>Trạng thái</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @row_error.each_with_index do |row_error, index| %>
+					<tr>
+						<td><%= index + 1 %></td>
+						<td><%= row_error[4] +", "+ row_error[5] %></td>
+						<td class="text-danger"> Acc lỗi nhân vật hoặc vũ khí </td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<%= link_to "Export csv", export_error_import_acc_path(format: :csv), class: "btn btn-primary" %>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>

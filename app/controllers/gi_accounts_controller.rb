@@ -162,8 +162,8 @@ class GiAccountsController < ApplicationController
   #     #   flash[:alert] = "Incorrect file format count column."
   #     #   redirect_to import_new_list_acc_path, :alert => 'Incorrect file format count column.' and return
   #     # elsif @error_code == 3
-  #     #   @row_error.each do |tmp_item|
-  #     #     tmp_error_gi_account = TempErrorSchedule.new(item_0:tmp_item[0], item_1:tmp_item[1], item_2:tmp_item[2], item_3:tmp_item[3], item_4:tmp_item[4], item_5:tmp_item[5], item_6:tmp_item[6], item_7:tmp_item[7], item_8:tmp_item[8], item_9:tmp_item[9])
+  #     #   @row_error.each do |error_row|
+  #     #     tmp_error_gi_account = TempErrorSchedule.new(item_0:error_row[0], item_1:error_row[1], item_2:error_row[2], item_3:error_row[3], item_4:error_row[4], item_5:error_row[5], item_6:error_row[6], item_7:error_row[7], item_8:error_row[8], item_9:error_row[9])
   #     #     tmp_error_gi_account.save
   #     #   end
   #     #   respond_to do |format|
@@ -177,6 +177,7 @@ class GiAccountsController < ApplicationController
   # end
 
   def import_list_acc
+    ErrorList.destroy_all
     @gi_accounts = GiAccount.all
     if params[:gi_account_file].present?
       # Initialize variables for error handling
@@ -211,9 +212,11 @@ class GiAccountsController < ApplicationController
 
         # Process each row in the CSV file
         @file.each do |row|
+          next if row.nil? || row.empty? || row.all?(&:blank?)
           begin
             account_mail, account_pass, user, ar, list_character, list_weapon, birthday_acc, intertwined_fate, acquaint_fate, map_clear, account_code, price, sold_price, note, role = row
             # Create a new GiAccount
+            @error_code = 0
             @gi_account = GiAccount.new(
               account_mail: account_mail,
               account_pass: account_pass,
@@ -235,7 +238,13 @@ class GiAccountsController < ApplicationController
               character_ids_and_constellations = character_info.map do |info|
                 name, constellation = info.split(' C')
                 character_id = characters_hash[name]
-                "#{character_id}_#{constellation}"
+                if character_id.present?
+                  "#{character_id}_#{constellation}"
+                else
+                  @error_code = 3
+                  @row_error << row
+                next 
+                end
               end
               @gi_account.list_character = character_ids_and_constellations.join(', ')
 
@@ -246,14 +255,22 @@ class GiAccountsController < ApplicationController
               weapon_ids_and_refinements = weapon_info.map do |info|
                 name, refinement = info.split(' R')
                 weapon_id = weapons_by_name[name]
-                "#{weapon_id}_#{refinement}"
+                if weapon_id.present?
+                  "#{weapon_id}_#{refinement}"
+                else
+                  @error_code = 3
+                  @row_error << row
+                  next 
+                end
               end
               @gi_account.list_weapon = weapon_ids_and_refinements.join(', ')
             end
             
             # Save the GiAccount record
             ActiveRecord::Base.transaction do
-              @gi_account.save!
+              if @error_code != 3
+                @gi_account.save!
+              end
             end
 
           rescue StandardError => e
@@ -263,8 +280,37 @@ class GiAccountsController < ApplicationController
         end
       end
 
-      # Handle errors and flash messages as needed
+      if @row_error.any?
+        @row_error.each do |error_row|
+          gi_error_account = ErrorList.new(item_0:error_row[0], item_1:error_row[1], item_2:error_row[2], item_3:error_row[3], item_4:error_row[4], item_5:error_row[5], item_6:error_row[6], item_7:error_row[7], item_8:error_row[8], item_9:error_row[9],item_10:error_row[10],item_11:error_row[11],item_12:error_row[12],item_13:error_row[13],item_14:error_row[14])
+          gi_error_account.save!
+        end
+        @error_code = 3
+      end
       # ...
+    end
+  end
+
+  def export_error_import_acc
+    tmp_error_acc = ErrorList.all
+    @row_error = []
+    tmp_error_acc.each do |row|
+      row_error = [
+        row.item_0.to_s, row.item_1.to_s, row.item_2.to_s, row.item_3.to_s, row.item_4.to_s,
+        row.item_5.to_s, row.item_6.to_s, row.item_7.to_s, row.item_8.to_s, row.item_9.to_s,
+        row.item_10.to_s, row.item_11.to_s, row.item_12.to_s, row.item_13.to_s, row.item_14.to_s
+      ]
+      
+      @row_error.push(row_error)
+    end
+    csv_string = "\uFEFF"
+    @row_error = @row_error.unshift(["account_user","account_pass","user","AR","list_character","list_weapon","birthday_acc","intertwined_fate","acquaint_fate","map_clear","account_code","price","sold_price","note","role"])
+    @row_error.each do |row_error|
+      csv_string = csv_string + row_error.to_csv
+    end
+
+    respond_to do |format|
+      format.csv { send_data csv_string, filename: "error_acc_list.csv" }
     end
   end
   private
@@ -282,3 +328,4 @@ class GiAccountsController < ApplicationController
       return str.delete(", ").delete("　")
     end
 end
+              

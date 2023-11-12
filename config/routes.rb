@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   root 'gi_shoppings#index'
   get '/add_user' => 'users#add_user'
   get 'import'=>'users#import'
+  get 'export_error_import_acc' => 'gi_accounts#export_error_import_acc'
   resources :users
     resources :users do
       member do
