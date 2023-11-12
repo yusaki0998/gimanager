@@ -22,39 +22,44 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="text-start text-info fw-bold">Nhân vật</div>
-                                <% @charaters.each.with_index do |c, idx| %>
+
+
                                 <% unless gi_account.list_character.blank?  %>
                                     <% character_ids = gi_account.list_character.split(',').map { |pair| pair.split('_').first } %>
-                                    <% character_ids_str = character_ids.join(', ') %>
-                                    <% if character_ids_str.include? (c.id.to_s) %>
-                                        <% charater = Charater.find(c.id) %>
-                                        <% if charater.stars == 5 %>
-                                            <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-5", title: charater.name if charater.image_path? %></td>
-                                        <% elsif charater.stars == 4 %>
-                                            <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-4", title: charater.name  if charater.image_path? %></td>
-                                        <% else %>
-                                            <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", title: charater.name  if charater.image_path? %></td>
+                                    <% character_ids.each do |c| %>
+                                        <% charater = Charater.find_by(id: c.to_i) %>
+                                        <% if charater.present? %>
+                                            <% if charater.stars == 5 %>
+                                                <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-5", title: charater.name if charater.image_path? %></td>
+                                            <% elsif charater.stars == 4 %>
+                                                <td class=""><%= image_tag charater.image_path.url, height: "30", width: "30", class:"rarity-4", title: charater.name  if charater.image_path? %></td>
+                                            <% else %>
+                                                <td></td>
+                                            <% end %>
                                         <% end %>
                                     <% end %>
                                 <% end %>                   
-                            <% end %>
+
                         </div>
                         <div class="col-6">
                             <div class="text-start text-info fw-bold">Vũ khí</div>
-                            <% @weapons.each.with_index do |w, idx| %>
+
                                 <% unless gi_account.list_weapon.blank?  %>
-                                    <% if gi_account.list_weapon.split(',').include? (w.id.to_s) %>
-                                        <% weapon = Weapon.find(w.id) %>
-                                        <% if weapon.stars == 5 %>
-                                            <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon.name  if weapon.image_path? %></td>
-                                        <% elsif weapon.stars == 4 %>
-                                            <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", class:"rarity-4", title: weapon.name   if weapon.image_path? %></td>
-                                        <% else %>
-                                            <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", title: weapon.name   if weapon.image_path? %></td>
+                                    <% weapon_ids = gi_account.list_weapon.split(',').map { |pair| pair.split('_').first } %>
+                                    <% weapon_ids.each do |w| %>
+                                        <% weapon = Weapon.find_by(id: w.to_i) %>
+                                        <% if weapon.present? %>
+                                            <% if weapon.stars == 5 %>
+                                                <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", class:"rarity-5", title: weapon.name  if weapon.image_path? %></td>
+                                            <% elsif weapon.stars == 4 %>
+                                                <td class=""><%= image_tag weapon.image_path.url, height: "30", width: "30", class:"rarity-4", title: weapon.name   if weapon.image_path? %></td>
+                                            <% else %>
+                                                <td></td>
+                                            <% end %>
                                         <% end %>
                                     <% end %>
                                 <% end %>                   
-                            <% end %>
+
                         </div>
                     </div>                                                       
                     <div class="row">
